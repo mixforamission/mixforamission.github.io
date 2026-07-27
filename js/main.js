@@ -22,44 +22,6 @@
   var navToggle = document.querySelector(".nav-toggle");
   var primaryNav = document.querySelector("#primary-nav");
 
-  /* ========================================================
-     SEASONAL ANNOUNCEMENT BANNER
-     --------------------------------------------------------
-     👉 NON-TECHNICAL EDIT INSTRUCTIONS:
-     To change the seasonal message shown in the slim banner at
-     the top of the home page, edit ONLY the text inside the
-     quotes on the SEASONAL_MESSAGE line below. You can include a
-     link by editing SEASONAL_MESSAGE_LINK_LABEL and
-     SEASONAL_MESSAGE_LINK_HREF. To hide the banner entirely,
-     set SEASONAL_MESSAGE to "" (empty quotes).
-     ======================================================== */
-  var SEASONAL_MESSAGE = "Accepting orders for the holiday season!";
-  var SEASONAL_MESSAGE_LINK_LABEL = "Order now";   // set to "" for no link
-  var SEASONAL_MESSAGE_LINK_HREF = "contact/#order-form"; // where the link goes
-
-  var banner = document.querySelector("[data-announce]");
-  if (banner && SEASONAL_MESSAGE) {
-    var html = SEASONAL_MESSAGE;
-    if (SEASONAL_MESSAGE_LINK_LABEL && SEASONAL_MESSAGE_LINK_HREF) {
-      // The link href is written relative to the site root (e.g.
-      // "contact/#order-form") so it works from the home page. If we're
-      // ALREADY on the target page, strip the path prefix so the link
-      // stays a same-page anchor instead of resolving to a 404.
-      var linkHref = SEASONAL_MESSAGE_LINK_HREF;
-      var hashIdx = linkHref.indexOf("#");
-      if (hashIdx !== -1 && /\/contact\//.test(window.location.pathname) &&
-          linkHref.indexOf("contact/") === 0) {
-        linkHref = linkHref.slice(hashIdx); // → "#order-form"
-      }
-      html += ' <a href="' + linkHref + '">' +
-              SEASONAL_MESSAGE_LINK_LABEL + '</a>';
-    }
-    banner.innerHTML = html;
-  } else if (banner) {
-    // No message set — hide the banner cleanly
-    banner.classList.add("is-hidden");
-  }
-
   /* ----------------------------------------------------------
      1. Sticky header shadow on scroll
      ---------------------------------------------------------- */

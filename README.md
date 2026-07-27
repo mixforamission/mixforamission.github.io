@@ -16,8 +16,7 @@ This repo is just the code that builds it.
 **Mix for a Mission** is a vegan home microbakery in Kirkland, WA, founded by
 high school students in 2024. Washington State Cottage Food approved. This
 repository holds the files that make up the bakery's website — the pages,
-styling, and a small bit of interactivity (mobile menu, sticky header, seasonal
-banner).
+styling, and a small bit of interactivity (mobile menu, sticky header).
 
 The website is **static** — meaning it's made of plain HTML, CSS, and a little
 JavaScript, with no database, no login, and no build process. It's hosted for
@@ -59,7 +58,7 @@ you need.
 │   ├── tokens.css                      # Design tokens (CSS custom properties — colors, type, spacing)
 │   └── styles.css                      # All styles: reset, base, components, per-page sections
 ├── js/
-│   └── main.js                         # Sticky header, mobile nav, footer year, banner, scroll-spy
+│   └── main.js                         # Sticky header, mobile nav, footer year, scroll-spy
 ├── assets/
 │   └── images/                         # Drop all photos here (see images/README.md for filenames)
 │       └── README.md                   # Expected image filenames & sizes
@@ -110,9 +109,8 @@ If setting up from scratch:
    https://<your-username>.github.io/mixforamission.github.io/
    ```
 
-6. Verify: open the URL. Check all 8 pages and the mobile nav. The green action
-   banner at the top should show "Accepting orders for the holiday season!"
-   (injected by `js/main.js` — if it's blank, hard-refresh to clear cache).
+6. Verify: open the URL. Check all 8 pages and the mobile nav. Hard-refresh
+   to clear cache if you don't see your latest changes.
 
 > **Repo-name note:** This repo is named `mixforamission.github.io`. If your GitHub
 > username is **`mixforamission`**, GitHub treats this as a **user/org page** served
@@ -235,8 +233,6 @@ These are the remaining placeholders marked with `TODO` comments in the code:
   meta tag in `index.html`.
 - **Favicon** — the current favicon is an inline SVG data-URI (a green circle with "M").
   Replace with `assets/images/favicon.svg` when a real logo is ready.
-- **Seasonal banner** — edit the `SEASONAL_MESSAGE` constant in `js/main.js` to change
-  the announcement text (single source, appears on home + contact pages).
 - **Donations list** — edit the `DONATIONS` array in `about/donations.html` to replace
   the placeholder entries with real donation history (instructions are in the comment).
 - **Local partnerships** — replace the placeholder partner cards on

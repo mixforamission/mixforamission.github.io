@@ -928,39 +928,10 @@ a[aria-disabled="true"] * {
 
 /* ============================================================
    HOME PAGE — section components
-   Hero, announcement banner, about summary + stat callout,
+   Hero, about summary + stat callout,
    featured menu teaser cards, reviews/social proof, social row.
    All mobile-first; responsive down to ~360px.
    ============================================================ */
-
-/* ---------- Announcement banner ----------
-   A slim, dismissible-feeling strip for seasonal messages.
-   The text is injected from a JS constant in main.js so a
-   non-technical person edits ONE place. If the constant is
-   empty, the banner is hidden automatically.
-   ---------------------------------------------------------- */
-.announce {
-  background-color: var(--color-accent);
-  color: var(--color-on-accent);
-  text-align: center;
-  font-size: var(--fs-xs);
-  font-weight: var(--font-weight-semibold);
-  letter-spacing: var(--ls-wide);
-  padding: var(--sp-2) var(--container-pad);
-  border-bottom: 1px solid var(--color-accent-active);
-}
-.announce.is-hidden {
-  display: none;
-}
-.announce a {
-  color: var(--color-on-accent);
-  text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.45);
-  text-underline-offset: 0.15em;
-}
-.announce a:hover {
-  text-decoration-color: var(--color-on-accent);
-}
 
 /* ---------- Hero ---------- */
 .hero {
@@ -2174,9 +2145,7 @@ a[aria-disabled="true"] * {
 /* ============================================================
    CONTACT PAGE — order form embed + direct contact cards
    The conversion page: short, action-oriented. Reuses .page-intro,
-   .section-head, .btn, .social-highlight-row, and the announcement
-   banner (same [data-announce] element + main.js SEASONAL_MESSAGE
-   single source as the home page — no duplicated text).
+   .section-head, .btn, .social-highlight-row patterns.
    ============================================================ */
 
 /* ---------- Order form embed ----------
