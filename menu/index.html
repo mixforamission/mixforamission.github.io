@@ -60,8 +60,8 @@
       ============================================================
       MENU PAGE
       --------------------------------------------------------
-      Sticky category sub-nav + four anchored sections (Cakes,
-      Cupcakes, Cookies, Cake Pops) + a Cake Jars callout.
+      Sticky category sub-nav + five anchored sections (Cakes,
+      Cupcakes, Cookies, Cake Pops, Cake Jars).
       Pricing and flavor lists are exact per project context.
       ============================================================
     -->
@@ -75,18 +75,6 @@
       </div>
     </section>
 
-    <!-- ===== Cake Jars callout ===== -->
-    <div class="container">
-      <div class="cake-jars">
-        <span class="cake-jars__label">
-          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 3h10v3H7zM8 6h8v3a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h-6a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2z"/><path d="M9 13h6"/></svg>
-          Cake Jars
-        </span>
-        <span class="cake-jars__price">$10 / jar</span>
-        <span class="cake-jars__desc">Layered cake in a jar — a perfect gift or single-serve treat. Ask about flavors when you order.</span>
-      </div>
-    </div>
-
     <!-- ===== Sticky category sub-nav =====
          Sticks below the main header. Active state is driven by
          JS scroll-spy in main.js (progressive enhancement — links
@@ -97,6 +85,7 @@
         <a href="#cupcakes">Cupcakes <span class="count" aria-hidden="true">9</span></a>
         <a href="#cookies">Cookies <span class="count" aria-hidden="true">6</span></a>
         <a href="#cake-pops">Cake Pops <span class="count" aria-hidden="true">3</span></a>
+        <a href="#cake-jars">Cake Jars <span class="count" aria-hidden="true">12</span></a>
       </div>
     </nav>
 
@@ -233,6 +222,44 @@
 
         <div class="menu-section__order">
           <p>Cake pops are perfect for parties, favors, and gifts.</p>
+          <!-- TODO: replace with the real Google Form URL -->
+          <a class="btn btn--secondary" href="../contact/#order-form">Order Here</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Cake Jars ===== -->
+    <section class="menu-section" id="cake-jars" aria-labelledby="cake-jars-heading">
+      <div class="container">
+        <div class="menu-section-head">
+          <div class="menu-section-head__title">
+            <span class="eyebrow">Cake Jars</span>
+            <h2 id="cake-jars-heading">Layered cake in a jar.</h2>
+            <p>Layered cake in a portable jar — a perfect gift or single-serve treat. Available in any of our cake flavors.</p>
+          </div>
+          <div class="price-chips">
+            <span class="price-chip"><span class="num">$10</span><span class="lbl">/ jar</span></span>
+          </div>
+        </div>
+
+        <div class="flavor-grid">
+          <!-- TODO: replace each placeholder media with <img src="../assets/images/cake-jar-*.jpg"> -->
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--vanilla" role="img" aria-label="Placeholder for Vintage Vanilla cake jar"><span class="emoji" aria-hidden="true">🎂</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Vintage Vanilla</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--rose" role="img" aria-label="Placeholder for Rose Cardamom cake jar"><span class="emoji" aria-hidden="true">🌸</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Rose Cardamom</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--chocolate" role="img" aria-label="Placeholder for Enchanted Chocolate Forest cake jar"><span class="emoji" aria-hidden="true">🍫</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Enchanted Chocolate Forest</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--strawberry" role="img" aria-label="Placeholder for Strawberry Crunch cake jar"><span class="emoji" aria-hidden="true">🍓</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Strawberry Crunch</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--ube" role="img" aria-label="Placeholder for Ube cake jar"><span class="emoji" aria-hidden="true">💜</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Ube</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--almond" role="img" aria-label="Placeholder for Almond Crunch cake jar"><span class="emoji" aria-hidden="true">🥜</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Almond Crunch</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--oreo" role="img" aria-label="Placeholder for Chocolate Oreo cake jar"><span class="emoji" aria-hidden="true">🍪</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Chocolate Oreo</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--lemon" role="img" aria-label="Placeholder for Lemon Curd cake jar"><span class="emoji" aria-hidden="true">🍋</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Lemon Curd</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--mango" role="img" aria-label="Placeholder for Mango Lassi cake jar"><span class="emoji" aria-hidden="true">🥭</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Mango Lassi</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--blackforest" role="img" aria-label="Placeholder for Black Forest cake jar"><span class="emoji" aria-hidden="true">🌲</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Black Forest</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--redvelvet" role="img" aria-label="Placeholder for Red Velvet cake jar"><span class="emoji" aria-hidden="true">❤️</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Red Velvet</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--blackchoc" role="img" aria-label="Placeholder for Black Chocolate cake jar"><span class="emoji" aria-hidden="true">🖤</span><span class="placeholder-label">Placeholder, content coming soon</span></div><div class="flavor-card__name">Black Chocolate</div></article>
+        </div>
+
+        <div class="menu-section__order">
+          <p>Cake jars make great gifts or single-serve treats — $10 each.</p>
           <!-- TODO: replace with the real Google Form URL -->
           <a class="btn btn--secondary" href="../contact/#order-form">Order Here</a>
         </div>
