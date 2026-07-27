@@ -1291,6 +1291,23 @@ a[aria-disabled="true"] * {
   margin-inline: auto;
 }
 
+/* Gluten-free note callout in the menu intro */
+.menu-gf-note {
+  max-width: 52ch;
+  margin: var(--sp-4) auto 0;
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: var(--sp-3) var(--sp-4);
+  text-align: center;
+}
+.menu-gf-note .gf-mark {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+}
+
 /* ---------- Cake jars callout ---------- */
 .cake-jars {
   display: flex;
@@ -1532,6 +1549,16 @@ a[aria-disabled="true"] * {
   line-height: 1.25;
 }
 
+/* Gluten-free marker — superscript asterisk on GF-eligible flavors */
+.flavor-card__name .gf-mark {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+  font-size: 0.9em;
+  vertical-align: super;
+  line-height: 0;
+  margin-left: 1px;
+}
+
 /* Per-flavor tint classes (reused from home; extra ones below) */
 .flavor-card__media--vanilla      { background: linear-gradient(135deg, #f6ecd8, #ece0c6); }
 .flavor-card__media--rose         { background: linear-gradient(135deg, #f6e2e2, #ecd0cf); }
@@ -1556,6 +1583,14 @@ a[aria-disabled="true"] * {
 .flavor-card__media--butter       { background: linear-gradient(135deg, #ecdcc4, #d8c098); }
 .flavor-card__media--zebra        { background: linear-gradient(135deg, #e6e3df, #c4bfb8); }
 .flavor-card__media--dough        { background: linear-gradient(135deg, #ecdcc8, #d6c0a4); }
+/* Additional tints for expanded menu (2025 update) */
+.flavor-card__media--mint         { background: linear-gradient(135deg, #dcefe6, #c0e0d0); }
+.flavor-card__media--candycane    { background: linear-gradient(135deg, #f4dde0, #e8c8cc); }
+.flavor-card__media--peanut       { background: linear-gradient(135deg, #e6d8c0, #d4c0a0); }
+.flavor-card__media--pandan       { background: linear-gradient(135deg, #dcecd2, #c4dca8); }
+.flavor-card__media--whiteforest  { background: linear-gradient(135deg, #eeece6, #ddd8cc); }
+.flavor-card__media--matcha       { background: linear-gradient(135deg, #d8e6c8, #bcd0a0); }
+.flavor-card__media--milktea      { background: linear-gradient(135deg, #e8dcc4, #d4c4a8); }
 
 /* Per-section Order CTA */
 .menu-section__order {
