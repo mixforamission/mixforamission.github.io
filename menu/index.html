@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menu — Mix for a Mission</title>
-  <meta name="description" content="The full vegan menu from Mix for a Mission: cakes, cupcakes, cookies, cake pops, and cake jars. Pickup in Kirkland, WA. Order via our Google Form." />
+  <meta name="description" content="The full vegan menu from Mix for a Mission." />
   <meta name="theme-color" content="#2f4a3a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%232f4a3a'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia,serif'>M</text></svg>" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ============ HEADER ============ -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="../index.html" aria-label="Mix for a Mission — home">
@@ -26,236 +26,230 @@
           <small>A Vegan Home Bakery</small>
         </span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
         <span class="bar" aria-hidden="true"></span>
       </button>
-      <nav class="nav" id="primary-nav" aria-label="Primary">
-        <a href="../index.html">Home</a>
-        <a href="index.html" class="is-active">Menu</a>
-        <a href="../about/">About</a>
-        <a href="../outreach/">Outreach</a>
-        <a href="../contact/">Contact</a>
-        <!-- TODO: replace #order-form with the real Google Form URL -->
-        <a href="../contact/#order-form" class="nav-cta">Order Now</a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link is-active" href="index.html">Menu</a></li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link has-caret" href="../about/">About Us<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
+            <ul class="dropdown" aria-label="About Us">
+              <li><a href="../about/">Our Mission</a></li>
+              <li><a href="../about/donations.html">Donations</a></li>
+              <li><a href="../about/board.html">Board</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link has-caret" href="../outreach/">Outreach &amp; Events<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
+            <ul class="dropdown" aria-label="Outreach &amp; Events">
+              <li><a href="../outreach/local-partnerships.html">Local Partnerships</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../contact/">Contact Us</a></li>
+        </ul>
+        <!-- TODO: replace with the real Google Form URL -->
+        <div class="nav-order"><a class="btn btn--secondary btn--sm" href="../contact/#order-form">Order</a></div>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- ============ PAGE HEADER ============ -->
-    <section class="page-header">
-      <div class="container page-header-inner">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
-          <span aria-hidden="true">/</span>
-          <span>Menu</span>
-        </nav>
-        <span class="eyebrow">Our Bakes</span>
-        <h1>The Menu</h1>
-        <p class="lead">
-          Everything is 100% vegan and made to order in our Washington State Cottage Food
-          approved home kitchen. Prices below are per order; custom requests welcome.
-        </p>
+    <!--
+      ============================================================
+      MENU PAGE
+      --------------------------------------------------------
+      Sticky category sub-nav + four anchored sections (Cakes,
+      Cupcakes, Cookies, Cake Pops) + a Cake Jars callout.
+      Pricing and flavor lists are exact per project context.
+      ============================================================
+    -->
+
+    <!-- ===== Page intro ===== -->
+    <section class="menu-intro" aria-labelledby="menu-title">
+      <div class="container">
+        <span class="eyebrow">Our Menu</span>
+        <h1 id="menu-title">Everything vegan, baked to order.</h1>
+        <p class="lead">Custom cakes, cupcakes, cookies &amp; cake pops — all plant-based, all made fresh in our Kirkland kitchen. Pick a category, choose your flavors, and place an order. Every purchase helps us donate to animal sanctuaries.</p>
       </div>
     </section>
 
-    <!-- ============ ANCHOR SUB-NAV ============ -->
-    <nav class="menu-anchor-nav" aria-label="Menu categories">
-      <div class="container">
-        <ul>
-          <li><a href="#cakes">Cakes</a></li>
-          <li><a href="#cupcakes">Cupcakes</a></li>
-          <li><a href="#cookies">Cookies</a></li>
-          <li><a href="#cake-pops">Cake Pops</a></li>
-          <li><a href="#cake-jars">Cake Jars</a></li>
-        </ul>
+    <!-- ===== Cake Jars callout ===== -->
+    <div class="container">
+      <div class="cake-jars">
+        <span class="cake-jars__label">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 3h10v3H7zM8 6h8v3a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h-6a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2z"/><path d="M9 13h6"/></svg>
+          Cake Jars
+        </span>
+        <span class="cake-jars__price">$10 / jar</span>
+        <span class="cake-jars__desc">Layered cake in a jar — a perfect gift or single-serve treat. Ask about flavors when you order.</span>
+      </div>
+    </div>
+
+    <!-- ===== Sticky category sub-nav =====
+         Sticks below the main header. Active state is driven by
+         JS scroll-spy in main.js (progressive enhancement — links
+         work as plain anchors without JS). -->
+    <nav class="menu-subnav" aria-label="Menu categories">
+      <div class="container menu-subnav__inner">
+        <a href="#cakes">Cakes <span class="count" aria-hidden="true">12</span></a>
+        <a href="#cupcakes">Cupcakes <span class="count" aria-hidden="true">9</span></a>
+        <a href="#cookies">Cookies <span class="count" aria-hidden="true">6</span></a>
+        <a href="#cake-pops">Cake Pops <span class="count" aria-hidden="true">3</span></a>
       </div>
     </nav>
 
-    <!-- ============ CAKES ============ -->
-    <section class="section menu-category" id="cakes" aria-labelledby="cakes-heading">
+    <!-- ===== Cakes ===== -->
+    <section class="menu-section" id="cakes" aria-labelledby="cakes-heading">
       <div class="container">
-        <div class="menu-category-head reveal">
-          <div>
-            <span class="eyebrow">Layered &amp; celebratory</span>
-            <h2 id="cakes-heading">Cakes</h2>
+        <div class="menu-section-head">
+          <div class="menu-section-head__title">
+            <span class="eyebrow">Cakes</span>
+            <h2 id="cakes-heading">Three-layer showstoppers.</h2>
+            <p>7-inch 3-layer cakes, baked vegan and decorated by hand. Custom designs welcome.</p>
           </div>
-          <div class="price-row">
-            <span class="price-pill">$50 · non-custom 7-inch 3-layer</span>
-            <span class="price-pill">$60+ · custom cakes</span>
-            <span class="price-pill">+$2 · birthday topper (optional)</span>
+          <div class="price-chips">
+            <span class="price-chip"><span class="num">$50</span><span class="lbl">non-custom 7&Prime; 3-layer</span></span>
+            <span class="price-chip"><span class="num">$60+</span><span class="lbl">custom cakes</span></span>
+            <span class="price-chip"><span class="num">+$2</span><span class="lbl">birthday topper</span></span>
           </div>
         </div>
-        <p class="lead" style="max-width:60ch; margin-bottom: var(--sp-6)">
-          Our cakes are built in three tender layers and finished by hand. Choose a
-          signature flavor for the $50 non-custom 7-inch, or work with us on a custom
-          design starting at $60. Add a birthday topper for $2.
-        </p>
-        <div class="flavor-grid reveal">
-          <span class="flavor-chip"><span class="dot"></span>Vintage Vanilla</span>
-          <span class="flavor-chip"><span class="dot"></span>Rose Cardamom</span>
-          <span class="flavor-chip"><span class="dot"></span>Enchanted Chocolate Forest</span>
-          <span class="flavor-chip"><span class="dot"></span>Strawberry Crunch</span>
-          <span class="flavor-chip"><span class="dot"></span>Ube</span>
-          <span class="flavor-chip"><span class="dot"></span>Almond Crunch</span>
-          <span class="flavor-chip"><span class="dot"></span>Chocolate Oreo</span>
-          <span class="flavor-chip"><span class="dot"></span>Lemon Curd</span>
-          <span class="flavor-chip"><span class="dot"></span>Mango Lassi</span>
-          <span class="flavor-chip"><span class="dot"></span>Black Forest</span>
-          <span class="flavor-chip"><span class="dot"></span>Red Velvet</span>
-          <span class="flavor-chip"><span class="dot"></span>Black Chocolate</span>
+
+        <div class="flavor-grid">
+          <!-- TODO: replace each placeholder media with <img src="../assets/images/cake-*.jpg"> -->
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--vanilla" role="img" aria-label="Placeholder for Vintage Vanilla cake"><span class="emoji" aria-hidden="true">🎂</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Vintage Vanilla</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--rose" role="img" aria-label="Placeholder for Rose Cardamom cake"><span class="emoji" aria-hidden="true">🌸</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Rose Cardamom</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--chocolate" role="img" aria-label="Placeholder for Enchanted Chocolate Forest cake"><span class="emoji" aria-hidden="true">🍫</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Enchanted Chocolate Forest</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--strawberry" role="img" aria-label="Placeholder for Strawberry Crunch cake"><span class="emoji" aria-hidden="true">🍓</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Strawberry Crunch</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--ube" role="img" aria-label="Placeholder for Ube cake"><span class="emoji" aria-hidden="true">💜</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Ube</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--almond" role="img" aria-label="Placeholder for Almond Crunch cake"><span class="emoji" aria-hidden="true">🥜</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Almond Crunch</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--oreo" role="img" aria-label="Placeholder for Chocolate Oreo cake"><span class="emoji" aria-hidden="true">🍪</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Chocolate Oreo</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--lemon" role="img" aria-label="Placeholder for Lemon Curd cake"><span class="emoji" aria-hidden="true">🍋</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Lemon Curd</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--mango" role="img" aria-label="Placeholder for Mango Lassi cake"><span class="emoji" aria-hidden="true">🥭</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Mango Lassi</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--blackforest" role="img" aria-label="Placeholder for Black Forest cake"><span class="emoji" aria-hidden="true">🌲</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Black Forest</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--redvelvet" role="img" aria-label="Placeholder for Red Velvet cake"><span class="emoji" aria-hidden="true">❤️</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Red Velvet</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--blackchoc" role="img" aria-label="Placeholder for Black Chocolate cake"><span class="emoji" aria-hidden="true">🖤</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Black Chocolate</div></article>
         </div>
-        <!-- TODO: replace with real cake photos -->
-        <div class="product-grid mt-6 reveal">
-          <article class="product">
-            <div class="product-media product-media--cake" role="img" aria-label="Placeholder for Vintage Vanilla cake"><span class="emoji" aria-hidden="true">🎂</span><span class="placeholder-label">Photo</span></div>
-            <div class="product-body"><h3>Vintage Vanilla</h3><p class="desc">A classic three-layer vanilla sponge — the crowd favorite.</p></div>
-          </article>
-          <article class="product">
-            <div class="product-media product-media--cake" role="img" aria-label="Placeholder for Rose Cardamom cake"><span class="emoji" aria-hidden="true">🌸</span><span class="placeholder-label">Photo</span></div>
-            <div class="product-body"><h3>Rose Cardamom</h3><p class="desc">Floral, aromatic, and gently spiced — a signature flavor.</p></div>
-          </article>
-          <article class="product">
-            <div class="product-media product-media--cake" role="img" aria-label="Placeholder for Enchanted Chocolate Forest cake"><span class="emoji" aria-hidden="true">🍫</span><span class="placeholder-label">Photo</span></div>
-            <div class="product-body"><h3>Enchanted Chocolate Forest</h3><p class="desc">Deep, rich chocolate layered for true chocolate lovers.</p></div>
-          </article>
+
+        <div class="menu-section__order">
+          <p>Ready to order a cake? Custom designs start at $60.</p>
+          <!-- TODO: replace with the real Google Form URL -->
+          <a class="btn btn--secondary" href="../contact/#order-form">Order Here</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ CUPCAKES ============ -->
-    <section class="section section--alt menu-category" id="cupcakes" aria-labelledby="cupcakes-heading">
+    <!-- ===== Cupcakes ===== -->
+    <section class="menu-section menu-section--alt" id="cupcakes" aria-labelledby="cupcakes-heading">
       <div class="container">
-        <div class="menu-category-head reveal">
-          <div>
-            <span class="eyebrow">Perfectly portioned</span>
-            <h2 id="cupcakes-heading">Cupcakes</h2>
+        <div class="menu-section-head">
+          <div class="menu-section-head__title">
+            <span class="eyebrow">Cupcakes</span>
+            <h2 id="cupcakes-heading">Perfect little portions.</h2>
+            <p>Mix and match flavors across your order. Sold by the half-dozen, dozen, or two dozen.</p>
           </div>
-          <div class="price-row">
-            <span class="price-pill">$20 / 6</span>
-            <span class="price-pill">$30 / 12</span>
-            <span class="price-pill">$50 / 24</span>
+          <div class="price-chips">
+            <span class="price-chip"><span class="num">$20</span><span class="lbl">/ 6</span></span>
+            <span class="price-chip"><span class="num">$30</span><span class="lbl">/ 12</span></span>
+            <span class="price-chip"><span class="num">$50</span><span class="lbl">/ 24</span></span>
           </div>
         </div>
-        <p class="lead" style="max-width:60ch; margin-bottom: var(--sp-6)">
-          Hand-frosted cupcakes sold by the half-dozen, dozen, or two dozen. Mix and
-          match flavors across a single order to build your perfect assortment.
-        </p>
-        <div class="flavor-grid reveal">
-          <span class="flavor-chip"><span class="dot"></span>Chocolate Oreo</span>
-          <span class="flavor-chip"><span class="dot"></span>Red Velvet Biscoff</span>
-          <span class="flavor-chip"><span class="dot"></span>Cardamom Rose</span>
-          <span class="flavor-chip"><span class="dot"></span>Ube</span>
-          <span class="flavor-chip"><span class="dot"></span>Coffee</span>
-          <span class="flavor-chip"><span class="dot"></span>Red Velvet</span>
-          <span class="flavor-chip"><span class="dot"></span>Cranberry Pumpkin Bliss</span>
-          <span class="flavor-chip"><span class="dot"></span>Vanilla</span>
-          <span class="flavor-chip"><span class="dot"></span>Chocolate Vanilla Swirl</span>
+
+        <div class="flavor-grid">
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--oreo" role="img" aria-label="Placeholder for Chocolate Oreo cupcake"><span class="emoji" aria-hidden="true">🍪</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Chocolate Oreo</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--redvelvet" role="img" aria-label="Placeholder for Red Velvet Biscoff cupcake"><span class="emoji" aria-hidden="true">❤️</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Red Velvet Biscoff</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--rose" role="img" aria-label="Placeholder for Cardamom Rose cupcake"><span class="emoji" aria-hidden="true">🌸</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Cardamom Rose</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--ube" role="img" aria-label="Placeholder for Ube cupcake"><span class="emoji" aria-hidden="true">💜</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Ube</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--coffee" role="img" aria-label="Placeholder for Coffee cupcake"><span class="emoji" aria-hidden="true">☕</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Coffee</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--redvelvet" role="img" aria-label="Placeholder for Red Velvet cupcake"><span class="emoji" aria-hidden="true">❤️</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Red Velvet</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--cranberry" role="img" aria-label="Placeholder for Cranberry Pumpkin Bliss cupcake"><span class="emoji" aria-hidden="true">🫐</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Cranberry Pumpkin Bliss</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--vanilla" role="img" aria-label="Placeholder for Vanilla cupcake"><span class="emoji" aria-hidden="true">🧁</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Vanilla</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--swirl" role="img" aria-label="Placeholder for Chocolate Vanilla Swirl cupcake"><span class="emoji" aria-hidden="true">🌀</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Chocolate Vanilla Swirl</div></article>
+        </div>
+
+        <div class="menu-section__order">
+          <p>Pick your flavors and quantity — cupcakes are great for events.</p>
+          <!-- TODO: replace with the real Google Form URL -->
+          <a class="btn btn--secondary" href="../contact/#order-form">Order Here</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ COOKIES ============ -->
-    <section class="section menu-category" id="cookies" aria-labelledby="cookies-heading">
+    <!-- ===== Cookies ===== -->
+    <section class="menu-section" id="cookies" aria-labelledby="cookies-heading">
       <div class="container">
-        <div class="menu-category-head reveal">
-          <div>
-            <span class="eyebrow">Thick &amp; chewy</span>
-            <h2 id="cookies-heading">Cookies</h2>
+        <div class="menu-section-head">
+          <div class="menu-section-head__title">
+            <span class="eyebrow">Cookies</span>
+            <h2 id="cookies-heading">Chewy, chunky, shareable.</h2>
+            <p>Big bakery-style cookies by the dozen. Each flavor is vegan through and through.</p>
           </div>
-          <div class="price-row">
-            <span class="price-pill">$18 / 6</span>
-            <span class="price-pill">$30 / 12</span>
-            <span class="price-pill">$45 / 24</span>
+          <div class="price-chips">
+            <span class="price-chip"><span class="num">$18</span><span class="lbl">/ 6</span></span>
+            <span class="price-chip"><span class="num">$30</span><span class="lbl">/ 12</span></span>
+            <span class="price-chip"><span class="num">$45</span><span class="lbl">/ 24</span></span>
           </div>
         </div>
-        <p class="lead" style="max-width:60ch; margin-bottom: var(--sp-6)">
-          Soft-centered, edge-crisp cookies packed with mix-ins. Available in 6, 12, or 24.
-        </p>
-        <div class="flavor-grid reveal">
-          <span class="flavor-chip"><span class="dot"></span>Blue Cookie Monster</span>
-          <span class="flavor-chip"><span class="dot"></span>Pumpkin Spice Latte</span>
-          <span class="flavor-chip"><span class="dot"></span>Party Sprinkle</span>
-          <span class="flavor-chip"><span class="dot"></span>Strawberry Crunch</span>
-          <span class="flavor-chip"><span class="dot"></span>S'mores</span>
-          <span class="flavor-chip"><span class="dot"></span>Cookie Butter Stuffed</span>
+
+        <div class="flavor-grid">
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--blue" role="img" aria-label="Placeholder for Blue Cookie Monster cookie"><span class="emoji" aria-hidden="true">🔵</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Blue Cookie Monster</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--pumpkin" role="img" aria-label="Placeholder for Pumpkin Spice Latte cookie"><span class="emoji" aria-hidden="true">🎃</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Pumpkin Spice Latte</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--sprinkle" role="img" aria-label="Placeholder for Party Sprinkle cookie"><span class="emoji" aria-hidden="true">🎉</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Party Sprinkle</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--strawberry" role="img" aria-label="Placeholder for Strawberry Crunch cookie"><span class="emoji" aria-hidden="true">🍓</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Strawberry Crunch</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--smores" role="img" aria-label="Placeholder for S'mores cookie"><span class="emoji" aria-hidden="true">🔥</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">S'mores</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--butter" role="img" aria-label="Placeholder for Cookie Butter Stuffed cookie"><span class="emoji" aria-hidden="true">🥠</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Cookie Butter Stuffed</div></article>
+        </div>
+
+        <div class="menu-section__order">
+          <p>A dozen cookies makes a great gift — or a great snack stash.</p>
+          <!-- TODO: replace with the real Google Form URL -->
+          <a class="btn btn--secondary" href="../contact/#order-form">Order Here</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ CAKE POPS ============ -->
-    <section class="section section--alt menu-category" id="cake-pops" aria-labelledby="cake-pops-heading">
+    <!-- ===== Cake Pops ===== -->
+    <section class="menu-section menu-section--alt" id="cake-pops" aria-labelledby="cakepops-heading">
       <div class="container">
-        <div class="menu-category-head reveal">
-          <div>
-            <span class="eyebrow">Hand-dipped bites</span>
-            <h2 id="cake-pops-heading">Cake Pops</h2>
+        <div class="menu-section-head">
+          <div class="menu-section-head__title">
+            <span class="eyebrow">Cake Pops</span>
+            <h2 id="cakepops-heading">Bite-sized, dipped, delightful.</h2>
+            <p>Hand-dipped cake pops on a stick. Want two flavors in one box? Add the half &amp; half option.</p>
           </div>
-          <div class="price-row">
-            <span class="price-pill">$20 / 6</span>
-            <span class="price-pill">$30 / 12 · +$3 half &amp; half</span>
-            <span class="price-pill">$50 / 24 · +$5 half &amp; half</span>
+          <div class="price-chips">
+            <span class="price-chip"><span class="num">$20</span><span class="lbl">/ 6</span></span>
+            <span class="price-chip"><span class="num">$30</span><span class="lbl">/ 12</span><span class="lbl">+ $3 half &amp; half</span></span>
+            <span class="price-chip"><span class="num">$50</span><span class="lbl">/ 24</span><span class="lbl">+ $5 half &amp; half</span></span>
           </div>
         </div>
-        <p class="lead" style="max-width:60ch; margin-bottom: var(--sp-6)">
-          Crumbled cake and frosting, rolled, dipped, and decorated. Choose a single
-          flavor or split an order "half &amp; half" for a small upcharge.
-        </p>
-        <div class="flavor-grid reveal">
-          <span class="flavor-chip"><span class="dot"></span>Zebra</span>
-          <span class="flavor-chip"><span class="dot"></span>Double Dough</span>
-          <span class="flavor-chip"><span class="dot"></span>Double Dough Biscoff</span>
+
+        <div class="flavor-grid">
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--zebra" role="img" aria-label="Placeholder for Zebra cake pop"><span class="emoji" aria-hidden="true">🦓</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Zebra</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--dough" role="img" aria-label="Placeholder for Double Dough cake pop"><span class="emoji" aria-hidden="true">🍩</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Double Dough</div></article>
+          <article class="flavor-card"><div class="flavor-card__media flavor-card__media--biscoff" role="img" aria-label="Placeholder for Double Dough Biscoff cake pop"><span class="emoji" aria-hidden="true">🍪</span><span class="placeholder-label">Photo</span></div><div class="flavor-card__name">Double Dough Biscoff</div></article>
+        </div>
+
+        <div class="menu-section__order">
+          <p>Cake pops are perfect for parties, favors, and gifts.</p>
+          <!-- TODO: replace with the real Google Form URL -->
+          <a class="btn btn--secondary" href="../contact/#order-form">Order Here</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ CAKE JARS ============ -->
-    <section class="section menu-category" id="cake-jars" aria-labelledby="cake-jars-heading">
+    <!-- ===== Closing CTA ===== -->
+    <section class="menu-cta" aria-labelledby="menu-cta-heading">
       <div class="container">
-        <div class="menu-category-head reveal">
-          <div>
-            <span class="eyebrow">Layered in a jar</span>
-            <h2 id="cake-jars-heading">Cake Jars</h2>
-          </div>
-          <div class="price-row">
-            <span class="price-pill">$10 / jar</span>
-          </div>
-        </div>
-        <p class="lead" style="max-width:60ch; margin-bottom: var(--sp-6)">
-          All the joy of a layered cake, packed into a portable jar. Perfect for gifts,
-          parties, or a personal treat. Ask us about available flavors when you order.
-        </p>
-        <!-- TODO: add cake jar photos and any flavor list once confirmed -->
+        <h2 id="menu-cta-heading">Don't see your dream flavor?</h2>
+        <p>We love a challenge. Tell us what you're imagining and we'll work with you to create a custom vegan bake for your event.</p>
+        <!-- TODO: replace with the real Google Form URL -->
+        <a class="btn btn--primary btn--lg" href="../contact/#order-form">Start a custom order</a>
       </div>
     </section>
-
-    <!-- ============ ORDER CTA ============ -->
-    <section class="section section--tight">
-      <div class="container container--narrow">
-        <div class="order-panel reveal">
-          <span class="eyebrow" style="color: var(--color-accent-soft)">How to order</span>
-          <h2>Ready to place an order?</h2>
-          <p>
-            Tell us what you'd like through our order form and we'll confirm pickup
-            details at our Kirkland kitchen. Questions first? Reach out anytime.
-          </p>
-          <div class="hero-actions" style="justify-content:center">
-            <!-- TODO: replace #order-form with the real Google Form URL -->
-            <a class="btn btn--accent btn--lg" href="../contact/#order-form">Start your order</a>
-            <a class="btn btn--ghost btn--lg btn--on-dark" href="../contact/">Contact us</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <p class="note text-center" style="max-width:60ch; margin: 0 auto var(--sp-7); padding-inline: var(--sp-5)">
-      All products are made in a home kitchen that is not inspected by the Washington
-      State Department of Agriculture, as permitted under cottage food law. Made to
-      order; please allow advance notice for pickup.
-    </p>
   </main>
 
-  <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -263,37 +257,40 @@
           <div class="footer-brand">Mix for a Mission</div>
           <p>A vegan home microbakery in Kirkland, WA. Washington State Cottage Food approved. Founded by high school students in 2024.</p>
           <div class="footer-social">
-            <a href="https://instagram.com/mixforamission" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="https://instagram.com/mixforamission" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
             <a href="https://facebook.com/mixforamission" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3l1-3h-4V4c0-1 .3-1.5 1.7-1.5H18V0h-3C11.5 0 11 1.8 11 3.5V6H8v3h3v9h3V9z"/></svg></a>
             <a href="https://www.tiktok.com/@mixforamission" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 3c.3 2.1 1.6 3.7 3.7 4v3c-1.4 0-2.7-.4-3.7-1v6.5A5.5 5.5 0 1 1 10.5 10v3a2.5 2.5 0 1 0 2.5 2.5V3h3z"/></svg></a>
+            <!-- TODO: replace with real Yelp and Google Reviews profile URLs -->
+            <a href="#" target="_blank" rel="noopener" aria-label="Yelp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 7L12 17.3 5.7 21l1.7-7L2 9.2l7.1-.6L12 2z"/></svg></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Google Reviews"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 11v2.8h6.3c-.3 1.6-2 4.7-6.3 4.7-3.8 0-6.9-3.1-6.9-7s3.1-7 6.9-7c2.2 0 3.6.9 4.4 1.7l2-1.9C16.9 2.4 14.7 1.5 12 1.5 6.8 1.5 2.6 5.7 2.6 11S6.8 20.5 12 20.5c5.9 0 9.8-4.1 9.8-9.9 0-.7-.1-1.2-.2-1.6H12z"/></svg></a>
           </div>
         </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
+        <nav aria-label="Footer">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
             <li><a href="../index.html">Home</a></li>
             <li><a href="index.html">Menu</a></li>
-            <li><a href="../about/">About</a></li>
+            <li><a href="../about/">About Us</a></li>
             <li><a href="../outreach/">Outreach</a></li>
             <li><a href="../contact/">Contact</a></li>
           </ul>
-        </div>
+        </nav>
         <div>
-          <h4>Get in touch</h4>
-          <ul>
+          <h2 class="footer-heading">Get in touch</h2>
+          <ul class="footer-list">
             <li><a href="tel:+14257399862">425-739-9862</a></li>
             <li><a href="mailto:MixForAMission@gmail.com">MixForAMission@gmail.com</a></li>
-            <li>Pickup: 6735 132nd Ave NE, Kirkland, WA 98033</li>
+            <li class="addr">6735 132nd Ave NE, Kirkland, WA 98033</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
+        <span class="footer-approval"><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Washington State Cottage Food Approved.</span>
         <span>© <span data-year>2024</span> Mix for a Mission. All rights reserved.</span>
-        <span>Made with care in Kirkland, WA.</span>
       </div>
     </div>
   </footer>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

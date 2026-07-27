@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Mix for a Mission</title>
-  <meta name="description" content="About Mix for a Mission: our story and mission." />
+  <title>Donations — Mix for a Mission</title>
+  <meta name="description" content="Where Mix for a Mission's profits go: animal sanctuaries and Hope Link." />
   <meta name="theme-color" content="#2f4a3a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,8 +36,8 @@
           <li class="nav-item has-dropdown">
             <a class="nav-link has-caret is-current" href="index.html">About Us<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
             <ul class="dropdown" aria-label="About Us">
-              <li><a class="is-active" href="index.html">Our Mission</a></li>
-              <li><a href="donations.html">Donations</a></li>
+              <li><a href="index.html">Our Mission</a></li>
+              <li><a class="is-active" href="donations.html">Donations</a></li>
               <li><a href="board.html">Board</a></li>
             </ul>
           </li>
@@ -58,82 +58,157 @@
   <main id="main">
     <!--
       ============================================================
-      ABOUT US — hub/summary page
+      DONATIONS — where our profits go
       --------------------------------------------------------
-      Intro, full mission statement, Our Results stat, and a
-      Meet Our Board CTA card. Donations and Board get their own
-      dedicated sub-pages (linked from here).
+      Framing copy, a prominent $1,000+ stat band, a Hope Link
+      highlight (50% of profits), and a JS-driven editable donations
+      timeline. The timeline renders from the DONATIONS array in the
+      inline <script> below — a non-developer edits THAT array, not
+      the HTML layout.
       ============================================================
     -->
 
     <!-- ===== Page intro ===== -->
-    <section class="page-intro" aria-labelledby="about-title">
+    <section class="page-intro" aria-labelledby="donations-title">
       <div class="container">
-        <span class="eyebrow">About Us</span>
-        <h1 id="about-title">A vegan home bakery on a mission.</h1>
-        <p class="lead">Mix for a Mission is a vegan home bakery in the Greater Seattle Area, Washington founded in 2024 by high school students. We specialize in custom vegan cakes, cookies, cupcakes and cake pops. Each order is always fresh, and created in our home bakery with both pick-up and delivery options available.</p>
+        <span class="eyebrow">Donations</span>
+        <h1 id="donations-title">Where your order goes.</h1>
+        <p class="lead">Mix for a Mission has donated extra proceeds to animal sanctuaries and charities across the North American region &mdash; donating over $1,000 so far. We donate 50% of profits from every order to Hope Link, a local organization supporting low-income families in our community.</p>
       </div>
     </section>
 
-    <!-- ===== Mission statement ===== -->
-    <section class="section" aria-labelledby="mission-heading">
+    <!-- ===== Prominent stat band ($1,000+) ===== -->
+    <section class="section" aria-labelledby="stat-heading">
+      <h2 id="stat-heading" class="visually-hidden">Donation total</h2>
       <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow">Our Mission</span>
-          <h2 id="mission-heading">Why we bake.</h2>
+        <div class="donation-stat-band">
+          <div class="stat-eyebrow">Donated to date</div>
+          <div class="stat-num">$1,000+</div>
+          <div class="stat-sub">&hellip; and growing with every order. Thank you for helping us give back.</div>
         </div>
-        <blockquote class="mission-quote">
-          <p>Our mission is to create exciting vegan baked goods that not only satisfy your cravings but also contribute towards making a positive impact on the world. As a Washington State Cottage Food approved microbakery, we use our profits from your orders to donate to animal sanctuaries or invest in the growth and development of our business, which in turn brings more satisfied customers and thus more donations to sanctuaries.</p>
-        </blockquote>
       </div>
     </section>
 
-    <!-- ===== Our Results ===== -->
-    <section class="section section--alt" aria-labelledby="results-heading">
+    <!-- ===== Hope Link highlight (50% of profits) ===== -->
+    <section class="section section--alt" aria-labelledby="hopelink-heading">
       <div class="container">
-        <div class="about-split">
-          <div>
-            <span class="eyebrow">Our Results</span>
-            <h2 id="results-heading">Every order gives back.</h2>
-            <p class="lead">Since 2024, your orders have helped us donate over $1,000 to animal sanctuaries and the causes we care about. We reinvest the rest into growing the bakery — so every satisfied customer means more donations down the line.</p>
-            <p><a href="donations.html">See how we donate &amp; who we support &rarr;</a></p>
+        <div class="hopelink-card">
+          <div class="hopelink-card__pct">
+            50%
+            <span class="pct-label">of profits</span>
           </div>
-          <div class="stat-callout">
-            <div class="stat-num">$1,000+</div>
-            <div class="stat-label">donated to date</div>
+          <div class="hopelink-card__body">
+            <h3 id="hopelink-heading">Hope Link</h3>
+            <p>A local organization supporting low-income families in our community. Half of the profit from every single order goes directly to Hope Link &mdash; so your celebration helps another family at the same time.</p>
+            <div class="cta-row cta-row--left">
+              <a class="btn btn--secondary btn--sm" href="https://www.hopelink.org" target="_blank" rel="noopener">Learn about Hope Link</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Meet Our Board CTA card ===== -->
-    <section class="section" aria-labelledby="board-heading">
+    <!-- ===== Donations timeline (JS-rendered) ===== -->
+    <section class="section" aria-labelledby="timeline-heading">
       <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow">Our People</span>
-          <h2 id="board-heading">Meet the students behind the bakery.</h2>
-          <p class="lead">A small board of high schoolers running every part of Mix for a Mission — from outreach to photography to the finances that fund our donations.</p>
+        <div class="section-head">
+          <span class="eyebrow">Our Donation History</span>
+          <h2 id="timeline-heading">Organizations we&rsquo;ve supported.</h2>
+          <p class="lead">A growing list of the animal sanctuaries and charities your orders have helped us support.</p>
         </div>
-        <div class="cta-card-wrap">
-          <!-- TODO: replace placeholder media with <img src="../assets/images/team.jpg"> -->
-          <article class="product-card">
-            <div class="product-card__media product-card__media--sage" role="img" aria-label="Placeholder for a team photo of the Mix for a Mission board">
-              <span class="emoji" aria-hidden="true">🌿</span>
-              <span class="placeholder-label">Photo</span>
-            </div>
-            <div class="product-card__body">
-              <h3>Meet Our Board</h3>
-              <p class="price">Emi &middot; Tandisse &middot; Ishwin</p>
-              <p class="desc">The high schoolers who founded Mix for a Mission and keep it running.</p>
-              <div class="cta-row cta-row--left">
-                <a class="btn btn--primary" href="board.html">Meet the board</a>
-              </div>
-            </div>
-          </article>
+        <!-- The list below is populated by JavaScript from the DONATIONS
+             array in the inline <script> further down. If JS is disabled,
+             this empty list simply won't render (the framing copy above
+             still conveys the key facts). -->
+        <ul class="donation-list" id="donation-list" aria-label="Donation history"></ul>
+      </div>
+    </section>
+
+    <!-- ===== Back to About link ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-row cta-row--left-lg">
+          <a class="btn btn--ghost" href="index.html">&larr; Back to About</a>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- ============================================================
+       DONATIONS DATA — EDIT THIS SECTION TO UPDATE THE LIST
+       ------------------------------------------------------------
+       👉 NON-DEVELOPER EDIT INSTRUCTIONS:
+       To add, remove, or change a donation entry, edit ONLY the
+       DONATIONS list below. Each entry is wrapped in { } and has:
+         name:  "Organization name"      (required)
+         blurb: "One-line description"   (required)
+         link:  "https://..."            (optional — leave as "" for no link)
+       Add a comma after each } except the last one. That's it —
+       the page updates automatically. Don't change anything else.
+       ============================================================ -->
+  <script>
+    var DONATIONS = [
+      // TODO: replace with real donation history
+      {
+        name: "[Sanctuary name 1]",
+        blurb: "An animal sanctuary we supported with proceeds from early orders.",
+        link: ""
+      },
+      // TODO: replace with real donation history
+      {
+        name: "[Charity name 2]",
+        blurb: "A charity fund we contributed to during a seasonal outreach event.",
+        link: ""
+      },
+      // TODO: replace with real donation history
+      {
+        name: "[Sanctuary name 3]",
+        blurb: "A North American animal sanctuary receiving ongoing support from our profits.",
+        link: ""
+      }
+    ];
+
+    (function () {
+      var list = document.getElementById("donation-list");
+      if (!list) return;
+
+      var heartIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
+        'stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9C1 9 2.5 5 6 5c2 0 3.5 1 4.5 2.5C11.5 6 13 5 15 5c3.5 0 5 4 3.5 7-2.5 4.5-9.5 9-9.5 9z"/></svg>';
+
+      DONATIONS.forEach(function (d) {
+        var li = document.createElement("li");
+        li.className = "donation-item";
+
+        // Build structure with innerHTML for the static shell, then set
+        // user-editable text via textContent so special characters like
+        // <, >, & can't break the layout.
+        li.innerHTML =
+          '<div class="donation-item__marker">' + heartIcon + '</div>' +
+          '<div class="donation-item__body">' +
+            '<div class="donation-item__name"></div>' +
+            '<p class="donation-item__blurb"></p>' +
+          '</div>';
+
+        var body = li.querySelector(".donation-item__body");
+        li.querySelector(".donation-item__name").textContent = d.name || "";
+        body.querySelector(".donation-item__blurb").textContent = d.blurb || "";
+
+        if (d.link && d.link.trim()) {
+          var linkP = document.createElement("p");
+          linkP.className = "donation-item__link";
+          var linkA = document.createElement("a");
+          linkA.href = d.link;
+          linkA.target = "_blank";
+          linkA.rel = "noopener";
+          linkA.textContent = "Visit site \u2192"; // →
+          linkP.appendChild(linkA);
+          body.appendChild(linkP);
+        }
+
+        list.appendChild(li);
+      });
+    })();
+  </script>
 
   <footer class="site-footer">
     <div class="container">

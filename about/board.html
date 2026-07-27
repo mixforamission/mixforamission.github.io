@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Mix for a Mission</title>
-  <meta name="description" content="About Mix for a Mission: our story and mission." />
+  <title>Board — Mix for a Mission</title>
+  <meta name="description" content="Meet the Mix for a Mission board." />
   <meta name="theme-color" content="#2f4a3a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,9 +36,9 @@
           <li class="nav-item has-dropdown">
             <a class="nav-link has-caret is-current" href="index.html">About Us<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
             <ul class="dropdown" aria-label="About Us">
-              <li><a class="is-active" href="index.html">Our Mission</a></li>
+              <li><a href="index.html">Our Mission</a></li>
               <li><a href="donations.html">Donations</a></li>
-              <li><a href="board.html">Board</a></li>
+              <li><a class="is-active" href="board.html">Board</a></li>
             </ul>
           </li>
           <li class="nav-item has-dropdown">
@@ -58,78 +58,88 @@
   <main id="main">
     <!--
       ============================================================
-      ABOUT US — hub/summary page
+      BOARD — Meet the students behind Mix for a Mission
       --------------------------------------------------------
-      Intro, full mission statement, Our Results stat, and a
-      Meet Our Board CTA card. Donations and Board get their own
-      dedicated sub-pages (linked from here).
+      A responsive team grid: 3 columns on desktop, stacks on
+      mobile. One card per board member with a photo placeholder,
+      name, role, and their quote exactly as given.
       ============================================================
     -->
 
     <!-- ===== Page intro ===== -->
-    <section class="page-intro" aria-labelledby="about-title">
+    <section class="page-intro" aria-labelledby="board-title">
       <div class="container">
-        <span class="eyebrow">About Us</span>
-        <h1 id="about-title">A vegan home bakery on a mission.</h1>
-        <p class="lead">Mix for a Mission is a vegan home bakery in the Greater Seattle Area, Washington founded in 2024 by high school students. We specialize in custom vegan cakes, cookies, cupcakes and cake pops. Each order is always fresh, and created in our home bakery with both pick-up and delivery options available.</p>
+        <span class="eyebrow">Our Board</span>
+        <h1 id="board-title">Meet the team.</h1>
+        <p class="lead">Mix for a Mission is run by a small board of high school students. They handle everything &mdash; from outreach and events to the finances behind our donations and the photos you see across the site.</p>
       </div>
     </section>
 
-    <!-- ===== Mission statement ===== -->
-    <section class="section" aria-labelledby="mission-heading">
+    <!-- ===== Board grid ===== -->
+    <section class="section" aria-labelledby="board-grid-heading">
+      <h2 id="board-grid-heading" class="visually-hidden">Board members</h2>
       <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow">Our Mission</span>
-          <h2 id="mission-heading">Why we bake.</h2>
-        </div>
-        <blockquote class="mission-quote">
-          <p>Our mission is to create exciting vegan baked goods that not only satisfy your cravings but also contribute towards making a positive impact on the world. As a Washington State Cottage Food approved microbakery, we use our profits from your orders to donate to animal sanctuaries or invest in the growth and development of our business, which in turn brings more satisfied customers and thus more donations to sanctuaries.</p>
-        </blockquote>
-      </div>
-    </section>
+        <div class="grid grid--cols-3">
 
-    <!-- ===== Our Results ===== -->
-    <section class="section section--alt" aria-labelledby="results-heading">
-      <div class="container">
-        <div class="about-split">
-          <div>
-            <span class="eyebrow">Our Results</span>
-            <h2 id="results-heading">Every order gives back.</h2>
-            <p class="lead">Since 2024, your orders have helped us donate over $1,000 to animal sanctuaries and the causes we care about. We reinvest the rest into growing the bakery — so every satisfied customer means more donations down the line.</p>
-            <p><a href="donations.html">See how we donate &amp; who we support &rarr;</a></p>
-          </div>
-          <div class="stat-callout">
-            <div class="stat-num">$1,000+</div>
-            <div class="stat-label">donated to date</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Meet Our Board CTA card ===== -->
-    <section class="section" aria-labelledby="board-heading">
-      <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow">Our People</span>
-          <h2 id="board-heading">Meet the students behind the bakery.</h2>
-          <p class="lead">A small board of high schoolers running every part of Mix for a Mission — from outreach to photography to the finances that fund our donations.</p>
-        </div>
-        <div class="cta-card-wrap">
-          <!-- TODO: replace placeholder media with <img src="../assets/images/team.jpg"> -->
-          <article class="product-card">
-            <div class="product-card__media product-card__media--sage" role="img" aria-label="Placeholder for a team photo of the Mix for a Mission board">
-              <span class="emoji" aria-hidden="true">🌿</span>
+          <!-- Emi — PRO / board member -->
+          <article class="product-card person-card">
+            <!-- TODO: replace with <img src="../assets/images/board-emi.jpg" alt="Emi"> (portrait, ~600x800, 3:4) -->
+            <div class="product-card__media product-card__media--emi" role="img" aria-label="Placeholder portrait of Emi">
+              <span class="emoji" aria-hidden="true">🎓</span>
               <span class="placeholder-label">Photo</span>
             </div>
             <div class="product-card__body">
-              <h3>Meet Our Board</h3>
-              <p class="price">Emi &middot; Tandisse &middot; Ishwin</p>
-              <p class="desc">The high schoolers who founded Mix for a Mission and keep it running.</p>
-              <div class="cta-row cta-row--left">
-                <a class="btn btn--primary" href="board.html">Meet the board</a>
+              <h3 class="product-card__name">Emi</h3>
+              <span class="product-card__role">PRO &middot; Board Member</span>
+              <p class="product-card__quote">I joined MixForAMission because I wanted experience in outreach for my future career. I also wanted to make a positive change in our community and environment with the vegan products that we sell!</p>
+            </div>
+          </article>
+
+          <!-- Tandisse — Treasurer & Financial Advisor -->
+          <article class="product-card person-card">
+            <!-- TODO: replace with <img src="../assets/images/board-tandisse.jpg" alt="Tandisse"> (portrait, ~600x800, 3:4) -->
+            <div class="product-card__media product-card__media--tandisse" role="img" aria-label="Placeholder portrait of Tandisse">
+              <span class="emoji" aria-hidden="true">💼</span>
+              <span class="placeholder-label">Photo</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Tandisse</h3>
+              <span class="product-card__role">Treasurer &amp; Financial Advisor</span>
+              <p class="product-card__quote">I joined MixForAMission to get experience managing finances for my future. If you have any questions about which charities we donate to or anything like that, feel free to reach out to s-trahimi@lwsd.org.</p>
+              <div class="product-card__contact">
+                <a href="mailto:s-trahimi@lwsd.org">
+                  <svg class="ext-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                  s-trahimi@lwsd.org
+                </a>
               </div>
             </div>
           </article>
+
+          <!-- Ishwin — Photographer & Web Designer -->
+          <article class="product-card person-card">
+            <!-- TODO: replace with <img src="../assets/images/board-ishwin.jpg" alt="Ishwin"> (portrait, ~600x800, 3:4) -->
+            <div class="product-card__media product-card__media--ishwin" role="img" aria-label="Placeholder portrait of Ishwin">
+              <span class="emoji" aria-hidden="true">🎨</span>
+              <span class="placeholder-label">Photo</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Ishwin</h3>
+              <span class="product-card__role">Photographer &amp; Web Designer</span>
+              <p class="product-card__quote">I joined the business after learning about the lack of vegan baked goods (which are typically overpriced) in the industry. Try the rose cupcakes! They're my favorite.</p>
+              <div class="product-card__contact">
+                <a href="https://www.ishwinvisuals.com" target="_blank" rel="noopener">
+                  <svg class="ext-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3h7v7"/><path d="M21 3l-9 9"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+                  ishwinvisuals.com
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ===== Back to About link ===== -->
+        <div class="cta-row cta-row--left-lg">
+          <a class="btn btn--ghost" href="index.html">&larr; Back to About</a>
         </div>
       </div>
     </section>

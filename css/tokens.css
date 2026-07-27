@@ -1,0 +1,197 @@
+/* ============================================================
+   Mix for a Mission — Design Tokens
+   CSS custom properties only. No rules here — import this once,
+   then build components in styles.css against these variables.
+
+   Strategy: every visual decision (color, size, spacing, radius,
+   shadow, width) flows through a token. To retheme the whole site,
+   edit this file only.
+   ============================================================ */
+
+:root {
+  /* ----------------------------------------------------------
+     COLOR — palette
+     Warm off-white ground, near-black ink, one confident
+     "vegan/fresh" accent (deep forest green) with a muted sage
+     companion, and a warm secondary accent (soft terracotta) for
+     CTAs & highlights. No cliché bright greens.
+     ---------------------------------------------------------- */
+
+  /* Backgrounds — warm off-white family */
+  --color-bg: #faf7f2;            /* page ground */
+  --color-bg-alt: #f1ece4;        /* alternating section ground */
+  --color-surface: #ffffff;       /* cards, panels */
+  --color-surface-2: #f6f2ea;     /* raised-but-subtle surface */
+
+  /* Ink — near-black text family */
+  --color-text: #1f1d1b;          /* primary text */
+  --color-text-muted: #5c574f;    /* secondary text */
+  --color-text-soft: #8a847a;     /* tertiary / captions */
+  --color-text-inverse: #faf7f2;  /* text on dark fills */
+
+  /* Lines & borders */
+  --color-line: #e4ddce;          /* hairline */
+  --color-line-strong: #d6cdb9;   /* visible divider */
+
+  /* Primary accent — deep forest green (the "vegan/fresh" voice) */
+  --color-primary: #2f4a3a;
+  --color-primary-hover: #243a2d;
+  --color-primary-active: #1c2f24;
+  --color-primary-soft: #e7ede5;  /* tinted background */
+  --color-on-primary: #ffffff;    /* text/icon on primary */
+
+  /* Sage — muted companion to primary, for secondary surfaces */
+  --color-sage: #8a9a87;
+  --color-sage-hover: #7a8a77;
+  --color-sage-soft: #edf0eb;
+
+  /* Secondary accent — soft terracotta (warm CTAs / highlights) */
+  --color-accent: #c0643f;
+  --color-accent-hover: #a85434;
+  --color-accent-active: #8e4528;
+  --color-accent-soft: #f3e6df;   /* tinted background */
+  --color-on-accent: #ffffff;     /* text/icon on accent */
+
+  /* State */
+  --color-focus: #c0643f;         /* focus ring */
+  --color-success: #4a7a52;
+  --color-error: #b5443a;
+
+  /* ----------------------------------------------------------
+     TYPOGRAPHY
+     Body: Inter (clean grotesque, highly legible).
+     Display: Fraunces (modern serif with optical sizing — adds
+     warmth and character to headings without sacrificing the
+     minimalist feel). Both loaded via <link> in each HTML page.
+     ---------------------------------------------------------- */
+
+  --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Modular type scale — ratio 1.250 (major third), base 1rem */
+  --fs-2xs: 0.75rem;    /* 12px — captions, labels */
+  --fs-xs: 0.875rem;    /* 14px — small text, nav */
+  --fs-sm: 1rem;        /* 16px — body (base) */
+  --fs-md: 1.125rem;    /* 18px — lead text */
+  --fs-lg: 1.25rem;     /* 20px — h6 / emphasized */
+  --fs-xl: 1.5rem;      /* 24px — h5 */
+  --fs-2xl: 1.875rem;   /* 30px — h4 */
+  --fs-3xl: 2.25rem;    /* 36px — h3 */
+  --fs-4xl: 3rem;       /* 48px — h2 */
+  --fs-5xl: 3.75rem;    /* 60px — h1 (fluid via clamp below) */
+
+  /* Fluid display sizes (clamp so headings scale with viewport) */
+  --fs-display-lg: clamp(2.75rem, 1.5rem + 5vw, 4.25rem);  /* hero h1 */
+  --fs-display-md: clamp(2rem, 1rem + 3vw, 3rem);          /* section h2 */
+
+  /* Line heights */
+  --lh-tight: 1.15;    /* headings */
+  --lh-snug: 1.35;     /* subheads */
+  --lh-normal: 1.6;    /* body */
+  --lh-relaxed: 1.75;  /* long-form / lead */
+
+  /* Letter spacing */
+  --ls-tight: -0.015em; /* large headings */
+  --ls-normal: 0;
+  --ls-wide: 0.02em;    /* buttons, nav */
+  --ls-wider: 0.08em;   /* eyebrows / uppercase labels */
+
+  /* ----------------------------------------------------------
+     SPACING — 4px base unit
+     ---------------------------------------------------------- */
+  --sp-1: 0.25rem;   /* 4px  */
+  --sp-2: 0.5rem;    /* 8px  */
+  --sp-3: 0.75rem;   /* 12px */
+  --sp-4: 1rem;      /* 16px */
+  --sp-5: 1.5rem;    /* 24px */
+  --sp-6: 2rem;      /* 32px */
+  --sp-7: 3rem;      /* 48px */
+  --sp-8: 4rem;      /* 64px */
+  --sp-9: 6rem;      /* 96px */
+  --sp-10: 8rem;     /* 128px */
+
+  /* ----------------------------------------------------------
+     BORDER RADIUS — restrained, not pill-everything
+     ---------------------------------------------------------- */
+  --radius-none: 0;
+  --radius-sm: 4px;     /* small chips, inputs */
+  --radius: 8px;        /* default — cards, buttons */
+  --radius-md: 12px;    /* larger cards */
+  --radius-lg: 18px;    /* hero / feature panels */
+  --radius-full: 999px; /* pills, avatars */
+
+  /* ----------------------------------------------------------
+     SHADOWS — very subtle. Minimalist ≠ flat, just restrained.
+     ---------------------------------------------------------- */
+  --shadow-xs: 0 1px 2px rgba(31, 29, 27, 0.05);
+  --shadow-sm: 0 1px 3px rgba(31, 29, 27, 0.06),
+               0 1px 2px rgba(31, 29, 27, 0.04);
+  --shadow-md: 0 4px 12px rgba(31, 29, 27, 0.08),
+               0 2px 4px rgba(31, 29, 27, 0.04);
+  --shadow-lg: 0 16px 36px -10px rgba(31, 29, 27, 0.16),
+               0 4px 10px rgba(31, 29, 27, 0.06);
+
+  /* ----------------------------------------------------------
+     LAYOUT
+     ---------------------------------------------------------- */
+  --container-max: 1200px;        /* max content width */
+  --container-narrow: 760px;      /* long-form / centered */
+  --container-pad: 1.5rem;        /* horizontal page padding (mobile) */
+  --container-pad-lg: 2.5rem;     /* horizontal page padding (desktop) */
+
+  --header-height: 68px;          /* sticky header height for scroll offset */
+
+  /* Section vertical rhythm */
+  --section-pad-y: 6rem;          /* default section padding */
+  --section-pad-y-sm: 3rem;       /* compact section */
+
+  /* ----------------------------------------------------------
+     MOTION
+     ---------------------------------------------------------- */
+  --transition-fast: 120ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 180ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 320ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Focus ring */
+  --focus-ring: 3px solid var(--color-focus);
+  --focus-offset: 3px;
+
+  /* z-index scale */
+  --z-base: 1;
+  --z-sticky: 50;
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+}
+
+/* ----------------------------------------------------------
+   Optional dark theme hook — not enabled by default but ready.
+   Override tokens under a [data-theme="dark"] selector when needed.
+   ---------------------------------------------------------- */
+/*
+[data-theme="dark"] {
+  --color-bg: #1c1b19;
+  --color-bg-alt: #232220;
+  --color-surface: #2a2926;
+  --color-surface-2: #33312d;
+  --color-text: #f1ece4;
+  --color-text-muted: #b5aea2;
+  --color-text-soft: #8a847a;
+  --color-line: #3a3833;
+  --color-line-strong: #4a4740;
+  --color-primary: #7a9a82;
+  --color-primary-hover: #8aab92;
+  --color-primary-soft: #2f3a32;
+  --color-on-primary: #1c1b19;
+  --color-accent: #d4794f;
+  --color-accent-hover: #e08a5e;
+  --color-accent-soft: #3a2e26;
+  --color-on-accent: #1c1b19;
+}
+*/

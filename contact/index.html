@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact &amp; Order — Mix for a Mission</title>
-  <meta name="description" content="Contact Mix for a Mission: order via our Google Form, call 425-739-9862, or email MixForAMission@gmail.com. Pickup at 6735 132nd Ave NE, Kirkland, WA 98033." />
+  <meta name="description" content="Contact Mix for a Mission to place an order or ask a question." />
   <meta name="theme-color" content="#2f4a3a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%232f4a3a'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia,serif'>M</text></svg>" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ============ HEADER ============ -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="../index.html" aria-label="Mix for a Mission — home">
@@ -26,172 +26,153 @@
           <small>A Vegan Home Bakery</small>
         </span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
         <span class="bar" aria-hidden="true"></span>
       </button>
-      <nav class="nav" id="primary-nav" aria-label="Primary">
-        <a href="../index.html">Home</a>
-        <a href="../menu/">Menu</a>
-        <a href="../about/">About</a>
-        <a href="../outreach/">Outreach</a>
-        <a href="index.html" class="is-active">Contact</a>
-        <!-- TODO: replace #order-form with the real Google Form URL -->
-        <a href="#order-form" class="nav-cta">Order Now</a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../menu/">Menu</a></li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link has-caret" href="../about/">About Us<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
+            <ul class="dropdown" aria-label="About Us">
+              <li><a href="../about/">Our Mission</a></li>
+              <li><a href="../about/donations.html">Donations</a></li>
+              <li><a href="../about/board.html">Board</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link has-caret" href="../outreach/">Outreach &amp; Events<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
+            <ul class="dropdown" aria-label="Outreach &amp; Events">
+              <li><a href="../outreach/local-partnerships.html">Local Partnerships</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link is-active" href="index.html">Contact Us</a></li>
+        </ul>
+        <!-- TODO: replace with the real Google Form URL -->
+        <div class="nav-order"><a class="btn btn--secondary btn--sm" href="#order-form">Order</a></div>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- ============ PAGE HEADER ============ -->
-    <section class="page-header">
-      <div class="container page-header-inner">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a>
-          <span aria-hidden="true">/</span>
-          <span>Contact</span>
-        </nav>
-        <span class="eyebrow">Contact &amp; Order</span>
-        <h1>Let's bake something good together.</h1>
-        <p class="lead">
-          Ready to order, or have a question? Here's how to reach us. We offer pickup
-          at our Kirkland home kitchen and answer messages as quickly as we can between
-          school and baking.
-        </p>
-      </div>
+    <!--
+      Seasonal announcement banner.
+      The text is injected by main.js from the SINGLE SEASONAL_MESSAGE
+      constant (same source as the home page banner) — edit the message
+      in js/main.js, not here. This element is just a hook.
+    -->
+    <div class="announce" data-announce role="status" aria-live="polite"></div>
+
+    <!-- Page intro -->
+    <section class="page-intro container" aria-labelledby="contact-title">
+      <span class="eyebrow">Contact &amp; Order</span>
+      <h1 id="contact-title">Ready to order?</h1>
+      <p class="lead">Fill out the form below or reach out directly. We bake fresh to order from our home bakery in Kirkland, WA.</p>
     </section>
 
-    <!-- ============ ORDER FORM CTA ============ -->
-    <section class="section section--tight" id="order-form" aria-labelledby="order-heading">
-      <div class="container container--narrow">
-        <div class="order-panel reveal">
-          <span class="eyebrow" style="color: var(--color-accent-soft)">How to order</span>
-          <h2 id="order-heading">Place your order with our form.</h2>
-          <p>
-            Use our Google Form to tell us what you'd like, when you'd like it, and any
-            custom details. We'll confirm your order and pickup time at our Kirkland
-            kitchen. Made to order, so please give us a little advance notice.
-          </p>
-          <div class="hero-actions" style="justify-content:center">
-            <!--
-              TODO: Replace the href below with the real Google Form URL.
-              e.g. https://docs.google.com/forms/d/e/<FORM_ID>/viewform
-              Optionally swap this <a> for an <iframe> embed of the form instead.
-            -->
-            <a class="btn btn--accent btn--lg" href="#order-form" target="_blank" rel="noopener">
-              Open the order form
-            </a>
-            <a class="btn btn--ghost btn--lg btn--on-dark" href="../menu/">Browse the menu</a>
-          </div>
-          <p class="note" style="color: rgba(255,255,255,0.7); margin-top: var(--sp-5); margin-bottom:0">
-            Prefer to talk it through? Call or email us using the details below.
-          </p>
+    <!-- Order form embed -->
+    <section class="section container" aria-labelledby="order-title">
+      <div class="section-head section-head--center">
+        <h2 id="order-title">Place your order</h2>
+        <p class="lead">Tell us what you&rsquo;d love and we&rsquo;ll get back to you with pickup or delivery details.</p>
+      </div>
+
+      <!--
+        ============================================================
+        ORDER FORM EMBED — TODO
+        ------------------------------------------------------------
+        Replace the placeholder below with a real Google Form embed:
+
+          1. Open your Google Form → Send → the < > (Embed HTML) icon.
+          2. Copy the <iframe src="..."> URL.
+          3. Set the `src` attribute below to that URL and DELETE the
+             `srcdoc="..."` attribute entirely.
+          4. Adjust the iframe `height` if your form is taller/shorter
+             (the .order-form__iframe class sets a default height).
+
+        Until then, the `srcdoc` attribute shows a styled placeholder so
+        the page doesn't look broken.
+        ============================================================
+      -->
+      <div class="order-form" id="order-form">
+        <div class="order-form__bar">
+          <span class="dot" aria-hidden="true"></span>
+          Order Form
         </div>
+        <iframe
+          class="order-form__iframe"
+          title="Mix for a Mission order form"
+          srcdoc="<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'><style>*{box-sizing:border-box;margin:0;}body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#FAF7F2;color:#1F1D1B;display:flex;align-items:center;justify-content:center;min-height:480px;padding:48px 24px;text-align:center;}.ph{max-width:420px;}.ph .ico{width:56px;height:56px;margin:0 auto 20px;border-radius:50%;background:#eaf0e6;display:grid;place-items:center;}.ph .ico svg{width:28px;height:28px;color:#2f4a3a;}.ph h3{font-family:Georgia,'Times New Roman',serif;font-size:1.4rem;font-weight:600;margin-bottom:12px;}.ph p{font-size:0.95rem;color:#6b665f;line-height:1.6;margin-bottom:20px;}.ph .badge{display:inline-block;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#2f4a3a;background:#eaf0e6;padding:6px 14px;border-radius:999px;}</style></head><body><div class='ph'><div class='ico'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' aria-hidden='true'><path d='M9 11l3 3L22 4'/><path d='M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11'/></svg></div><h3>Order form coming soon</h3><p>We&rsquo;re finalizing our online order form. In the meantime, place an order by phone, email, or DM us on Instagram &mdash; we&rsquo;d love to help!</p><span class='badge'>Placeholder</span></div></body></html>"
+          loading="lazy"
+        >Your browser does not support embedded forms. Please use the contact details below to place your order.</iframe>
       </div>
     </section>
 
-    <!-- ============ CONTACT DETAILS ============ -->
-    <section class="section" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="reveal">
-            <span class="eyebrow">Reach us</span>
-            <h2 id="contact-heading">Contact details.</h2>
-            <ul class="contact-list">
-              <li>
-                <span class="contact-ico" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                </span>
-                <div>
-                  <div class="contact-label">Phone</div>
-                  <a class="contact-value" href="tel:+14257399862">425-739-9862</a>
-                </div>
-              </li>
-              <li>
-                <span class="contact-ico" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
-                </span>
-                <div>
-                  <div class="contact-label">Email</div>
-                  <a class="contact-value" href="mailto:MixForAMission@gmail.com">MixForAMission@gmail.com</a>
-                </div>
-              </li>
-              <li>
-                <span class="contact-ico" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </span>
-                <div>
-                  <div class="contact-label">Pickup address</div>
-                  <div class="contact-value">6735 132nd Ave NE, Kirkland, WA 98033</div>
-                </div>
-              </li>
-            </ul>
+    <!-- Direct contact -->
+    <section class="section container" aria-labelledby="direct-title">
+      <div class="section-head section-head--center">
+        <h2 id="direct-title">Or reach us directly</h2>
+      </div>
 
-            <h3 style="margin-top: var(--sp-7); font-family: var(--font-sans); font-size: var(--fs-xs); text-transform:uppercase; letter-spacing:0.12em; color: var(--color-text-soft); font-weight:700">Follow along</h3>
-            <div class="social-row">
-              <a href="https://instagram.com/mixforamission" target="_blank" rel="noopener">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-                Instagram @mixforamission
-              </a>
-              <a href="https://facebook.com/mixforamission" target="_blank" rel="noopener">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3l1-3h-4V4c0-1 .3-1.5 1.7-1.5H18V0h-3C11.5 0 11 1.8 11 3.5V6H8v3h3v9h3V9z"/></svg>
-                Facebook /mixforamission
-              </a>
-              <a href="https://www.tiktok.com/@mixforamission" target="_blank" rel="noopener">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 3c.3 2.1 1.6 3.7 3.7 4v3c-1.4 0-2.7-.4-3.7-1v6.5A5.5 5.5 0 1 1 10.5 10v3a2.5 2.5 0 1 0 2.5 2.5V3h3z"/></svg>
-                TikTok @mixforamission
-              </a>
-              <!-- TODO: add the real Yelp and Google Reviews profile URLs when available -->
-              <a href="#order-form" rel="noopener">Yelp</a>
-              <a href="#order-form" rel="noopener">Google Reviews</a>
-            </div>
-            <p class="note" style="margin-top: var(--sp-3)">Reviews on Yelp and Google are appreciated — links coming soon.</p>
-          </div>
+      <div class="contact-cards">
+        <!-- Phone -->
+        <div class="contact-card">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          <span class="contact-card__label">Phone</span>
+          <span class="contact-card__value"><a href="tel:+14257399862">425-739-9862</a></span>
+          <span class="contact-card__hint">Call or text to place an order or ask a question.</span>
+        </div>
 
-          <!-- Map embed -->
-          <div class="reveal">
-            <div class="map-embed" aria-label="Map showing the pickup location in Kirkland, WA">
-              <iframe
-                title="Map of 6735 132nd Ave NE, Kirkland, WA 98033"
-                src="https://www.google.com/maps?q=6735%20132nd%20Ave%20NE%2C%20Kirkland%2C%20WA%2098033&output=embed"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                allowfullscreen></iframe>
-            </div>
-            <p class="note" style="margin-top: var(--sp-3)">
-              Pickup only — we're a home microbakery, so we don't offer shipping or a
-              storefront. Thanks for understanding!
-            </p>
-          </div>
+        <!-- Email -->
+        <div class="contact-card">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 5L2 7"/></svg>
+          </span>
+          <span class="contact-card__label">Email</span>
+          <span class="contact-card__value"><a href="mailto:MixForAMission@gmail.com">MixForAMission@gmail.com</a></span>
+          <span class="contact-card__hint">Best for custom cake requests &amp; larger orders.</span>
+        </div>
+
+        <!-- Pickup address -->
+        <div class="contact-card">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <span class="contact-card__label">Pickup</span>
+          <span class="contact-card__value">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=6735+132nd+Ave+NE,+Kirkland,+WA+98033" target="_blank" rel="noopener">6735 132nd Ave NE<br />Kirkland, WA 98033</a>
+          </span>
+          <span class="contact-card__hint">Pickup by appointment. Tap for directions.</span>
         </div>
       </div>
     </section>
 
-    <!-- ============ HOURS / NOTES ============ -->
-    <section class="section section--alt" aria-labelledby="notes-heading">
-      <div class="container container--narrow">
-        <div class="section-head section-head--center reveal">
-          <span class="eyebrow">Good to know</span>
-          <h2 id="notes-heading">Before you order.</h2>
-        </div>
-        <div class="grid grid--3 reveal">
-          <div class="card"><div class="card-body">
-            <h3>Made to order</h3>
-            <p>We bake fresh for each order, so please allow advance notice — especially for custom cakes and large quantities.</p>
-          </div></div>
-          <div class="card"><div class="card-body">
-            <h3>Pickup in Kirkland</h3>
-            <p>Pickup is at our home kitchen at 6735 132nd Ave NE, Kirkland, WA 98033. We'll arrange a time when we confirm your order.</p>
-          </div></div>
-          <div class="card"><div class="card-body">
-            <h3>Cottage Food approved</h3>
-            <p>We operate under Washington State Cottage Food law. Products are made in a home kitchen not inspected by the state agriculture department.</p>
-          </div></div>
-        </div>
+    <!-- Social row (reuses .social-highlight-row from the home page) -->
+    <section class="section container social-highlight" aria-labelledby="social-title">
+      <div class="section-head section-head--center">
+        <h2 id="social-title">Follow along</h2>
+        <p class="lead">See our latest bakes, behind-the-scenes, and event updates.</p>
+      </div>
+      <div class="social-highlight-row">
+        <a href="https://instagram.com/mixforamission" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://facebook.com/mixforamission" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3l1-3h-4V4c0-1 .3-1.5 1.7-1.5H18V0h-3C11.5 0 11 1.8 11 3.5V6H8v3h3v9h3V9z"/></svg>
+          Facebook
+        </a>
+        <a href="https://www.tiktok.com/@mixforamission" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 3c.3 2.1 1.6 3.7 3.7 4v3c-1.4 0-2.7-.4-3.7-1v6.5A5.5 5.5 0 1 1 10.5 10v3a2.5 2.5 0 1 0 2.5 2.5V3h3z"/></svg>
+          TikTok
+        </a>
       </div>
     </section>
   </main>
 
-  <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -199,37 +180,40 @@
           <div class="footer-brand">Mix for a Mission</div>
           <p>A vegan home microbakery in Kirkland, WA. Washington State Cottage Food approved. Founded by high school students in 2024.</p>
           <div class="footer-social">
-            <a href="https://instagram.com/mixforamission" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="https://instagram.com/mixforamission" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
             <a href="https://facebook.com/mixforamission" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3l1-3h-4V4c0-1 .3-1.5 1.7-1.5H18V0h-3C11.5 0 11 1.8 11 3.5V6H8v3h3v9h3V9z"/></svg></a>
             <a href="https://www.tiktok.com/@mixforamission" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 3c.3 2.1 1.6 3.7 3.7 4v3c-1.4 0-2.7-.4-3.7-1v6.5A5.5 5.5 0 1 1 10.5 10v3a2.5 2.5 0 1 0 2.5 2.5V3h3z"/></svg></a>
+            <!-- TODO: replace with real Yelp and Google Reviews profile URLs -->
+            <a href="#" target="_blank" rel="noopener" aria-label="Yelp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 7L12 17.3 5.7 21l1.7-7L2 9.2l7.1-.6L12 2z"/></svg></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Google Reviews"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 11v2.8h6.3c-.3 1.6-2 4.7-6.3 4.7-3.8 0-6.9-3.1-6.9-7s3.1-7 6.9-7c2.2 0 3.6.9 4.4 1.7l2-1.9C16.9 2.4 14.7 1.5 12 1.5 6.8 1.5 2.6 5.7 2.6 11S6.8 20.5 12 20.5c5.9 0 9.8-4.1 9.8-9.9 0-.7-.1-1.2-.2-1.6H12z"/></svg></a>
           </div>
         </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
+        <nav aria-label="Footer">
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-list">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../menu/">Menu</a></li>
-            <li><a href="../about/">About</a></li>
+            <li><a href="../about/">About Us</a></li>
             <li><a href="../outreach/">Outreach</a></li>
             <li><a href="index.html">Contact</a></li>
           </ul>
-        </div>
+        </nav>
         <div>
-          <h4>Get in touch</h4>
-          <ul>
+          <h2 class="footer-heading">Get in touch</h2>
+          <ul class="footer-list">
             <li><a href="tel:+14257399862">425-739-9862</a></li>
             <li><a href="mailto:MixForAMission@gmail.com">MixForAMission@gmail.com</a></li>
-            <li>Pickup: 6735 132nd Ave NE, Kirkland, WA 98033</li>
+            <li class="addr">6735 132nd Ave NE, Kirkland, WA 98033</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
+        <span class="footer-approval"><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Washington State Cottage Food Approved.</span>
         <span>© <span data-year>2024</span> Mix for a Mission. All rights reserved.</span>
-        <span>Made with care in Kirkland, WA.</span>
       </div>
     </div>
   </footer>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

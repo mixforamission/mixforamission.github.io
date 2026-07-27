@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Mix for a Mission</title>
-  <meta name="description" content="About Mix for a Mission: our story and mission." />
+  <title>Local Partnerships — Mix for a Mission</title>
+  <meta name="description" content="Mix for a Mission's local partnerships: Hope Link and more." />
   <meta name="theme-color" content="#2f4a3a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,17 +34,17 @@
           <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="../menu/">Menu</a></li>
           <li class="nav-item has-dropdown">
-            <a class="nav-link has-caret is-current" href="index.html">About Us<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
+            <a class="nav-link has-caret" href="../about/">About Us<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
             <ul class="dropdown" aria-label="About Us">
-              <li><a class="is-active" href="index.html">Our Mission</a></li>
-              <li><a href="donations.html">Donations</a></li>
-              <li><a href="board.html">Board</a></li>
+              <li><a href="../about/">Our Mission</a></li>
+              <li><a href="../about/donations.html">Donations</a></li>
+              <li><a href="../about/board.html">Board</a></li>
             </ul>
           </li>
           <li class="nav-item has-dropdown">
-            <a class="nav-link has-caret" href="../outreach/">Outreach &amp; Events<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
+            <a class="nav-link has-caret is-current" href="index.html">Outreach &amp; Events<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
             <ul class="dropdown" aria-label="Outreach &amp; Events">
-              <li><a href="../outreach/local-partnerships.html">Local Partnerships</a></li>
+              <li><a class="is-active" href="local-partnerships.html">Local Partnerships</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="../contact/">Contact Us</a></li>
@@ -58,78 +58,82 @@
   <main id="main">
     <!--
       ============================================================
-      ABOUT US — hub/summary page
+      LOCAL PARTNERSHIPS — organizations we work with
       --------------------------------------------------------
-      Intro, full mission statement, Our Results stat, and a
-      Meet Our Board CTA card. Donations and Board get their own
-      dedicated sub-pages (linked from here).
+      A responsive partner grid. Hope Link is the one confirmed
+      partner (50% of profits). The remaining cards are clearly
+      marked TODO placeholders so the page isn't visually empty
+      and is ready for real partner content.
       ============================================================
     -->
 
     <!-- ===== Page intro ===== -->
-    <section class="page-intro" aria-labelledby="about-title">
+    <section class="page-intro" aria-labelledby="partners-title">
       <div class="container">
-        <span class="eyebrow">About Us</span>
-        <h1 id="about-title">A vegan home bakery on a mission.</h1>
-        <p class="lead">Mix for a Mission is a vegan home bakery in the Greater Seattle Area, Washington founded in 2024 by high school students. We specialize in custom vegan cakes, cookies, cupcakes and cake pops. Each order is always fresh, and created in our home bakery with both pick-up and delivery options available.</p>
+        <span class="eyebrow">Local Partnerships</span>
+        <h1 id="partners-title">Rooted in the Eastside community.</h1>
+        <p class="lead">We&rsquo;re proud to partner with local organizations across the Eastside community. Every partnership helps us extend our impact beyond the bakery &mdash; turning your orders into real support for the people and causes around us.</p>
       </div>
     </section>
 
-    <!-- ===== Mission statement ===== -->
-    <section class="section" aria-labelledby="mission-heading">
+    <!-- ===== Partner grid ===== -->
+    <section class="section" aria-labelledby="partners-grid-heading">
+      <h2 id="partners-grid-heading" class="visually-hidden">Our partners</h2>
       <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow">Our Mission</span>
-          <h2 id="mission-heading">Why we bake.</h2>
-        </div>
-        <blockquote class="mission-quote">
-          <p>Our mission is to create exciting vegan baked goods that not only satisfy your cravings but also contribute towards making a positive impact on the world. As a Washington State Cottage Food approved microbakery, we use our profits from your orders to donate to animal sanctuaries or invest in the growth and development of our business, which in turn brings more satisfied customers and thus more donations to sanctuaries.</p>
-        </blockquote>
-      </div>
-    </section>
+        <div class="partner-grid">
 
-    <!-- ===== Our Results ===== -->
-    <section class="section section--alt" aria-labelledby="results-heading">
-      <div class="container">
-        <div class="about-split">
-          <div>
-            <span class="eyebrow">Our Results</span>
-            <h2 id="results-heading">Every order gives back.</h2>
-            <p class="lead">Since 2024, your orders have helped us donate over $1,000 to animal sanctuaries and the causes we care about. We reinvest the rest into growing the bakery — so every satisfied customer means more donations down the line.</p>
-            <p><a href="donations.html">See how we donate &amp; who we support &rarr;</a></p>
-          </div>
-          <div class="stat-callout">
-            <div class="stat-num">$1,000+</div>
-            <div class="stat-label">donated to date</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Meet Our Board CTA card ===== -->
-    <section class="section" aria-labelledby="board-heading">
-      <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow">Our People</span>
-          <h2 id="board-heading">Meet the students behind the bakery.</h2>
-          <p class="lead">A small board of high schoolers running every part of Mix for a Mission — from outreach to photography to the finances that fund our donations.</p>
-        </div>
-        <div class="cta-card-wrap">
-          <!-- TODO: replace placeholder media with <img src="../assets/images/team.jpg"> -->
-          <article class="product-card">
-            <div class="product-card__media product-card__media--sage" role="img" aria-label="Placeholder for a team photo of the Mix for a Mission board">
-              <span class="emoji" aria-hidden="true">🌿</span>
-              <span class="placeholder-label">Photo</span>
+          <!-- Confirmed partner: Hope Link -->
+          <article class="product-card partner-card">
+            <!-- TODO: replace with Hope Link logo <img src="../assets/images/partner-hopelink.svg" alt="Hope Link logo"> -->
+            <div class="product-card__media product-card__media--hopelink" role="img" aria-label="Placeholder for Hope Link logo">
+              <span class="emoji" aria-hidden="true">🤝</span>
+              <span class="placeholder-label">Logo</span>
             </div>
             <div class="product-card__body">
-              <h3>Meet Our Board</h3>
-              <p class="price">Emi &middot; Tandisse &middot; Ishwin</p>
-              <p class="desc">The high schoolers who founded Mix for a Mission and keep it running.</p>
-              <div class="cta-row cta-row--left">
-                <a class="btn btn--primary" href="board.html">Meet the board</a>
-              </div>
+              <h3>Hope Link</h3>
+              <p class="partner-blurb">We donate 50% of profits from every order to Hope Link, a local organization supporting low-income families in our community.</p>
+              <a class="btn btn--secondary btn--sm" href="https://www.hopelink.org" target="_blank" rel="noopener">Visit Hope Link</a>
             </div>
           </article>
+
+          <!-- TODO: replace with a real partner. This is a placeholder card
+               so the grid isn't visually empty while partner details are
+               confirmed. Duplicate this <article> block and fill in the
+               real name, blurb, logo, and link when ready. -->
+          <article class="product-card partner-card">
+            <div class="product-card__media product-card__media--partner-placeholder" role="img" aria-label="Placeholder for a future partner logo">
+              <span class="emoji" aria-hidden="true">🌱</span>
+              <span class="placeholder-label">Logo</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Your organization here</h3>
+              <p class="partner-blurb">We&rsquo;re always looking for new local partners. If your organization aligns with our mission, we&rsquo;d love to connect.</p>
+              <a class="btn btn--ghost btn--sm" href="../contact/">Get in touch</a>
+            </div>
+          </article>
+
+          <!-- TODO: replace with a real partner. Placeholder card. -->
+          <article class="product-card partner-card">
+            <div class="product-card__media product-card__media--partner-placeholder" role="img" aria-label="Placeholder for a future partner logo">
+              <span class="emoji" aria-hidden="true">🐾</span>
+              <span class="placeholder-label">Logo</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Animal sanctuary partner</h3>
+              <p class="partner-blurb">We support animal sanctuaries across the North American region with proceeds from our orders. Partner details coming soon.</p>
+              <a class="btn btn--ghost btn--sm" href="../about/donations.html">See our donations</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Back to Outreach link ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-row cta-row--left-lg">
+          <a class="btn btn--ghost" href="index.html">&larr; Back to Outreach</a>
         </div>
       </div>
     </section>
@@ -155,8 +159,8 @@
           <ul class="footer-list">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../menu/">Menu</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="../outreach/">Outreach</a></li>
+            <li><a href="../about/">About Us</a></li>
+            <li><a href="index.html">Outreach</a></li>
             <li><a href="../contact/">Contact</a></li>
           </ul>
         </nav>
