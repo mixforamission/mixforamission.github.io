@@ -1,15 +1,45 @@
 # Mix for a Mission — Website
 
-A static, multi-page website for **Mix for a Mission**, a vegan home microbakery in
-Kirkland, WA, founded by high school students in 2024. Washington State Cottage Food
-approved.
+This repository contains the source code for the **Mix for a Mission** website.
+If you're looking for the bakery — menu, ordering, contact info — you want the
+actual site:
 
-Built with **plain HTML, CSS, and vanilla JavaScript** — no frameworks, no build step,
-no dependencies. Designed to run as-is on GitHub Pages.
+> **🌐 [mixforamission.github.io](https://mixforamission.github.io/)**
+> (custom domain once live: **mixforamission.com**)
+
+This repo is just the code that builds it.
 
 ---
 
-## 📁 Project structure
+## What is this?
+
+**Mix for a Mission** is a vegan home microbakery in Kirkland, WA, founded by
+high school students in 2024. Washington State Cottage Food approved. This
+repository holds the files that make up the bakery's website — the pages,
+styling, and a small bit of interactivity (mobile menu, sticky header, seasonal
+banner).
+
+The website is **static** — meaning it's made of plain HTML, CSS, and a little
+JavaScript, with no database, no login, and no build process. It's hosted for
+free via **GitHub Pages**, which serves the files directly from this repository
+to anyone who visits the URL above.
+
+You don't need to install anything or run any code to view the site — just
+follow the link. The rest of this README is for anyone who wants to preview,
+edit, or deploy the code themselves.
+
+---
+
+## For developers
+
+Everything below this point is for someone working with the code — previewing
+locally, making edits, deploying updates, or understanding the project
+structure. If you're just here to find the bakery, the link at the top is all
+you need.
+
+---
+
+### 📁 Project structure
 
 ```
 .
@@ -24,7 +54,7 @@ no dependencies. Designed to run as-is on GitHub Pages.
 │   ├── index.html                      # Events timeline — Wave Seattle, Eastside Dandiya
 │   └── local-partnerships.html         # Partner grid — Hope Link + placeholder slots
 ├── contact/
-│   └── index.html                      # Contact & order — form embed, phone/email/address, social
+│   └── index.html                      # Contact & order — form embed, phone/email/address/delivery, social
 ├── css/
 │   ├── tokens.css                      # Design tokens (CSS custom properties — colors, type, spacing)
 │   └── styles.css                      # All styles: reset, base, components, per-page sections
@@ -39,11 +69,11 @@ no dependencies. Designed to run as-is on GitHub Pages.
 
 ---
 
-## 🧑‍💻 Preview locally
+### 🧑‍💻 Preview locally
 
 No build tools required. Pick either option:
 
-### Option A — Python (already installed on macOS/Linux)
+#### Option A — Python (already installed on macOS/Linux)
 
 ```bash
 python3 -m http.server 8000
@@ -51,7 +81,7 @@ python3 -m http.server 8000
 
 Then open **http://localhost:8000** in your browser.
 
-### Option B — VS Code Live Server extension
+#### Option B — VS Code Live Server extension
 
 1. Install the **Live Server** extension (by Ritwick Dey) in VS Code.
 2. Right-click `index.html` → **Open with Live Server**.
@@ -63,26 +93,18 @@ Then open **http://localhost:8000** in your browser.
 
 ---
 
-## 🚀 Deploy to GitHub Pages
+### 🚀 Deploy to GitHub Pages
 
-### Step 1 — Push to GitHub
+The site is already deployed. To publish an update, just push to `main` —
+GitHub Pages publishes automatically within 1–2 minutes. No build step.
 
-```bash
-git init
-git add .
-git commit -m "Initial commit — Mix for a Mission website"
-git branch -M main
-git remote add origin https://github.com/<your-username>/mixforamission.github.io.git
-git push -u origin main
-```
+If setting up from scratch:
 
-### Step 2 — Enable GitHub Pages
-
-1. Go to your repo on GitHub → **Settings** → **Pages** (left sidebar).
-2. Under **Build and deployment → Source**, select **Deploy from a branch**.
-3. Under **Branch**, select **`main`** and **`/ (root)`** folder.
-4. Click **Save**.
-5. Wait 1–2 minutes. Your site goes live at:
+1. Push the code to a GitHub repo (this one is `mixforamission.github.io`).
+2. Go to the repo → **Settings** → **Pages** (left sidebar).
+3. Under **Build and deployment → Source**, select **Deploy from a branch**.
+4. Under **Branch**, select **`main`** and **`/ (root)`** folder. Click **Save**.
+5. Wait 1–2 minutes. The site goes live at:
 
    ```
    https://<your-username>.github.io/mixforamission.github.io/
@@ -91,8 +113,6 @@ git push -u origin main
 6. Verify: open the URL. Check all 8 pages and the mobile nav. The green action
    banner at the top should show "Accepting orders for the holiday season!"
    (injected by `js/main.js` — if it's blank, hard-refresh to clear cache).
-
-No build step — every push to `main` publishes instantly.
 
 > **Repo-name note:** This repo is named `mixforamission.github.io`. If your GitHub
 > username is **`mixforamission`**, GitHub treats this as a **user/org page** served
@@ -104,12 +124,12 @@ No build step — every push to `main` publishes instantly.
 
 ---
 
-## 🌐 Custom domain (optional — for later)
+### 🌐 Custom domain (optional — for later)
 
 When you're ready to serve the site at **mixforamission.com** instead of the
 `github.io` URL:
 
-### Step 1 — Add a CNAME file
+#### Step 1 — Add a CNAME file
 
 Create a file named `CNAME` (no extension) in the repo root containing exactly:
 
@@ -119,7 +139,7 @@ mixforamission.com
 
 Commit and push. GitHub Pages detects this file and updates its routing.
 
-### Step 2 — Configure DNS at your domain registrar
+#### Step 2 — Configure DNS at your domain registrar
 
 GitHub publishes the current IP addresses at
 <https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site>.
@@ -142,7 +162,7 @@ GitHub publishes the current IP addresses at
 > ⚠️ Double-check the A-record IPs against GitHub's docs before saving — they
 > can change. The values above are current as of July 2026.
 
-### Step 3 — Enable HTTPS & enforce
+#### Step 3 — Enable HTTPS & enforce
 
 1. Back in **Settings → Pages**, enter `mixforamission.com` in the **Custom domain**
    field and click **Save**.
@@ -152,7 +172,7 @@ GitHub publishes the current IP addresses at
 
 ---
 
-## 🔗 Internal links — all relative
+### 🔗 Internal links — all relative
 
 Every internal link and asset reference uses **relative paths** (`../css/styles.css`,
 `about/donations.html`, `contact/#order-form`, etc.) — no leading slashes, no absolute
@@ -167,7 +187,7 @@ No changes needed when switching between these environments.
 
 ---
 
-## 🎨 Design system summary
+### 🎨 Design system summary
 
 All visual decisions live as CSS custom properties in **`css/tokens.css`**. Edit that
 file alone to retheme the whole site.
@@ -185,7 +205,7 @@ file alone to retheme the whole site.
 | **Spacing** | 4px base unit (`--sp-1` … `--sp-10`) |
 | **Max width** | `--container-max` 1200px; `--container-narrow` 760px |
 
-### Responsive strategy
+#### Responsive strategy
 
 - **Mobile-first layout**: base = single column, full-bleed.
 - **≥ 640px** (small tablet): 2-column grids where useful.
@@ -196,7 +216,7 @@ file alone to retheme the whole site.
 
 ---
 
-## ✅ TODOs before launch
+### ✅ Remaining TODOs
 
 These are the remaining placeholders marked with `TODO` comments in the code:
 
@@ -206,8 +226,11 @@ These are the remaining placeholders marked with `TODO` comments in the code:
 - **Product photos** — add real images to `assets/images/` per `assets/images/README.md`
   and swap the styled placeholder `<div>`s for `<img>` tags (the TODO comments show the
   exact `src` and `alt` to use).
-- **Yelp & Google Reviews URLs** — replace the `href="#"` placeholders in every
-  footer's social row with the real profile URLs.
+- **Delivery details** — replace the "Placeholder, content coming soon" value in the
+  Delivery contact card on `contact/index.html` with real delivery info (radius, fees,
+  areas served).
+- **Yelp & Google Reviews URLs** — re-enable the disabled footer social links by
+  removing `aria-disabled` and adding the real `href` (instructions in the TODO comments).
 - **OG image** — add `assets/images/og-image.jpg` (1200×630) and set the `og:image`
   meta tag in `index.html`.
 - **Favicon** — the current favicon is an inline SVG data-URI (a green circle with "M").
@@ -216,3 +239,5 @@ These are the remaining placeholders marked with `TODO` comments in the code:
   the announcement text (single source, appears on home + contact pages).
 - **Donations list** — edit the `DONATIONS` array in `about/donations.html` to replace
   the placeholder entries with real donation history (instructions are in the comment).
+- **Local partnerships** — replace the placeholder partner cards on
+  `outreach/local-partnerships.html` with real partner content.

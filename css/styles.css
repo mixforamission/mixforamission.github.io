@@ -289,6 +289,37 @@ a.plain:hover {
   pointer-events: none;
 }
 
+/* Disabled links — placeholder links with no destination yet.
+   Removes hover/cursor/pointer so they don't look clickable.
+   Only pointer-events: none cascades to descendants (SVG icons) so
+   hovering the icon doesn't trigger :hover on the parent <a>.
+   opacity is set ONLY on the <a> (not children) to avoid double-
+   opacity from nesting. cursor inherits; text-decoration applies
+   from the parent. Pair with a visible .placeholder-note label. */
+a[aria-disabled="true"] {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+  text-decoration: none;
+}
+a[aria-disabled="true"] * {
+  pointer-events: none;
+}
+
+/* Placeholder note — small muted "coming soon" label for disabled links */
+.placeholder-note {
+  font-size: var(--fs-2xs);
+  color: var(--color-text-soft);
+  font-style: italic;
+  margin-top: var(--sp-2);
+  margin-bottom: 0;
+}
+/* Force the note to its own line inside a flex row (e.g. .reviews-actions) */
+.reviews-actions .placeholder-note {
+  flex-basis: 100%;
+  text-align: center;
+}
+
 /* Primary — deep forest green */
 .btn--primary {
   background-color: var(--color-primary);
@@ -849,6 +880,13 @@ a.plain:hover {
   background-color: var(--color-accent);
   color: var(--color-on-accent);
 }
+/* Disabled social icons in footer — more faded on dark bg */
+.footer-social a[aria-disabled="true"] {
+  opacity: 0.3;
+}
+.site-footer .placeholder-note {
+  color: rgba(250, 247, 242, 0.5);
+}
 
 /* Footer bottom bar */
 .footer-bottom {
@@ -1007,8 +1045,7 @@ a.plain:hover {
 }
 .hero-visual .placeholder-label span {
   font-size: var(--fs-2xs);
-  text-transform: uppercase;
-  letter-spacing: var(--ls-wider);
+  line-height: 1.4;
   opacity: 0.7;
 }
 
@@ -1102,12 +1139,12 @@ a.plain:hover {
   position: absolute;
   bottom: var(--sp-3);
   left: var(--sp-3);
+  right: var(--sp-3);
   z-index: 1;
   font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: var(--ls-wider);
+  line-height: 1.35;
   font-weight: var(--font-weight-bold);
-  opacity: 0.55;
+  opacity: 0.7;
 }
 .product-card__body {
   padding: var(--sp-4) var(--sp-4) var(--sp-5);
@@ -1502,12 +1539,12 @@ a.plain:hover {
   position: absolute;
   bottom: var(--sp-2);
   left: var(--sp-2);
+  right: var(--sp-2);
   z-index: 1;
   font-size: 0.58rem;
-  text-transform: uppercase;
-  letter-spacing: var(--ls-wider);
+  line-height: 1.3;
   font-weight: var(--font-weight-bold);
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .flavor-card__media::after {
   content: "";
@@ -2020,12 +2057,12 @@ a.plain:hover {
   position: absolute;
   bottom: var(--sp-3);
   left: var(--sp-3);
+  right: var(--sp-3);
   z-index: 1;
   font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: var(--ls-wider);
+  line-height: 1.35;
   font-weight: var(--font-weight-bold);
-  opacity: 0.55;
+  opacity: 0.7;
 }
 /* Per-event tints */
 .event-item__media--dandiya { background: linear-gradient(135deg, #f6e3c6, #eccc9a); }
@@ -2260,7 +2297,7 @@ a.plain:hover {
 }
 @media (min-width: 900px) {
   .contact-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .order-form__iframe {
     height: 720px;

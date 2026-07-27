@@ -19,7 +19,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="../index.html" aria-label="Mix for a Mission — home">
+      <a class="brand" href="../" aria-label="Mix for a Mission — home">
         <span class="brand-mark" aria-hidden="true">M</span>
         <span class="brand-text">
           Mix for a Mission
@@ -31,12 +31,12 @@
       </button>
       <nav class="primary-nav" id="primary-nav" aria-label="Primary">
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="../menu/">Menu</a></li>
           <li class="nav-item has-dropdown">
-            <a class="nav-link has-caret is-current" href="index.html">About Us<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
+            <a class="nav-link has-caret is-current" href="./">About Us<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
             <ul class="dropdown" aria-label="About Us">
-              <li><a href="index.html">Our Mission</a></li>
+              <li><a href="./">Our Mission</a></li>
               <li><a class="is-active" href="donations.html">Donations</a></li>
               <li><a href="board.html">Board</a></li>
             </ul>
@@ -60,11 +60,11 @@
       ============================================================
       DONATIONS — where our profits go
       --------------------------------------------------------
-      Framing copy, a prominent $1,000+ stat band, a Hope Link
-      highlight (50% of profits), and a JS-driven editable donations
-      timeline. The timeline renders from the DONATIONS array in the
-      inline <script> below — a non-developer edits THAT array, not
-      the HTML layout.
+      Intro copy, a prominent $1,000+ stat callout (reuses the
+      same .stat-callout component as the home page and the About
+      hub), and a JS-rendered editable donations list. The list
+      renders from the DONATIONS array in the inline <script>
+      below — a non-developer edits THAT array, not the HTML.
       ============================================================
     -->
 
@@ -73,47 +73,33 @@
       <div class="container">
         <span class="eyebrow">Donations</span>
         <h1 id="donations-title">Where your order goes.</h1>
-        <p class="lead">Mix for a Mission has donated extra proceeds to animal sanctuaries and charities across the North American region &mdash; donating over $1,000 so far. We donate 50% of profits from every order to Hope Link, a local organization supporting low-income families in our community.</p>
+        <p class="lead">Mix for a Mission has donated over $1,000 to date. We donate 50% of profits from every order to Hope Link, a local organization supporting low-income families in our community, and put the rest toward animal sanctuaries and growing the bakery so we can give more over time.</p>
       </div>
     </section>
 
-    <!-- ===== Prominent stat band ($1,000+) ===== -->
+    <!-- ===== Prominent stat callout ($1,000+) — reuses .stat-callout ===== -->
     <section class="section" aria-labelledby="stat-heading">
-      <h2 id="stat-heading" class="visually-hidden">Donation total</h2>
       <div class="container">
-        <div class="donation-stat-band">
-          <div class="stat-eyebrow">Donated to date</div>
-          <div class="stat-num">$1,000+</div>
-          <div class="stat-sub">&hellip; and growing with every order. Thank you for helping us give back.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Hope Link highlight (50% of profits) ===== -->
-    <section class="section section--alt" aria-labelledby="hopelink-heading">
-      <div class="container">
-        <div class="hopelink-card">
-          <div class="hopelink-card__pct">
-            50%
-            <span class="pct-label">of profits</span>
+        <div class="about-split">
+          <div>
+            <span class="eyebrow">Our Results</span>
+            <h2 id="stat-heading">Every order gives back.</h2>
+            <p class="lead">Half of every order&rsquo;s profit goes straight to Hope Link, and the rest funds animal sanctuaries and the bakery&rsquo;s growth &mdash; so each satisfied customer means more donations down the line.</p>
           </div>
-          <div class="hopelink-card__body">
-            <h3 id="hopelink-heading">Hope Link</h3>
-            <p>A local organization supporting low-income families in our community. Half of the profit from every single order goes directly to Hope Link &mdash; so your celebration helps another family at the same time.</p>
-            <div class="cta-row cta-row--left">
-              <a class="btn btn--secondary btn--sm" href="https://www.hopelink.org" target="_blank" rel="noopener">Learn about Hope Link</a>
-            </div>
+          <div class="stat-callout">
+            <div class="stat-num">$1,000+</div>
+            <div class="stat-label">donated to date</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Donations timeline (JS-rendered) ===== -->
-    <section class="section" aria-labelledby="timeline-heading">
+    <!-- ===== Donations list (JS-rendered) ===== -->
+    <section class="section section--alt" aria-labelledby="donations-list-heading">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head section-head--center">
           <span class="eyebrow">Our Donation History</span>
-          <h2 id="timeline-heading">Organizations we&rsquo;ve supported.</h2>
+          <h2 id="donations-list-heading">Organizations we&rsquo;ve supported.</h2>
           <p class="lead">A growing list of the animal sanctuaries and charities your orders have helped us support.</p>
         </div>
         <!-- The list below is populated by JavaScript from the DONATIONS
@@ -128,7 +114,7 @@
     <section class="section">
       <div class="container">
         <div class="cta-row cta-row--left-lg">
-          <a class="btn btn--ghost" href="index.html">&larr; Back to About</a>
+          <a class="btn btn--ghost" href="./">&larr; Back to About</a>
         </div>
       </div>
     </section>
@@ -148,22 +134,21 @@
        ============================================================ -->
   <script>
     var DONATIONS = [
+      {
+        name: "Hope Link",
+        blurb: "50% of profits from every order, ongoing. A local organization supporting low-income families in our community.",
+        link: "https://www.hopelink.org"
+      },
       // TODO: replace with real donation history
       {
-        name: "[Sanctuary name 1]",
-        blurb: "An animal sanctuary we supported with proceeds from early orders.",
+        name: "Placeholder, content coming soon",
+        blurb: "Placeholder, content coming soon",
         link: ""
       },
       // TODO: replace with real donation history
       {
-        name: "[Charity name 2]",
-        blurb: "A charity fund we contributed to during a seasonal outreach event.",
-        link: ""
-      },
-      // TODO: replace with real donation history
-      {
-        name: "[Sanctuary name 3]",
-        blurb: "A North American animal sanctuary receiving ongoing support from our profits.",
+        name: "Placeholder, content coming soon",
+        blurb: "Placeholder, content coming soon",
         link: ""
       }
     ];
@@ -220,17 +205,18 @@
             <a href="https://instagram.com/mixforamission" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
             <a href="https://facebook.com/mixforamission" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3l1-3h-4V4c0-1 .3-1.5 1.7-1.5H18V0h-3C11.5 0 11 1.8 11 3.5V6H8v3h3v9h3V9z"/></svg></a>
             <a href="https://www.tiktok.com/@mixforamission" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 3c.3 2.1 1.6 3.7 3.7 4v3c-1.4 0-2.7-.4-3.7-1v6.5A5.5 5.5 0 1 1 10.5 10v3a2.5 2.5 0 1 0 2.5 2.5V3h3z"/></svg></a>
-            <!-- TODO: replace with real Yelp and Google Reviews profile URLs -->
-            <a href="#" target="_blank" rel="noopener" aria-label="Yelp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 7L12 17.3 5.7 21l1.7-7L2 9.2l7.1-.6L12 2z"/></svg></a>
-            <a href="#" target="_blank" rel="noopener" aria-label="Google Reviews"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 11v2.8h6.3c-.3 1.6-2 4.7-6.3 4.7-3.8 0-6.9-3.1-6.9-7s3.1-7 6.9-7c2.2 0 3.6.9 4.4 1.7l2-1.9C16.9 2.4 14.7 1.5 12 1.5 6.8 1.5 2.6 5.7 2.6 11S6.8 20.5 12 20.5c5.9 0 9.8-4.1 9.8-9.9 0-.7-.1-1.2-.2-1.6H12z"/></svg></a>
+            <!-- TODO: replace with real Yelp and Google Reviews profile URLs (remove aria-disabled, add href) -->
+            <a aria-disabled="true" role="link" aria-label="Yelp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 7L12 17.3 5.7 21l1.7-7L2 9.2l7.1-.6L12 2z"/></svg></a>
+            <a aria-disabled="true" role="link" aria-label="Google Reviews"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 11v2.8h6.3c-.3 1.6-2 4.7-6.3 4.7-3.8 0-6.9-3.1-6.9-7s3.1-7 6.9-7c2.2 0 3.6.9 4.4 1.7l2-1.9C16.9 2.4 14.7 1.5 12 1.5 6.8 1.5 2.6 5.7 2.6 11S6.8 20.5 12 20.5c5.9 0 9.8-4.1 9.8-9.9 0-.7-.1-1.2-.2-1.6H12z"/></svg></a>
           </div>
+          <p class="placeholder-note">Placeholder, content coming soon</p>
         </div>
         <nav aria-label="Footer">
           <h2 class="footer-heading">Explore</h2>
           <ul class="footer-list">
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="../">Home</a></li>
             <li><a href="../menu/">Menu</a></li>
-            <li><a href="index.html">About Us</a></li>
+            <li><a href="./">About Us</a></li>
             <li><a href="../outreach/">Outreach</a></li>
             <li><a href="../contact/">Contact</a></li>
           </ul>
