@@ -1523,6 +1523,7 @@ a[aria-disabled="true"] * {
 }
 /* Flavor card — leaner variant of .product-card */
 .flavor-card {
+  cursor: pointer;
   background-color: var(--color-surface);
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
@@ -1586,110 +1587,10 @@ a[aria-disabled="true"] * {
   margin-left: 1px;
 }
 
-/* ---------- Menu ingredients notice (top of menu page) ---------- */
-.menu-ingredients-note {
-  max-width: 52ch;
-  margin: var(--sp-3) auto 0;
-  font-size: var(--fs-xs);
-  color: var(--color-text-muted);
-  text-align: center;
-  line-height: var(--lh-relaxed);
-}
-
-/* ---------- Ingredients & Details accordion inside flavor cards ----------
-   Built as a reusable component: JS injects the toggle button + collapsed
-   panel into cards that have matching data in the ingredientData map.
-   Cards without data get nothing — no broken empty accordion, no
-   placeholder. The toggle is a small, tap-friendly button below the
-   flavor name; clicking it expands a details panel with a smooth
-   max-height transition. */
-
-/* Toggle button — small, full-width, tap-friendly (≥44px tall) */
-.flavor-card__toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--sp-1);
-  width: 100%;
-  padding: var(--sp-3) var(--sp-3);
-  margin: 0;
-  font-size: var(--fs-xs);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-accent);
-  background: none;
-  border: none;
-  border-top: 1px solid var(--color-line);
-  cursor: pointer;
-  transition: color var(--transition), background-color var(--transition);
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
-.flavor-card__toggle:hover {
-  background-color: var(--color-accent-soft);
-  color: var(--color-accent-active);
-}
-.flavor-card__toggle:active {
-  background-color: var(--color-accent-soft);
-}
-
-/* Plus/minus icon — transitions on expand */
-.flavor-card__toggle .toggle-icon {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  position: relative;
-  flex: 0 0 auto;
-  transition: transform var(--transition);
-}
-.flavor-card__toggle .toggle-icon::before,
-.flavor-card__toggle .toggle-icon::after {
-  content: "";
-  position: absolute;
-  background-color: currentColor;
-  transition: transform var(--transition);
-}
-/* Horizontal line */
-.flavor-card__toggle .toggle-icon::before {
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px;
-  transform: translateY(-50%);
-  border-radius: 1px;
-}
-/* Vertical line (hidden when expanded → forms minus sign) */
-.flavor-card__toggle .toggle-icon::after {
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  transform: translateX(-50%);
-  border-radius: 1px;
-}
-.flavor-card__toggle[aria-expanded="true"] .toggle-icon::after {
-  transform: translateX(-50%) rotate(90deg);
-  opacity: 0;
-}
-
-/* Collapsible details panel — hidden by default, animated via max-height */
-.flavor-card__details {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease;
-}
-.flavor-card__details-inner {
-  padding: var(--sp-3) var(--sp-4) var(--sp-4);
-  font-size: var(--fs-xs);
-  line-height: var(--lh-relaxed);
-  color: var(--color-text-muted);
-}
-.flavor-card__details-inner p {
-  margin-bottom: var(--sp-2);
-}
-.flavor-card__details-inner p:last-child {
-  margin-bottom: 0;
-}
-.flavor-card__details-inner .details-label {
+/* Detail label — used on product pages for "Size" & "Ingredients" headings.
+   Standalone (not scoped inside .flavor-card__details-inner) so it works
+   on any page. */
+.details-label {
   display: block;
   font-size: var(--fs-2xs);
   font-weight: var(--font-weight-bold);
@@ -1698,17 +1599,15 @@ a[aria-disabled="true"] * {
   color: var(--color-accent);
   margin-bottom: var(--sp-1);
 }
-.flavor-card__details-inner .details-desc {
-  font-style: italic;
-  margin-bottom: var(--sp-3);
-}
-.flavor-card__details-inner .details-note {
-  font-size: var(--fs-2xs);
-  color: var(--color-text-soft);
-  font-style: italic;
-  margin-top: var(--sp-3);
-  padding-top: var(--sp-2);
-  border-top: 1px dashed var(--color-line);
+
+/* ---------- Menu ingredients notice (top of menu page) ---------- */
+.menu-ingredients-note {
+  max-width: 52ch;
+  margin: var(--sp-3) auto 0;
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  text-align: center;
+  line-height: var(--lh-relaxed);
 }
 
 /* Per-flavor tint classes (reused from home; extra ones below) */

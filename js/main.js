@@ -202,82 +202,142 @@
   }
 
   /* ========================================================
-     MENU PAGE — Ingredients & Details accordion
+     MENU PAGE — flavor-card → product page links
      --------------------------------------------------------
-     Injects an expandable "Ingredients & Details" section into
-     flavor cards that have ingredient data. Data is stored in
-     `ingredientData` keyed by `data-flavor` value. Cards without
-     matching data get nothing — no empty accordion, no placeholder.
-     Toggle uses aria-expanded for accessibility and a smooth
-     max-height CSS transition for animation.
+     Every flavor card across all five sections links to its
+     product detail page (product.html?item=<key>). A section-
+     scoped name→key map resolves each card's key at runtime —
+     the same flavor name in different sections maps to the
+     correct category-scoped key (e.g. cake-black-forest vs
+     cupcake-black-forest vs cakejar-black-forest).
+
+     Cards get tabindex="0" + role="link" so the whole card
+     area is a keyboard-accessible click target (Enter/Space).
+     No HTML changes needed — this runs on menu page load only.
      ======================================================== */
-  var ingredientData = {
-    "black-forest": {
-      description: "Indulge in our exquisite Vegan Chocolate Cake, lovingly decorated to resemble a lush and enchanting forest.",
-      size: "3 layers, 7-inch diameter, serves 10–15",
-      ingredients: "Chocolate cake (enriched wheat flour, niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid, organic sugar, water, organic soymilk, vitamin/mineral blend, sea salt, gellan gum, ascorbic acid, canola oil, alkalized cocoa, instant coffee powder, baking powder, baking soda, vanilla extract); buttercream (vegan butter, shortening, light corn syrup, sugar, water, instant coffee powder, vanilla extract, chocolate shards, meringue mushrooms made from aquafaba/organic sugar/vinegar/cocoa powder/matcha powder)."
-    }
-  };
-
-  var flavorCards = document.querySelectorAll(".flavor-card[data-flavor]");
-  Array.prototype.forEach.call(flavorCards, function (card) {
-    var flavorKey = card.getAttribute("data-flavor");
-    var data = ingredientData[flavorKey];
-    if (!data) return;
-
-    // Build toggle button
-    var toggle = document.createElement("button");
-    toggle.type = "button";
-    toggle.className = "flavor-card__toggle";
-    toggle.setAttribute("aria-expanded", "false");
-    toggle.innerHTML = '<span class="toggle-icon" aria-hidden="true"></span> Ingredients &amp; Details';
-
-    // Build details panel
-    var details = document.createElement("div");
-    details.className = "flavor-card__details";
-    details.setAttribute("aria-hidden", "true");
-
-    var inner = document.createElement("div");
-    inner.className = "flavor-card__details-inner";
-
-    var html = "";
-    if (data.description) {
-      html += '<p class="details-desc">' + data.description + "</p>";
-    }
-    if (data.size) {
-      html += '<p><span class="details-label">Size</span>' + data.size + "</p>";
-    }
-    if (data.ingredients) {
-      html += '<p><span class="details-label">Ingredients</span>' + data.ingredients + "</p>";
-      html += '<p class="details-note">Ingredients may be subject to change. Text us with any questions.</p>';
-    }
-    inner.innerHTML = html;
-    details.appendChild(inner);
-
-    // Append to card
-    card.appendChild(toggle);
-    card.appendChild(details);
-
-    // Toggle handler
-    toggle.addEventListener("click", function () {
-      var isExpanded = toggle.getAttribute("aria-expanded") === "true";
-      if (isExpanded) {
-        toggle.setAttribute("aria-expanded", "false");
-        details.setAttribute("aria-hidden", "true");
-        details.style.maxHeight = "0";
-      } else {
-        toggle.setAttribute("aria-expanded", "true");
-        details.setAttribute("aria-hidden", "false");
-        details.style.maxHeight = details.scrollHeight + "px";
-        // Remove the inline max-height after the transition ends so the
-        // panel reflows naturally on viewport resize. If the user collapses
-        // before transitionend fires, the inline value stays and works fine.
-        var onTransitionEnd = function () {
-          details.style.maxHeight = "";
-          details.removeEventListener("transitionend", onTransitionEnd);
-        };
-        details.addEventListener("transitionend", onTransitionEnd);
+  if (menuSubnav) {
+    var cardLinkMap = {
+      "cakes": {
+        "Almond Crunch Bar Cake": "cake-almond-crunch-bar",
+        "Chocolate Cake w/Vanilla Buttercream": "cake-chocolate-vanilla-buttercream",
+        "Chocolate Mint Cake": "cake-chocolate-mint",
+        "Enchanted Tree Stump Cake (+$5)": "cake-enchanted-tree-stump",
+        "Chocolate Oreo Crunch Cake": "cake-chocolate-oreo-crunch",
+        "Chocolate Strawberry Crunch Cake": "cake-chocolate-strawberry-crunch",
+        "Chocolate Caramel Peanut Butter Cake": "cake-chocolate-caramel-peanut-butter",
+        "Black Forest Cake": "cake-black-forest",
+        "Black Chocolate Cake w/gold highlights": "cake-black-chocolate-gold",
+        "Vanilla Sprinkles Cake": "cake-vanilla-sprinkles",
+        "Vanilla Coconut Cake": "cake-vanilla-coconut",
+        "Cardamom Rose Cake": "cake-cardamom-rose",
+        "Mango Vanilla Cake": "cake-mango-vanilla",
+        "Vanilla Spice Cake": "cake-vanilla-spice",
+        "Vanilla with Lemon Curd Filling": "cake-vanilla-lemon-curd",
+        "Strawberry Crunch Cake": "cake-strawberry-crunch",
+        "Vanilla Biscoff Cake": "cake-vanilla-biscoff",
+        "Pandan Vanilla Cake": "cake-pandan-vanilla",
+        "Ube Vanilla Cake": "cake-ube-vanilla",
+        "White Forest Cake": "cake-white-forest",
+        "Gender Reveal Cake (Pink)": "cake-gender-reveal-pink",
+        "Gender Reveal Cake (Blue)": "cake-gender-reveal-blue",
+        "Red Velvet Cake": "cake-red-velvet"
+      },
+      "cupcakes": {
+        "Almond Crunch": "cupcake-almond-crunch",
+        "Chocolate Vanilla": "cupcake-chocolate-vanilla",
+        "Chocolate Candy Cane": "cupcake-chocolate-candy-cane",
+        "Chocolate Mint": "cupcake-chocolate-mint",
+        "Chocolate Coffee": "cupcake-chocolate-coffee",
+        "Chocolate Oreo Crunch": "cupcake-chocolate-oreo-crunch",
+        "Chocolate Strawberry Crunch": "cupcake-chocolate-strawberry-crunch",
+        "Chocolate Peanut Butter": "cupcake-chocolate-peanut-butter",
+        "Black Forest": "cupcake-black-forest",
+        "Black Chocolate": "cupcake-black-chocolate",
+        "Toasted S'mores Cupcakes": "cupcake-toasted-smores",
+        "Vanilla Sprinkle": "cupcake-vanilla-sprinkle",
+        "Matcha": "cupcake-matcha",
+        "Cardamom Rose": "cupcake-cardamom-rose",
+        "Mango Vanilla": "cupcake-mango-vanilla",
+        "Lemon Curd Vanilla": "cupcake-lemon-curd-vanilla",
+        "Strawberry Crunch": "cupcake-strawberry-crunch",
+        "Vanilla Biscoff": "cupcake-vanilla-biscoff",
+        "Pandan Vanilla": "cupcake-pandan-vanilla",
+        "Ube Vanilla": "cupcake-ube-vanilla",
+        "Milk Tea Boba": "cupcake-milk-tea-boba",
+        "Red Velvet": "cupcake-red-velvet",
+        "Vanilla Chocolate Swirl": "cupcake-vanilla-chocolate-swirl",
+        "Pumpkin Cranberry Bliss": "cupcake-pumpkin-cranberry-bliss"
+      },
+      "cookies": {
+        "Biscoff Stuff": "cookie-biscoff-stuff",
+        "Blue Cookie Monster": "cookie-blue-monster",
+        "Ube": "cookie-ube",
+        "Party Sprinkles": "cookie-party-sprinkles",
+        "Toasted S'mores": "cookie-toasted-smores",
+        "Chocolate Chip": "cookie-chocolate-chip",
+        "Pumpkin Spice Latte": "cookie-pumpkin-spice-latte",
+        "Strawberry Crunch": "cookie-strawberry-crunch"
+      },
+      "cake-pops": {
+        "Red Velvet (White Chocolate)": "cakepop-red-velvet",
+        "Double Dough Biscoff (White Chocolate)": "cakepop-double-dough-biscoff",
+        "Chocolate Lovers (White Chocolate)": "cakepop-chocolate-lovers"
+      },
+      "cake-jars": {
+        "Almond Crunch": "cakejar-almond-crunch",
+        "Chocolate Vanilla": "cakejar-chocolate-vanilla",
+        "Chocolate Candy Cane": "cakejar-chocolate-candy-cane",
+        "Chocolate Mint": "cakejar-chocolate-mint",
+        "Chocolate Coffee": "cakejar-chocolate-coffee",
+        "Chocolate Oreo Crunch": "cakejar-chocolate-oreo-crunch",
+        "Chocolate Strawberry Crunch": "cakejar-chocolate-strawberry-crunch",
+        "Chocolate Peanut Butter": "cakejar-chocolate-peanut-butter",
+        "Black Forest": "cakejar-black-forest",
+        "Black Chocolate": "cakejar-black-chocolate",
+        "Vanilla Sprinkle": "cakejar-vanilla-sprinkle",
+        "Matcha": "cakejar-matcha",
+        "Cardamom Rose": "cakejar-cardamom-rose",
+        "Mango Vanilla": "cakejar-mango-vanilla",
+        "Lemon Curd Vanilla": "cakejar-lemon-curd-vanilla",
+        "Strawberry Crunch": "cakejar-strawberry-crunch",
+        "Vanilla Biscoff": "cakejar-vanilla-biscoff",
+        "Pandan Vanilla": "cakejar-pandan-vanilla",
+        "Ube Vanilla": "cakejar-ube-vanilla",
+        "Milk Tea Boba": "cakejar-milk-tea-boba",
+        "Red Velvet": "cakejar-red-velvet",
+        "Vanilla Chocolate Swirl": "cakejar-vanilla-chocolate-swirl",
+        "Pumpkin Cranberry Bliss": "cakejar-pumpkin-cranberry-bliss"
       }
+    };
+
+    var allFlavorCards = document.querySelectorAll(".flavor-card");
+    Array.prototype.forEach.call(allFlavorCards, function (card) {
+      var section = card.closest("section");
+      var sectionId = section ? section.id : "";
+      var sectionMap = cardLinkMap[sectionId];
+      if (!sectionMap) return;
+
+      var nameEl = card.querySelector(".flavor-card__name");
+      if (!nameEl) return;
+      var displayName = nameEl.textContent.replace(/\*/g, "").trim();
+      var key = sectionMap[displayName];
+      if (!key) return;
+
+      card.setAttribute("tabindex", "0");
+      card.setAttribute("role", "link");
+      card.setAttribute("aria-label", "View details for " + displayName);
+
+      var navigate = function () {
+        window.location.href = "product.html?item=" + key;
+      };
+
+      card.addEventListener("click", navigate);
+      card.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          navigate();
+        }
+      });
     });
-  });
+  }
 })();
