@@ -2308,6 +2308,190 @@ a[aria-disabled="true"] * {
   }
 }
 
+/* ============================================================
+   CONTACT PAGE — pickup unavailability notices + policies accordion
+   ============================================================ */
+
+/* ---------- Pickup unavailability notice ---------- */
+.pickup-notices {
+  background-color: var(--color-accent-soft);
+  border: 1px solid var(--color-line);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-5) var(--sp-5) var(--sp-4);
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+}
+.pickup-notices__title {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--color-accent-active);
+  margin-bottom: var(--sp-3);
+}
+.pickup-notices__title .ico {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  color: var(--color-accent);
+}
+.pickup-notices__list {
+  display: grid;
+  gap: var(--sp-3);
+}
+.pickup-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-4);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: var(--sp-3) var(--sp-4);
+}
+.pickup-notice__date {
+  flex: 0 0 auto;
+  font-size: var(--fs-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
+  white-space: nowrap;
+  padding-top: 2px;
+}
+.pickup-notice__note {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  line-height: var(--lh-relaxed);
+  margin: 0;
+}
+
+/* ---------- Ordering & Policies accordion ----------
+   Uses native <details>/<summary> — keyboard accessible by default,
+   no JS needed. First item is open by default via the `open` attr. */
+.policies {
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+  display: grid;
+  gap: var(--sp-2);
+}
+.policy {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.policy[open] {
+  border-color: var(--color-line-strong);
+  box-shadow: var(--shadow-xs);
+}
+.policy + .policy {
+  margin-top: 0; /* gap handled by the grid */
+}
+.policy__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding: var(--sp-4) var(--sp-5);
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  cursor: pointer;
+  list-style: none; /* hide default marker; we use a chevron */
+  transition: background-color var(--transition), color var(--transition);
+}
+.policy__summary::-webkit-details-marker {
+  display: none; /* hide default marker in Safari/Chrome */
+}
+.policy__summary:hover {
+  background-color: var(--color-primary-soft);
+}
+.policy[open] > .policy__summary {
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-line);
+}
+.policy__chevron {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  color: var(--color-text-soft);
+  transition: transform var(--transition), color var(--transition);
+}
+.policy[open] > .policy__summary .policy__chevron {
+  transform: rotate(180deg);
+  color: var(--color-primary);
+}
+.policy__body {
+  padding: var(--sp-4) var(--sp-5) var(--sp-5);
+}
+.policy__body p {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  line-height: var(--lh-relaxed);
+  margin-bottom: var(--sp-3);
+}
+.policy__body p:last-child {
+  margin-bottom: 0;
+}
+.policy__body a {
+  color: var(--color-primary);
+  text-decoration-color: var(--color-line-strong);
+}
+.policy__body a:hover {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
+}
+/* GF asterisk marker inside policy bodies (reuses accent color) */
+.policy__body .gf-mark {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+}
+/* Bulleted list inside a policy (e.g. cake add-ons) */
+.policy__list {
+  display: grid;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+  padding-left: 0;
+}
+.policy__list li {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  line-height: var(--lh-relaxed);
+  padding-left: var(--sp-4);
+  position: relative;
+}
+.policy__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-accent);
+}
+.policy__body .policy__note {
+  font-size: var(--fs-xs);
+  color: var(--color-text-soft);
+  font-style: italic;
+}
+
+/* ---------- Responsive: pickup notices + policies ---------- */
+@media (max-width: 639px) {
+  .pickup-notice {
+    flex-direction: column;
+    gap: var(--sp-1);
+  }
+  .pickup-notice__date {
+    padding-top: 0;
+  }
+}
+
 /* ---------- REDUCED MOTION ---------- */
 
 @media (prefers-reduced-motion: reduce) {

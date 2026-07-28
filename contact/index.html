@@ -140,6 +140,123 @@
       </div>
     </section>
 
+    <!-- ===== Pickup unavailability notice =====
+         Renders from the PICKUP_BLACKOUTS array in the inline <script>
+         further down. If JS is disabled, nothing renders (no empty box).
+         To add/remove a window, edit the array — expired windows auto-hide
+         based on their endDate, so old ones can simply be deleted when
+         no longer relevant. This is NOT the old seasonal banner mechanism
+         (that was removed permanently) — this is a dated, temporary
+         availability notice driven by data. -->
+    <section class="section container" id="pickup-notices" aria-labelledby="pickup-notices-title" hidden>
+      <div class="pickup-notices" role="region" aria-label="Pickup availability notices">
+        <h2 id="pickup-notices-title" class="pickup-notices__title">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+          Pickup availability
+        </h2>
+        <ul class="pickup-notices__list" id="pickup-blackouts-list" aria-label="Current pickup unavailability windows"></ul>
+      </div>
+    </section>
+
+    <!-- ===== Ordering & Policies =====
+         Native <details>/<summary> accordions — keyboard accessible by
+         default, work without JS, open/close with click or Space/Enter.
+         Each item is self-contained; expand the first one by default so
+         the section isn't collapsed-empty on first view. -->
+    <section class="section container" aria-labelledby="policies-title">
+      <div class="section-head section-head--center">
+        <h2 id="policies-title">Ordering &amp; Policies</h2>
+        <p class="lead">Everything you need to know before you order &mdash; how it works, timing, allergies, and add-ons.</p>
+      </div>
+
+      <div class="policies">
+        <!-- 1. How ordering works -->
+        <details class="policy" open>
+          <summary class="policy__summary">
+            <span>How ordering works</span>
+            <svg class="policy__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="policy__body">
+            <p>After you submit the form, I&rsquo;ll text you back with pickup or delivery instructions, timing, and payment details. No order is confirmed until payment is made.</p>
+            <p>Payment is via Venmo, arranged after you submit the form (we don&rsquo;t collect payment in the form itself). Once paid, all sales are final.</p>
+          </div>
+        </details>
+
+        <!-- 2. Rush orders -->
+        <details class="policy">
+          <summary class="policy__summary">
+            <span>Rush orders</span>
+            <svg class="policy__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="policy__body">
+            <p>Rush orders are welcome, but may be overbooked. If your event is in less than 2 days, text <a href="tel:+14257399862">425-739-9862</a> for a faster response.</p>
+            <p>Typical response time is under 48 hours &mdash; if you haven&rsquo;t heard back by then, follow up by text or email.</p>
+          </div>
+        </details>
+
+        <!-- 3. Gluten-free -->
+        <details class="policy">
+          <summary class="policy__summary">
+            <span>Gluten-free options</span>
+            <svg class="policy__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="policy__body">
+            <p>Items marked with <span class="gf-mark">*</span> on the <a href="../menu/">menu</a> can be modified gluten-free for an additional $5 (cakes) or $3 (everything else).</p>
+            <p>There&rsquo;s a real chance of trace gluten in the final product despite precautions &mdash; not recommended for anyone with celiac disease.</p>
+          </div>
+        </details>
+
+        <!-- 4. Nut allergies -->
+        <details class="policy">
+          <summary class="policy__summary">
+            <span>Nut allergies</span>
+            <svg class="policy__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="policy__body">
+            <p>Products are generally nut-free unless nuts are in the name (for example, a peanut butter flavor), but equipment is shared and only washed once between uses, so cross-contamination is possible.</p>
+          </div>
+        </details>
+
+        <!-- 5. General allergy note -->
+        <details class="policy">
+          <summary class="policy__summary">
+            <span>Allergy note</span>
+            <svg class="policy__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="policy__body">
+            <p>All baked goods are made in a shared home kitchen and may contain trace amounts of common allergens. Mix for a Mission is not liable for allergic reactions after products leave the kitchen &mdash; if you have severe allergies, please don&rsquo;t consume or share these products without checking first.</p>
+          </div>
+        </details>
+
+        <!-- 6. Customization limits -->
+        <details class="policy">
+          <summary class="policy__summary">
+            <span>Customization</span>
+            <svg class="policy__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="policy__body">
+            <p>Under Washington&rsquo;s Cottage Food law, customization is limited. Simple requests (for example, dietary notes) can go in the order form&rsquo;s comments.</p>
+            <p>All customization starts at $60 and increases with complexity &mdash; we&rsquo;re not a professional cake decorator and will do our best within our ability.</p>
+          </div>
+        </details>
+
+        <!-- 7. Optional add-ons (cakes) -->
+        <details class="policy">
+          <summary class="policy__summary">
+            <span>Cake add-ons</span>
+            <svg class="policy__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="policy__body">
+            <ul class="policy__list">
+              <li><strong>Happy Birthday topper</strong> &mdash; +$2. Small gold non-edible decorations.</li>
+              <li><strong>Humorous Happy Birthday card</strong> &mdash; +$5.</li>
+            </ul>
+            <p class="policy__note">Add either when you order &mdash; just note it in the form.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
     <!-- Social row (reuses .social-highlight-row from the home page) -->
     <section class="section container social-highlight" aria-labelledby="social-title">
       <div class="section-head section-head--center">
@@ -202,6 +319,79 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    /* ============================================================
+       PICKUP UNAVAILABILITY NOTICES
+       ------------------------------------------------------------
+       A simple, editable list of temporary pickup blackout windows.
+       To add a window: add an object to the array below.
+       To remove a window: delete the object (or let it auto-hide
+       once its endDate has passed).
+
+       Each object:
+         { startDate: "YYYY-MM-DD", endDate: "YYYY-MM-DD", note: "..." }
+
+       The note is shown verbatim. Dates are compared against the
+       visitor's local date; a window hides automatically once its
+       endDate has passed. If no windows are active, the entire
+       section stays hidden.
+       ============================================================ */
+    var PICKUP_BLACKOUTS = [
+      {
+        startDate: "2026-08-19",
+        endDate: "2026-08-24",
+        note: "No pickups August 19\u201324, 2026. You can still place orders for other dates during this window \u2014 just expect a slower response."
+      }
+      // TODO: add future blackout windows here as { startDate, endDate, note } objects.
+      //       Delete expired entries when no longer needed (they auto-hide, but
+      //       keeping the array tidy is good hygiene).
+    ];
+
+    (function () {
+      var section = document.getElementById("pickup-notices");
+      var list = document.getElementById("pickup-blackouts-list");
+      if (!section || !list) return;
+
+      // Today's date at local midnight for clean date comparison.
+      var today = new Date();
+      today.setHours(0, 0, 0, 0);
+
+      var active = PICKUP_BLACKOUTS.filter(function (b) {
+        var start = new Date(b.startDate + "T00:00:00");
+        var end = new Date(b.endDate + "T23:59:59");
+        return today <= end; // hide once the window is fully past
+      });
+
+      if (active.length === 0) {
+        section.setAttribute("hidden", "");
+        return;
+      }
+
+      active.forEach(function (b) {
+        var li = document.createElement("li");
+        li.className = "pickup-notice";
+
+        // Build the shell with innerHTML, set user text via textContent
+        // so special characters can't break the layout.
+        li.innerHTML =
+          '<span class="pickup-notice__date" aria-hidden="true"></span>' +
+          '<div class="pickup-notice__body"><p class="pickup-notice__note"></p></div>';
+
+        // Format the date range for display.
+        var fmtOpts = { month: "short", day: "numeric", year: "numeric" };
+        var startStr = new Date(b.startDate + "T00:00:00").toLocaleDateString("en-US", fmtOpts);
+        var endStr = new Date(b.endDate + "T00:00:00").toLocaleDateString("en-US", fmtOpts);
+        li.querySelector(".pickup-notice__date").textContent = startStr + " \u2013 " + endStr;
+
+        li.querySelector(".pickup-notice__note").textContent = b.note || "";
+
+        list.appendChild(li);
+      });
+
+      section.removeAttribute("hidden");
+    })();
+  </script>
 
   <script src="../js/main.js"></script>
 </body>
