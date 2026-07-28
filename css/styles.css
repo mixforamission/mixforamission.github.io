@@ -2175,6 +2175,7 @@ a[aria-disabled="true"] * {
 }
 /* Partner media tints */
 .product-card__media--hopelink { background: linear-gradient(135deg, var(--color-accent-soft), #f0ddd4); }
+.product-card__media--worstwishes { background: linear-gradient(135deg, #ece6f0, #d8cee2); }
 .product-card__media--partner-placeholder { background: linear-gradient(135deg, var(--color-sage-soft), #dfe5db); }
 
 /* ============================================================
