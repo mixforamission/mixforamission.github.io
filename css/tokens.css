@@ -11,49 +11,65 @@
 :root {
   /* ----------------------------------------------------------
      COLOR — palette
-     Warm off-white ground, near-black ink, one confident
-     "vegan/fresh" accent (deep forest green) with a muted sage
-     companion, and a warm secondary accent (soft terracotta) for
-     CTAs & highlights. No cliché bright greens.
+     Matches the original Google Sites version (mixforamission.com):
+     light grey ground, Material dark grey ink, a muted purple-brown
+     primary, and the brand's soft dusty pink accent. The pink
+     (#ea9999) is used for fills (buttons, borders, highlights)
+     paired with dark text; a slightly darker rose (#b55858) is used
+     for text/indicators to maintain WCAG AA contrast on light
+     backgrounds (the pink alone fails AA as text at 2.21:1).
      ---------------------------------------------------------- */
 
-  /* Backgrounds — warm off-white family */
-  --color-bg: #faf7f2;            /* page ground */
-  --color-bg-alt: #f1ece4;        /* alternating section ground */
+  /* Backgrounds — light grey family (old site page bg: #f2f2f2) */
+  --color-bg: #f2f2f2;            /* page ground */
+  --color-bg-alt: #e9e8e8;        /* alternating section ground */
   --color-surface: #ffffff;       /* cards, panels */
-  --color-surface-2: #f6f2ea;     /* raised-but-subtle surface */
+  --color-surface-2: #f6f6f6;     /* raised-but-subtle surface */
 
-  /* Ink — near-black text family */
-  --color-text: #1f1d1b;          /* primary text */
-  --color-text-muted: #5c574f;    /* secondary text */
-  --color-text-soft: #8a847a;     /* tertiary / captions */
-  --color-text-inverse: #faf7f2;  /* text on dark fills */
+  /* Ink — Material dark grey (old site text: #212121) */
+  --color-text: #212121;          /* primary text */
+  --color-text-muted: #5f5f5f;    /* secondary text */
+  --color-text-soft: #8a8a8a;     /* tertiary / captions */
+  --color-text-inverse: #ffffff;  /* text on dark fills */
 
   /* Lines & borders */
-  --color-line: #e4ddce;          /* hairline */
-  --color-line-strong: #d6cdb9;   /* visible divider */
+  --color-line: #e0e0e0;          /* hairline */
+  --color-line-strong: #cccccc;   /* visible divider */
 
-  /* Primary accent — deep forest green (the "vegan/fresh" voice) */
-  --color-primary: #2f4a3a;
-  --color-primary-hover: #243a2d;
-  --color-primary-active: #1c2f24;
-  --color-primary-soft: #e7ede5;  /* tinted background */
+  /* Primary — muted purple-brown (old site dark fill: #4f474e) */
+  --color-primary: #4f474e;
+  --color-primary-hover: #3d353c;
+  --color-primary-active: #2e2830;
+  --color-primary-soft: #ede9ec;  /* tinted background */
   --color-on-primary: #ffffff;    /* text/icon on primary */
 
-  /* Sage — muted companion to primary, for secondary surfaces */
-  --color-sage: #8a9a87;
-  --color-sage-hover: #7a8a77;
-  --color-sage-soft: #edf0eb;
+  /* Sage — neutral grey companion (old site has no sage; mapped
+     to a neutral grey for secondary surfaces/icons on dark fills) */
+  --color-sage: #9a9a9a;
+  --color-sage-hover: #8a8a8a;
+  --color-sage-soft: #eeeeee;
 
-  /* Secondary accent — soft terracotta (warm CTAs / highlights) */
-  --color-accent: #c0643f;
-  --color-accent-hover: #a85434;
-  --color-accent-active: #8e4528;
-  --color-accent-soft: #f3e6df;   /* tinted background */
-  --color-on-accent: #ffffff;     /* text/icon on accent */
+  /* Secondary accent — the brand's dusty pink (old site: #ea9999).
+     Split into two roles for accessibility:
+     - --color-accent:       darker rose for TEXT/indicators
+       (passes WCAG AA on white at 5.20:1 AND on grey #f2f2f2
+       page bg at 4.64:1 — normal text safe on both surfaces)
+     - --color-accent-fill:  the actual pink for FILLS (buttons,
+       borders, highlights) paired with dark text
+       (passes AA at 7.30:1 with #212121) */
+  --color-accent: #ad5050;        /* text/indicator rose */
+  --color-accent-hover: #9c4040;
+  --color-accent-active: #8e3838;
+  --color-accent-soft: #f9e5e5;   /* soft pink tint background */
+
+  /* Fill accent — the brand pink, for buttons/borders/fills */
+  --color-accent-fill: #ea9999;
+  --color-accent-fill-hover: #d98989;
+  --color-accent-fill-active: #c97a7a;
+  --color-on-accent: #212121;     /* dark text on pink fills */
 
   /* State */
-  --color-focus: #c0643f;         /* focus ring */
+  --color-focus: #ad5050;         /* focus ring (darker rose, AA on white & grey bg) */
   --color-success: #4a7a52;
   --color-error: #b5443a;
 
@@ -128,14 +144,15 @@
 
   /* ----------------------------------------------------------
      SHADOWS — very subtle. Minimalist ≠ flat, just restrained.
+     rgba updated to match new ink color (#212121 = 33,33,33).
      ---------------------------------------------------------- */
-  --shadow-xs: 0 1px 2px rgba(31, 29, 27, 0.05);
-  --shadow-sm: 0 1px 3px rgba(31, 29, 27, 0.06),
-               0 1px 2px rgba(31, 29, 27, 0.04);
-  --shadow-md: 0 4px 12px rgba(31, 29, 27, 0.08),
-               0 2px 4px rgba(31, 29, 27, 0.04);
-  --shadow-lg: 0 16px 36px -10px rgba(31, 29, 27, 0.16),
-               0 4px 10px rgba(31, 29, 27, 0.06);
+  --shadow-xs: 0 1px 2px rgba(33, 33, 33, 0.05);
+  --shadow-sm: 0 1px 3px rgba(33, 33, 33, 0.06),
+               0 1px 2px rgba(33, 33, 33, 0.04);
+  --shadow-md: 0 4px 12px rgba(33, 33, 33, 0.08),
+               0 2px 4px rgba(33, 33, 33, 0.04);
+  --shadow-lg: 0 16px 36px -10px rgba(33, 33, 33, 0.16),
+               0 4px 10px rgba(33, 33, 33, 0.06);
 
   /* ----------------------------------------------------------
      LAYOUT
