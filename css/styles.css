@@ -1234,6 +1234,33 @@ a[aria-disabled="true"] * {
   margin-top: var(--sp-7);
 }
 
+/* Stacked CTA — full-width buttons on mobile (max tap target), centered
+   row on ≥640px. Used for the featured-section dual CTA (See full menu +
+   Order Now) where both actions need to be prominent and easy to tap on
+   small screens. Per mobile review: both buttons are full-width and
+   ≥48px tall (btn--lg padding) at ~375px. */
+.cta-row--stack {
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--sp-4);
+  max-width: 420px;
+  margin-inline: auto;
+}
+.cta-row--stack .btn {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .cta-row--stack {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: none;
+  }
+  .cta-row--stack .btn {
+    width: auto;
+  }
+}
+
 /* ---------- Responsive: home page ---------- */
 @media (min-width: 640px) {
   .featured-grid {
