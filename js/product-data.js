@@ -35,7 +35,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "chocolate"
+    imageKey: "chocolate",
     allergens: ""
   },
   "cake-chocolate-mint": {
@@ -45,7 +45,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "mint"
+    imageKey: "mint",
     allergens: ""
   },
   "cake-enchanted-tree-stump": {
@@ -55,7 +55,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "chocolate"
+    imageKey: "chocolate",
     allergens: ""
   },
   "cake-chocolate-oreo-crunch": {
@@ -65,7 +65,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "oreo"
+    imageKey: "oreo",
     allergens: ""
   },
   "cake-chocolate-strawberry-crunch": {
@@ -75,7 +75,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "strawberry"
+    imageKey: "strawberry",
     allergens: ""
   },
   "cake-chocolate-caramel-peanut-butter": {
@@ -85,7 +85,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "peanut"
+    imageKey: "peanut",
     allergens: ""
   },
   "cake-black-forest": {
@@ -95,7 +95,7 @@ var productData = {
     ingredients: "Chocolate cake (enriched flour (wheat flour, niacin, reduced iron, thiamine, mononitrate, riboflavin, folic acid), organic sugar, water, organic soymilk (filtered water, organic soybeans, contains 2% or less of: vitamin and mineral blend (calcium carbonate, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sea salt, gellan gum, ascorbic acid (vitamin C to protect)), canola oil, cocoa (processed with alkali), instant coffee powder, baking powder, baking soda, vanilla extract (water, ethyl alcohol, vanilla extract)); buttercream (vegan butter (vegetable oil blend (palm oil, canola oil), water, salt, pea protein isolate, monoglycerides, diglycerides, sunflower lecithin, artificial flavors, vitamin A palmitate, beta carotene with potassium sorbate, lactic acid, and calcium disodium EDTA), shortening (canola oil, modified palm and palm kernel oils, mono and diglycerides), corn syrup (light corn syrup, salt, and vanilla), sugar, water, instant coffee powder, vanilla extract (water, ethyl alcohol, vanilla extract), chocolate shards (sugar, hydrogenated palm fat, cocoa, soy lecithin, flavorings), meringue mushrooms (aquafaba, organic sugar, vinegar, cocoa powder (processed with alkali), matcha powder)).",
     sizeInfo: "3 layers, 7-inch diameter, serves 10\u201315",
     gfAvailable: true,
-    imageKey: "blackforest"
+    imageKey: "blackforest",
     allergens: ""
   },
   "cake-black-chocolate-gold": {
@@ -105,7 +105,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "blackchoc"
+    imageKey: "blackchoc",
     allergens: ""
   },
   "cake-vanilla-sprinkles": {
@@ -115,7 +115,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "vanilla"
+    imageKey: "vanilla",
     allergens: ""
   },
   "cake-vanilla-coconut": {
@@ -125,7 +125,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "vanilla"
+    imageKey: "vanilla",
     allergens: ""
   },
   "cake-cardamom-rose": {
@@ -135,7 +135,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "rose"
+    imageKey: "rose",
     allergens: ""
   },
   "cake-mango-vanilla": {
@@ -145,7 +145,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "mango"
+    imageKey: "mango",
     allergens: ""
   },
   "cake-vanilla-spice": {
@@ -155,7 +155,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "vanilla"
+    imageKey: "vanilla",
     allergens: ""
   },
   "cake-vanilla-lemon-curd": {
@@ -165,7 +165,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "lemon"
+    imageKey: "lemon",
     allergens: ""
   },
   "cake-strawberry-crunch": {
@@ -175,7 +175,7 @@ var productData = {
     ingredients: "Soy milk (organic soybase (filtered water, whole organic soybeans), tricalcium phosphate, sea salt, organic flavors, gellan gum, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sugar, powdered sugar, enriched bleached flour (wheat flour, malted barley flour, niacin, iron, thiamine, riboflavin, folic acid), light corn syrup (corn syrup, salt, vanilla), vegan butter (oil blend (palm fruit, canola, soybean, flax, and olive), water, salt, natural flavor (plant derived from corn), soy protein, soy lecithin, lactic acid (non-dairy), annatto extract (color)), canola oil, shortening (soybean oil, fully hydrogenated palm oil, palm oil, mono and diglycerides, TBHQ and citric acid (antioxidants)), freeze dried strawberries, apple cider vinegar, vanilla extract (water, alcohol (35%), sugar, vanilla bean extractives), water, baking soda, salt.",
     sizeInfo: "3 layers, 7-inch diameter, serves 10\u201320 small slices; 8\u201310 large slices",
     gfAvailable: false,
-    imageKey: "strawberry"
+    imageKey: "strawberry",
     allergens: "WHEAT, SOY"
   },
   "cake-vanilla-biscoff": {
@@ -185,7 +185,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "biscoff"
+    imageKey: "biscoff",
     allergens: ""
   },
   "cake-pandan-vanilla": {
@@ -195,7 +195,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "pandan"
+    imageKey: "pandan",
     allergens: ""
   },
   "cake-ube-vanilla": {
@@ -205,7 +205,7 @@ var productData = {
     ingredients: "Soy milk (organic soybase (filtered water, whole organic soybeans), tricalcium phosphate, sea salt, organic flavors, gellan gum, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sugar, powdered sugar, enriched bleached flour (wheat flour, malted barley flour, niacin, iron, thiamine, riboflavin, folic acid), light corn syrup (corn syrup, salt, vanilla), vegan butter (oil blend (palm fruit, canola, soybean, flax, and olive), water, salt, natural flavor (plant derived from corn), soy protein, soy lecithin, lactic acid (non-dairy), annatto extract (color)), canola oil, macapuno (coconut sport, young coconut, sugar, water, sodium carboxymethylcellulose, sodium metabisulfite (as preservative)), shortening (soybean oil, fully hydrogenated palm oil, palm oil, mono and diglycerides, TBHQ and citric acid (antioxidants)), apple cider vinegar, ube flavouring (glucose syrup, water, propylene glycol, sorbitol syrup, artificial sweet potato flavor, coloring (FD&C Red #3 & FD&C Blue #1), ethyl vanilla), vanilla extract (water, alcohol (35%), sugar, vanilla bean extractives), baking soda, salt.",
     sizeInfo: "3 layers, 7-inch diameter, serves 10\u201320 small slices; 8\u201310 large slices",
     gfAvailable: true,
-    imageKey: "ube"
+    imageKey: "ube",
     allergens: "WHEAT, SOY, COCONUT"
   },
   "cake-white-forest": {
@@ -215,7 +215,7 @@ var productData = {
     ingredients: "Soy milk (organic soybase (filtered water, whole organic soybeans), tricalcium phosphate, sea salt, organic flavors, gellan gum, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sugar, powdered sugar (sugar, cornstarch), enriched bleached flour (wheat flour, malted barley flour, niacin, iron, thiamine, riboflavin, folic acid), light corn syrup (corn syrup, salt, vanilla), vegan butter (oil blend (palm fruit, canola, soybean, flax, and olive), water, salt, natural flavor (plant derived from corn), soy protein, soy lecithin, lactic acid (non-dairy), annatto extract (color)), canola oil, shortening (soybean oil, fully hydrogenated palm oil, palm oil, mono and diglycerides, TBHQ and citric acid (antioxidants)), cocoa, apple cider vinegar, strawberry syrup (high fructose corn syrup, corn syrup, water, artificial flavors, citric acid, sodium benzoate, xanthan gum, Red 40), vanilla extract (water, alcohol (35%), sugar, vanilla bean extractives), baking powder (sodium acid pyrophosphate, sodium bicarbonate, cornstarch, monocalcium phosphate), salt.",
     sizeInfo: "3 layers, 7-inch diameter, serves 10\u201320 small slices; 8\u201310 large slices",
     gfAvailable: true,
-    imageKey: "whiteforest"
+    imageKey: "whiteforest",
     allergens: "WHEAT, SOY"
   },
   "cake-gender-reveal-pink": {
@@ -225,7 +225,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "strawberry"
+    imageKey: "strawberry",
     allergens: ""
   },
   "cake-gender-reveal-blue": {
@@ -235,7 +235,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "blue"
+    imageKey: "blue",
     allergens: ""
   },
   "cake-red-velvet": {
@@ -245,7 +245,7 @@ var productData = {
     ingredients: "Soy milk (organic soybase (filtered water, whole organic soybeans), tricalcium phosphate, sea salt, organic flavors, gellan gum, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sugar, powdered sugar (sugar, cornstarch), enriched bleached flour (wheat flour, malted barley flour, niacin, iron, thiamine, riboflavin, folic acid), light corn syrup (corn syrup, salt, vanilla), vegan butter (oil blend (palm fruit, canola, soybean, flax, and olive), water, salt, natural flavor (plant derived from corn), soy protein, soy lecithin, lactic acid (non-dairy), annatto extract (color)), canola oil, shortening (soybean oil, fully hydrogenated palm oil, palm oil, mono and diglycerides, TBHQ and citric acid (antioxidants)), apple cider vinegar, cocoa, red gel food color (water, sugar, US certified Red 40 (E129), Red 3 (E127), Yellow 6 (E110), modified corn starch, vegetable gum, citric acid and 1/10 of sodium benzoate and potassium sorbate (as preservatives)), vanilla extract (water, alcohol (35%), sugar, vanilla bean extractives), baking powder (sodium acid pyrophosphate, sodium bicarbonate, cornstarch, monocalcium phosphate), salt.",
     sizeInfo: "3 layers, 7-inch diameter, serves 10\u201315 small slices; 8\u201310 large slices",
     gfAvailable: true,
-    imageKey: "redvelvet"
+    imageKey: "redvelvet",
     allergens: "WHEAT, SOY"
   },
 
@@ -259,7 +259,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "almond"
+    imageKey: "almond",
     allergens: ""
   },
   "cupcake-chocolate-vanilla": {
@@ -269,7 +269,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "chocolate"
+    imageKey: "chocolate",
     allergens: ""
   },
   "cupcake-chocolate-candy-cane": {
@@ -279,7 +279,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "candycane"
+    imageKey: "candycane",
     allergens: ""
   },
   "cupcake-chocolate-mint": {
@@ -289,7 +289,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "mint"
+    imageKey: "mint",
     allergens: ""
   },
   "cupcake-chocolate-coffee": {
@@ -299,7 +299,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "coffee"
+    imageKey: "coffee",
     allergens: ""
   },
   "cupcake-chocolate-oreo-crunch": {
@@ -309,7 +309,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "oreo"
+    imageKey: "oreo",
     allergens: ""
   },
   "cupcake-chocolate-strawberry-crunch": {
@@ -319,7 +319,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "strawberry"
+    imageKey: "strawberry",
     allergens: ""
   },
   "cupcake-chocolate-peanut-butter": {
@@ -329,7 +329,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "peanut"
+    imageKey: "peanut",
     allergens: ""
   },
   "cupcake-black-forest": {
@@ -339,7 +339,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "blackforest"
+    imageKey: "blackforest",
     allergens: ""
   },
   "cupcake-black-chocolate": {
@@ -349,7 +349,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "blackchoc"
+    imageKey: "blackchoc",
     allergens: ""
   },
   "cupcake-toasted-smores": {
@@ -359,7 +359,7 @@ var productData = {
     ingredients: "Chocolate cake (enriched flour (wheat flour, niacin, reduced iron, thiamine, mononitrate, riboflavin, folic acid), organic sugar, water, organic soymilk (filtered water, organic soybeans, contains 2% or less of: vitamin and mineral blend (calcium carbonate, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sea salt, gellan gum, ascorbic acid (vitamin C to protect)), canola oil, cocoa (processed with alkali), instant coffee powder, baking powder, baking soda, vanilla extract (water, ethyl alcohol, vanilla extract)); meringue (sugar, aquafaba, water, vinegar).",
     sizeInfo: "Sold in sets of 6 or 12",
     gfAvailable: false,
-    imageKey: "smores"
+    imageKey: "smores",
     allergens: ""
   },
   "cupcake-vanilla-sprinkle": {
@@ -369,7 +369,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "vanilla"
+    imageKey: "vanilla",
     allergens: ""
   },
   "cupcake-matcha": {
@@ -379,7 +379,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "matcha"
+    imageKey: "matcha",
     allergens: ""
   },
   "cupcake-cardamom-rose": {
@@ -389,7 +389,7 @@ var productData = {
     ingredients: "All-purpose flour, sugar, vegan butter (vegetable oil blend (palm oil, canola oil), water, salt, pea protein isolate, monoglycerides, diglycerides, sunflower lecithin, artificial flavors, vitamin A palmitate, beta carotene with potassium sorbate, lactic acid, and calcium disodium EDTA), shortening, soy milk (soybeans, water, and artificial flavors), baking soda, salt, rose extract, and vanilla flavor (water, propylene glycol, vanillin, caramel color, sodium benzoate, phosphoric acid, and ethyl vanillin).",
     sizeInfo: "Sold in sets of 6 or 12",
     gfAvailable: true,
-    imageKey: "rose"
+    imageKey: "rose",
     allergens: ""
   },
   "cupcake-mango-vanilla": {
@@ -399,7 +399,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "mango"
+    imageKey: "mango",
     allergens: ""
   },
   "cupcake-lemon-curd-vanilla": {
@@ -409,7 +409,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "lemon"
+    imageKey: "lemon",
     allergens: ""
   },
   "cupcake-strawberry-crunch": {
@@ -419,7 +419,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "strawberry"
+    imageKey: "strawberry",
     allergens: ""
   },
   "cupcake-vanilla-biscoff": {
@@ -429,7 +429,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "biscoff"
+    imageKey: "biscoff",
     allergens: ""
   },
   "cupcake-pandan-vanilla": {
@@ -439,7 +439,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "pandan"
+    imageKey: "pandan",
     allergens: ""
   },
   "cupcake-ube-vanilla": {
@@ -449,7 +449,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "ube"
+    imageKey: "ube",
     allergens: ""
   },
   "cupcake-milk-tea-boba": {
@@ -459,7 +459,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "milktea"
+    imageKey: "milktea",
     allergens: ""
   },
   "cupcake-red-velvet": {
@@ -469,7 +469,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "redvelvet"
+    imageKey: "redvelvet",
     allergens: ""
   },
   "cupcake-vanilla-chocolate-swirl": {
@@ -479,7 +479,7 @@ var productData = {
     ingredients: "Soy milk (organic soybase (filtered water, whole organic soybeans), tricalcium phosphate, sea salt, organic flavors, gellan gum, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sugar, powdered sugar (sugar, cornstarch), enriched bleached flour (wheat flour, malted barley flour, niacin, iron, thiamine, riboflavin, folic acid), light corn syrup (corn syrup, salt, vanilla), vegan butter (oil blend (palm fruit, soybean, canola, flax, and olive), water, salt, natural flavor (plant derived from corn), soy protein, soy lecithin, lactic acid (non-dairy), annatto extract (color)), canola oil, shortening (soybean oil, fully hydrogenated palm oil, palm oil, mono and diglycerides, TBHQ and citric acid (antioxidants)), cocoa, apple cider vinegar, vanilla extract (water, alcohol (35%), sugar, vanilla bean extractives), baking powder (sodium acid pyrophosphate, sodium bicarbonate, cornstarch, monocalcium phosphate), salt.",
     sizeInfo: "Sold in sets of 6 or 12",
     gfAvailable: true,
-    imageKey: "swirl"
+    imageKey: "swirl",
     allergens: ""
   },
   "cupcake-pumpkin-cranberry-bliss": {
@@ -489,7 +489,7 @@ var productData = {
     ingredients: "Flour, sugar, vegan butter (vegetable oil blend (palm oil, canola oil), water, salt, pea protein isolate, monoglycerides, diglycerides, sunflower lecithin, artificial flavors, vitamin A palmitate, beta carotene with potassium sorbate, lactic acid, and calcium disodium EDTA), soy milk (soybeans, water, and artificial flavors), baking soda, salt, shortening, cinnamon, nutmeg, allspice, cranberries, pumpkin, and vanilla flavor (water, propylene glycol, vanillin, caramel color, sodium benzoate, phosphoric acid, and ethyl vanillin).",
     sizeInfo: "Sold in sets of 6 or 12",
     gfAvailable: false,
-    imageKey: "cranberry"
+    imageKey: "cranberry",
     allergens: ""
   },
 
@@ -503,7 +503,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "biscoff"
+    imageKey: "biscoff",
     allergens: ""
   },
   "cookie-blue-monster": {
@@ -513,7 +513,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "blue"
+    imageKey: "blue",
     allergens: ""
   },
   "cookie-ube": {
@@ -523,7 +523,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "ube"
+    imageKey: "ube",
     allergens: ""
   },
   "cookie-party-sprinkles": {
@@ -533,7 +533,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "sprinkle"
+    imageKey: "sprinkle",
     allergens: ""
   },
   "cookie-toasted-smores": {
@@ -543,7 +543,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "smores"
+    imageKey: "smores",
     allergens: ""
   },
   "cookie-chocolate-chip": {
@@ -553,7 +553,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "chocolate"
+    imageKey: "chocolate",
     allergens: ""
   },
   "cookie-pumpkin-spice-latte": {
@@ -563,7 +563,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "pumpkin"
+    imageKey: "pumpkin",
     allergens: ""
   },
   "cookie-strawberry-crunch": {
@@ -573,7 +573,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "strawberry"
+    imageKey: "strawberry",
     allergens: ""
   },
 
@@ -587,7 +587,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "redvelvet"
+    imageKey: "redvelvet",
     allergens: ""
   },
   "cakepop-double-dough-biscoff": {
@@ -597,7 +597,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "dough"
+    imageKey: "dough",
     allergens: ""
   },
   "cakepop-chocolate-lovers": {
@@ -607,7 +607,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "chocolate"
+    imageKey: "chocolate",
     allergens: ""
   },
 
@@ -621,7 +621,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "almond"
+    imageKey: "almond",
     allergens: ""
   },
   "cakejar-chocolate-vanilla": {
@@ -631,7 +631,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "chocolate"
+    imageKey: "chocolate",
     allergens: ""
   },
   "cakejar-chocolate-candy-cane": {
@@ -641,7 +641,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "candycane"
+    imageKey: "candycane",
     allergens: ""
   },
   "cakejar-chocolate-mint": {
@@ -651,7 +651,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "mint"
+    imageKey: "mint",
     allergens: ""
   },
   "cakejar-chocolate-coffee": {
@@ -661,7 +661,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "coffee"
+    imageKey: "coffee",
     allergens: ""
   },
   "cakejar-chocolate-oreo-crunch": {
@@ -671,7 +671,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "oreo"
+    imageKey: "oreo",
     allergens: ""
   },
   "cakejar-chocolate-strawberry-crunch": {
@@ -681,7 +681,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "strawberry"
+    imageKey: "strawberry",
     allergens: ""
   },
   "cakejar-chocolate-peanut-butter": {
@@ -691,7 +691,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "peanut"
+    imageKey: "peanut",
     allergens: ""
   },
   "cakejar-black-forest": {
@@ -701,7 +701,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "blackforest"
+    imageKey: "blackforest",
     allergens: ""
   },
   "cakejar-black-chocolate": {
@@ -711,7 +711,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "blackchoc"
+    imageKey: "blackchoc",
     allergens: ""
   },
   "cakejar-vanilla-sprinkle": {
@@ -721,7 +721,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "vanilla"
+    imageKey: "vanilla",
     allergens: ""
   },
   "cakejar-matcha": {
@@ -731,7 +731,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "matcha"
+    imageKey: "matcha",
     allergens: ""
   },
   "cakejar-cardamom-rose": {
@@ -741,7 +741,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "rose"
+    imageKey: "rose",
     allergens: ""
   },
   "cakejar-mango-vanilla": {
@@ -751,7 +751,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "mango"
+    imageKey: "mango",
     allergens: ""
   },
   "cakejar-lemon-curd-vanilla": {
@@ -761,7 +761,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "lemon"
+    imageKey: "lemon",
     allergens: ""
   },
   "cakejar-strawberry-crunch": {
@@ -771,7 +771,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "strawberry"
+    imageKey: "strawberry",
     allergens: ""
   },
   "cakejar-vanilla-biscoff": {
@@ -781,7 +781,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "biscoff"
+    imageKey: "biscoff",
     allergens: ""
   },
   "cakejar-pandan-vanilla": {
@@ -791,7 +791,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "pandan"
+    imageKey: "pandan",
     allergens: ""
   },
   "cakejar-ube-vanilla": {
@@ -801,7 +801,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "ube"
+    imageKey: "ube",
     allergens: ""
   },
   "cakejar-milk-tea-boba": {
@@ -811,7 +811,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "milktea"
+    imageKey: "milktea",
     allergens: ""
   },
   "cakejar-red-velvet": {
@@ -821,7 +821,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "redvelvet"
+    imageKey: "redvelvet",
     allergens: ""
   },
   "cakejar-vanilla-chocolate-swirl": {
@@ -831,7 +831,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
-    imageKey: "swirl"
+    imageKey: "swirl",
     allergens: ""
   },
   "cakejar-pumpkin-cranberry-bliss": {
@@ -841,7 +841,7 @@ var productData = {
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
-    imageKey: "cranberry"
+    imageKey: "cranberry",
     allergens: ""
   }
 };
