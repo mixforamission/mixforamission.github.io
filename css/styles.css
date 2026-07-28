@@ -1524,6 +1524,8 @@ a[aria-disabled="true"] * {
 /* Flavor card — leaner variant of .product-card */
 .flavor-card {
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
   background-color: var(--color-surface);
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
