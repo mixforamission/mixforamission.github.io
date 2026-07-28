@@ -200,4 +200,84 @@
       window.addEventListener("scroll", onMenuNavScroll, { passive: true });
     }
   }
+
+  /* ========================================================
+     MENU PAGE — Ingredients & Details accordion
+     --------------------------------------------------------
+     Injects an expandable "Ingredients & Details" section into
+     flavor cards that have ingredient data. Data is stored in
+     `ingredientData` keyed by `data-flavor` value. Cards without
+     matching data get nothing — no empty accordion, no placeholder.
+     Toggle uses aria-expanded for accessibility and a smooth
+     max-height CSS transition for animation.
+     ======================================================== */
+  var ingredientData = {
+    "black-forest": {
+      description: "Indulge in our exquisite Vegan Chocolate Cake, lovingly decorated to resemble a lush and enchanting forest.",
+      size: "3 layers, 7-inch diameter, serves 10–15",
+      ingredients: "Chocolate cake (enriched wheat flour, niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid, organic sugar, water, organic soymilk, vitamin/mineral blend, sea salt, gellan gum, ascorbic acid, canola oil, alkalized cocoa, instant coffee powder, baking powder, baking soda, vanilla extract); buttercream (vegan butter, shortening, light corn syrup, sugar, water, instant coffee powder, vanilla extract, chocolate shards, meringue mushrooms made from aquafaba/organic sugar/vinegar/cocoa powder/matcha powder)."
+    }
+  };
+
+  var flavorCards = document.querySelectorAll(".flavor-card[data-flavor]");
+  Array.prototype.forEach.call(flavorCards, function (card) {
+    var flavorKey = card.getAttribute("data-flavor");
+    var data = ingredientData[flavorKey];
+    if (!data) return;
+
+    // Build toggle button
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "flavor-card__toggle";
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.innerHTML = '<span class="toggle-icon" aria-hidden="true"></span> Ingredients &amp; Details';
+
+    // Build details panel
+    var details = document.createElement("div");
+    details.className = "flavor-card__details";
+    details.setAttribute("aria-hidden", "true");
+
+    var inner = document.createElement("div");
+    inner.className = "flavor-card__details-inner";
+
+    var html = "";
+    if (data.description) {
+      html += '<p class="details-desc">' + data.description + "</p>";
+    }
+    if (data.size) {
+      html += '<p><span class="details-label">Size</span>' + data.size + "</p>";
+    }
+    if (data.ingredients) {
+      html += '<p><span class="details-label">Ingredients</span>' + data.ingredients + "</p>";
+      html += '<p class="details-note">Ingredients may be subject to change. Text us with any questions.</p>';
+    }
+    inner.innerHTML = html;
+    details.appendChild(inner);
+
+    // Append to card
+    card.appendChild(toggle);
+    card.appendChild(details);
+
+    // Toggle handler
+    toggle.addEventListener("click", function () {
+      var isExpanded = toggle.getAttribute("aria-expanded") === "true";
+      if (isExpanded) {
+        toggle.setAttribute("aria-expanded", "false");
+        details.setAttribute("aria-hidden", "true");
+        details.style.maxHeight = "0";
+      } else {
+        toggle.setAttribute("aria-expanded", "true");
+        details.setAttribute("aria-hidden", "false");
+        details.style.maxHeight = details.scrollHeight + "px";
+        // Remove the inline max-height after the transition ends so the
+        // panel reflows naturally on viewport resize. If the user collapses
+        // before transitionend fires, the inline value stays and works fine.
+        var onTransitionEnd = function () {
+          details.style.maxHeight = "";
+          details.removeEventListener("transitionend", onTransitionEnd);
+        };
+        details.addEventListener("transitionend", onTransitionEnd);
+      }
+    });
+  });
 })();
