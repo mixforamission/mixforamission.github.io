@@ -1866,7 +1866,7 @@ a[aria-disabled="true"] * {
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--ls-wider);
   text-transform: uppercase;
-  color: var(--color-sage);
+  color: rgba(255, 255, 255, 0.7); /* AA on dark primary band (was var(--color-sage), failed at 3.36:1 after sage→grey) */
   margin-bottom: var(--sp-3);
 }
 .donation-stat-band .stat-num {
