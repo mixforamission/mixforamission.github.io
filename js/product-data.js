@@ -15,7 +15,7 @@
 
 var productData = {
   /* ======================================================
-     CAKES — 23 items
+     CAKES — 24 items
      ====================================================== */
   "cake-almond-crunch-bar": {
     name: "Almond Crunch Bar Cake",
@@ -248,6 +248,16 @@ var productData = {
     gfAvailable: true,
     imageKey: "redvelvet",
     allergens: "WHEAT, SOY",
+  },
+  "cake-custom-order": {
+    name: "Custom Order Cake",
+    category: "cake",
+    tagline: "Your vision, our craft. Tell us what you're dreaming up — a favorite flavor combination, a special theme, an inside joke turned edible — and we'll design a one-of-a-kind vegan cake for your occasion. Custom designs start at $60.",
+    ingredients: "",
+    sizeInfo: "",
+    gfAvailable: true,
+    imageKey: "custom",
+    allergens: "",
   },
 
   /* ======================================================
