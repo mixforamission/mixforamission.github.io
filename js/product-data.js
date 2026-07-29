@@ -15,7 +15,7 @@
 
 var productData = {
   /* ======================================================
-     CAKES — 24 items
+     CAKES — 23 items
      ====================================================== */
   "cake-almond-crunch-bar": {
     name: "Almond Crunch Bar Cake",
@@ -31,7 +31,7 @@ var productData = {
   "cake-chocolate-vanilla-buttercream": {
     name: "Chocolate Cake w/Vanilla Buttercream",
     category: "cake",
-    tagline: "The classic combo done right — rich, moist chocolate cake with smooth vanilla buttercream. Sometimes simple is absolutely perfect.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -71,7 +71,7 @@ var productData = {
   "cake-chocolate-strawberry-crunch": {
     name: "Chocolate Strawberry Crunch Cake",
     category: "cake",
-    tagline: "Chocolate cake meets strawberry crunch — rich cocoa layers with that signature tangy-sweet strawberry finish. The mashup you didn't know you needed.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
@@ -81,7 +81,7 @@ var productData = {
   "cake-chocolate-caramel-peanut-butter": {
     name: "Chocolate Caramel Peanut Butter Cake",
     category: "cake",
-    tagline: "Chocolate, caramel, and peanut butter in three decadent layers — the ultimate indulgence for anyone who believes peanut butter makes everything better.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -97,16 +97,6 @@ var productData = {
     gfAvailable: true,
     imageKey: "blackforest",
     allergens: ""
-  },
-  "cake-black-chocolate-gold": {
-    name: "Black Chocolate Cake w/gold highlights",
-    category: "cake",
-    tagline: "A dramatic black chocolate cake finished with shimmering gold highlights — dark, luxurious, and the kind of cake that makes people ask 'who made that?!'",
-    ingredients: "",
-    sizeInfo: "",
-    gfAvailable: true,
-    imageKey: "blackchoc",
-    allergens: "",
   },
   "cake-vanilla-sprinkles": {
     name: "Vanilla Sprinkles Cake",
@@ -161,7 +151,7 @@ var productData = {
   "cake-vanilla-lemon-curd": {
     name: "Vanilla with Lemon Curd Filling",
     category: "cake",
-    tagline: "Bright, zesty lemon curd tucked between soft vanilla layers — tangy meets sweet in the most refreshing way. A total palate-cleanser of a cake.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -252,7 +242,7 @@ var productData = {
   "cake-custom-order": {
     name: "Custom Order Cake",
     category: "cake",
-    tagline: "Your vision, our craft. Tell us what you're dreaming up — a favorite flavor combination, a special theme, an inside joke turned edible — and we'll design a one-of-a-kind vegan cake for your occasion. Custom designs start at $60.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -261,7 +251,7 @@ var productData = {
   },
 
   /* ======================================================
-     CUPCAKES — 24 items
+     CUPCAKES — 22 items
      ====================================================== */
   "cupcake-almond-crunch": {
     name: "Almond Crunch",
@@ -276,7 +266,7 @@ var productData = {
   "cupcake-chocolate-vanilla": {
     name: "Chocolate Vanilla",
     category: "cupcake",
-    tagline: "The one that started it all. A rich chocolate cupcake with smooth vanilla frosting — simple, perfect, and the one everyone reaches for first.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -306,7 +296,7 @@ var productData = {
   "cupcake-chocolate-coffee": {
     name: "Chocolate Coffee",
     category: "cupcake",
-    tagline: "The perfect morning meeting in a cupcake — deep, rich chocolate with a bold coffee kick. Caffeine and cake, together at last.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -326,7 +316,7 @@ var productData = {
   "cupcake-chocolate-strawberry-crunch": {
     name: "Chocolate Strawberry Crunch",
     category: "cupcake",
-    tagline: "Chocolate cupcake with strawberry crunch topping — two of our best flavors in one incredible bite. Why choose?",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
@@ -336,33 +326,23 @@ var productData = {
   "cupcake-chocolate-peanut-butter": {
     name: "Chocolate Peanut Butter",
     category: "cupcake",
-    tagline: "Chocolate and peanut butter — the unbeatable duo, now in a perfectly portable cupcake. No fork needed, no regrets.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
     imageKey: "peanut",
     allergens: "",
-  },
-  "cupcake-black-forest": {
-    name: "Black Forest",
-    category: "cupcake",
-    tagline: "A miniature enchanted forest in cupcake form — rich chocolate, sweet cherries, and meringue mushrooms just like our full-sized Black Forest creation.",
-    ingredients: "",
-    sizeInfo: "",
-    gfAvailable: true,
-    imageKey: "blackforest",
-    allergens: "",
-  },
-  "cupcake-black-chocolate": {
-    name: "Black Chocolate",
-    category: "cupcake",
-    tagline: "Dark, intense, and unapologetically chocolate — for when regular chocolate just isn't enough. This one means business.",
-    ingredients: "",
-    sizeInfo: "",
-    gfAvailable: false,
-    imageKey: "blackchoc",
-    allergens: "",
-  },
+  },    "cupcake-black-forest": {
+      name: "Black Forest",
+      category: "cupcake",
+      tagline: "",
+      // ingredients copied from cake-black-forest per standing rule: same batter/frosting, different format
+      ingredients: "Chocolate cake (enriched flour (wheat flour, niacin, reduced iron, thiamine, mononitrate, riboflavin, folic acid), organic sugar, water, organic soymilk (filtered water, organic soybeans, contains 2% or less of: vitamin and mineral blend (calcium carbonate, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sea salt, gellan gum, ascorbic acid (vitamin C to protect)), canola oil, cocoa (processed with alkali), instant coffee powder, baking powder, baking soda, vanilla extract (water, ethyl alcohol, vanilla extract)); buttercream (vegan butter (vegetable oil blend (palm oil, canola oil), water, salt, pea protein isolate, monoglycerides, diglycerides, sunflower lecithin, artificial flavors, vitamin A palmitate, beta carotene with potassium sorbate, lactic acid, and calcium disodium EDTA), shortening (canola oil, modified palm and palm kernel oils, mono and diglycerides), corn syrup (light corn syrup, salt, and vanilla), sugar, water, instant coffee powder, vanilla extract (water, ethyl alcohol, vanilla extract), chocolate shards (sugar, hydrogenated palm fat, cocoa, soy lecithin, flavorings), meringue mushrooms (aquafaba, organic sugar, vinegar, cocoa powder (processed with alkali), matcha powder)).",
+      sizeInfo: "",
+      gfAvailable: true,
+      imageKey: "blackforest",
+      allergens: "",
+    },
   "cupcake-toasted-smores": {
     name: "Toasted S'mores Cupcakes",
     category: "cupcake",
@@ -372,7 +352,7 @@ var productData = {
     gfAvailable: false,
     imageKey: "smores",
     // inferred from ingredient list (not printed label)
-    allergens: "WHEAT, SOY",
+    allergens: "",
   },
   "cupcake-vanilla-sprinkle": {
     name: "Vanilla Sprinkle",
@@ -387,7 +367,7 @@ var productData = {
   "cupcake-matcha": {
     name: "Matcha",
     category: "cupcake",
-    tagline: "Earthy, vibrant matcha green tea in cupcake form — subtle sweetness with that distinctive green tea depth. The color alone is worth it, but the flavor keeps you coming back.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -417,23 +397,22 @@ var productData = {
   "cupcake-lemon-curd-vanilla": {
     name: "Lemon Curd Vanilla",
     category: "cupcake",
-    tagline: "A vanilla cupcake hiding a burst of tangy lemon curd inside — bright, fresh, and the most pleasant surprise in the box.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
     imageKey: "lemon",
     allergens: "",
-  },
-  "cupcake-strawberry-crunch": {
-    name: "Strawberry Crunch",
-    category: "cupcake",
-    tagline: "Vanilla cupcake with tangy strawberry buttercream and that signature golden crunch — bold, pink, and impossible to miss in the box.",
-    ingredients: "",
-    sizeInfo: "",
-    gfAvailable: false,
-    imageKey: "strawberry",
-    allergens: "",
-  },
+  },    "cupcake-strawberry-crunch": {
+      name: "Strawberry Crunch",
+      category: "cupcake",
+      tagline: "",
+      ingredients: "Soy milk (organic soybase (filtered water, whole organic soybeans), tricalcium phosphate, sea salt, organic flavors, gellan gum, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sugar, powdered sugar, enriched bleached flour (wheat flour, malted barley flour, niacin, iron, thiamine, riboflavin, folic acid), light corn syrup (corn syrup, salt, vanilla), vegan butter (oil blend (palm fruit, canola, soybean, flax, and olive), water, salt, natural flavor (plant derived from corn), soy protein, soy lecithin, lactic acid (non-dairy), annatto extract (color)), canola oil, shortening (soybean oil, fully hydrogenated palm oil, palm oil, mono and diglycerides, TBHQ and citric acid (antioxidants)), freeze dried strawberries, apple cider vinegar, vanilla extract (water, alcohol (35%), sugar, vanilla bean extractives), water, baking soda, salt.",
+      sizeInfo: "",
+      gfAvailable: false,
+      imageKey: "strawberry",
+      allergens: "WHEAT, SOY",
+    },
   "cupcake-vanilla-biscoff": {
     name: "Vanilla Biscoff",
     category: "cupcake",
@@ -494,18 +473,6 @@ var productData = {
     imageKey: "swirl",
     allergens: "WHEAT, SOY",
   },
-  "cupcake-pumpkin-cranberry-bliss": {
-    name: "Pumpkin Cranberry Bliss",
-    category: "cupcake",
-    tagline: "Indulge in the perfect blend of autumnal flavors with our irresistible pumpkin cranberry cupcake! Our moist and fluffy pumpkin cupcake gives you a warm and cozy taste that will instantly transport you to your favorite fall memories. Topped with juicy cranberries, each bite is a delightful balance of sweet and tangy flavors that will leave you wanting to be ordering more.",
-    ingredients: "Flour, sugar, vegan butter (vegetable oil blend (palm oil, canola oil), water, salt, pea protein isolate, monoglycerides, diglycerides, sunflower lecithin, artificial flavors, vitamin A palmitate, beta carotene with potassium sorbate, lactic acid, and calcium disodium EDTA), soy milk (soybeans, water, and artificial flavors), baking soda, salt, shortening, cinnamon, nutmeg, allspice, cranberries, pumpkin, and vanilla flavor (water, propylene glycol, vanillin, caramel color, sodium benzoate, phosphoric acid, and ethyl vanillin).",
-    sizeInfo: "Sold in sets of 6 or 12",
-    gfAvailable: false,
-    imageKey: "cranberry",
-    // inferred from ingredient list (not printed label)
-    allergens: "WHEAT, SOY",
-  },
-
   /* ======================================================
      COOKIES — 8 items
      ====================================================== */
@@ -542,7 +509,7 @@ var productData = {
   "cookie-party-sprinkles": {
     name: "Party Sprinkles",
     category: "cookie",
-    tagline: "A GIANT funfetti cookie absolutely loaded with rainbow sprinkles — it's a party in every bite, and everyone's invited.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -552,7 +519,7 @@ var productData = {
   "cookie-toasted-smores": {
     name: "Toasted S'mores",
     category: "cookie",
-    tagline: "A GIANT s'mores cookie — all the chocolate, marshmallow, and graham cracker vibes of a campfire classic, no campfire needed.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
@@ -562,7 +529,7 @@ var productData = {
   "cookie-chocolate-chip": {
     name: "Chocolate Chip",
     category: "cookie",
-    tagline: "A GIANT chocolate chip cookie absolutely loaded with dark chocolate chunks — your classic, leveled up and 100%% vegan.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -572,7 +539,7 @@ var productData = {
   "cookie-pumpkin-spice-latte": {
     name: "Pumpkin Spice Latte",
     category: "cookie",
-    tagline: "Your PSL, but make it a GIANT cookie — pumpkin, warm spices, and a coffee kick. Fall in cookie form.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -582,7 +549,7 @@ var productData = {
   "cookie-strawberry-crunch": {
     name: "Strawberry Crunch",
     category: "cookie",
-    tagline: "A GIANT strawberry cookie with that signature golden crunch — bright pink, tangy-sweet, and totally addictive.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
@@ -625,7 +592,7 @@ var productData = {
   },
 
   /* ======================================================
-     CAKE JARS — 23 items (same as cupcakes minus Smores)
+     CAKE JARS — 21 items (same as cupcakes minus Smores and two discontinued)
      ====================================================== */
   "cakejar-almond-crunch": {
     name: "Almond Crunch",
@@ -640,7 +607,7 @@ var productData = {
   "cakejar-chocolate-vanilla": {
     name: "Chocolate Vanilla",
     category: "cakejar",
-    tagline: "The classic combo, jarred — rich chocolate cake and smooth vanilla, no fork needed. Sometimes the basics hit hardest.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -670,7 +637,7 @@ var productData = {
   "cakejar-chocolate-coffee": {
     name: "Chocolate Coffee",
     category: "cakejar",
-    tagline: "Chocolate-coffee energy in a jar — the perfect pick-me-up dessert for whenever the craving hits.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -690,7 +657,7 @@ var productData = {
   "cakejar-chocolate-strawberry-crunch": {
     name: "Chocolate Strawberry Crunch",
     category: "cakejar",
-    tagline: "Chocolate-strawberry crunch in portable form — two of our best flavors, one jar, zero regrets.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: false,
@@ -700,7 +667,7 @@ var productData = {
   "cakejar-chocolate-peanut-butter": {
     name: "Chocolate Peanut Butter",
     category: "cakejar",
-    tagline: "The ultimate duo, jarred — chocolate and peanut butter, spoon-ready. This one's dangerous in the best way.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -717,16 +684,6 @@ var productData = {
     imageKey: "blackforest",
     allergens: "",
   },
-  "cakejar-black-chocolate": {
-    name: "Black Chocolate",
-    category: "cakejar",
-    tagline: "Dark chocolate cake, jarred — intense, portable, and ready when you are. No slicing, no sharing, no problem.",
-    ingredients: "",
-    sizeInfo: "",
-    gfAvailable: false,
-    imageKey: "blackchoc",
-    allergens: "",
-  },
   "cakejar-vanilla-sprinkle": {
     name: "Vanilla Sprinkle",
     category: "cakejar",
@@ -740,7 +697,7 @@ var productData = {
   "cakejar-matcha": {
     name: "Matcha",
     category: "cakejar",
-    tagline: "Matcha green tea cake, jarred — earthy, vibrant, and perfectly portable for the matcha lover on the go.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -770,7 +727,7 @@ var productData = {
   "cakejar-lemon-curd-vanilla": {
     name: "Lemon Curd Vanilla",
     category: "cakejar",
-    tagline: "Vanilla cake with lemon curd, jarred — bright, zesty, and ready to brighten your day one spoonful at a time.",
+    tagline: "",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -846,15 +803,5 @@ var productData = {
     gfAvailable: true,
     imageKey: "swirl",
     allergens: "WHEAT, SOY",
-  },
-  "cakejar-pumpkin-cranberry-bliss": {
-    name: "Pumpkin Cranberry Bliss",
-    category: "cakejar",
-    tagline: "Pumpkin cranberry bliss, jarred — all the cozy fall magic, ready whenever the craving hits (even if it's March).",
-    ingredients: "Flour, sugar, vegan butter (vegetable oil blend (palm oil, canola oil), water, salt, pea protein isolate, monoglycerides, diglycerides, sunflower lecithin, artificial flavors, vitamin A palmitate, beta carotene with potassium sorbate, lactic acid, and calcium disodium EDTA), soy milk (soybeans, water, and artificial flavors), baking soda, salt, shortening, cinnamon, nutmeg, allspice, cranberries, pumpkin, and vanilla flavor (water, propylene glycol, vanillin, caramel color, sodium benzoate, phosphoric acid, and ethyl vanillin).",
-    sizeInfo: "",
-    gfAvailable: false,
-    imageKey: "cranberry",
-    allergens: "",
   },
 };
