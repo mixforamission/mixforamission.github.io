@@ -76,19 +76,20 @@
   /* ----------------------------------------------------------
      TYPOGRAPHY
      Body: Inter (clean grotesque, highly legible).
-     Display: Fraunces (modern serif with optical sizing — adds
-     warmth and character to headings without sacrificing the
-     minimalist feel). Both loaded via <link> in each HTML page.
+     Display: Newsreader (editorial serif with optical sizing —
+     used sparingly for hero and stat moments only, not as the
+     default heading font). Both loaded via <link> in each HTML page.
      ---------------------------------------------------------- */
 
   --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
 
   /* Modular type scale — ratio 1.250 (major third), base 1rem */
   --fs-2xs: 0.75rem;    /* 12px — captions, labels */
