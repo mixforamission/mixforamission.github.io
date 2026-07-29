@@ -60,8 +60,8 @@ you need.
 ├── js/
 │   └── main.js                         # Sticky header, mobile nav, footer year, scroll-spy
 ├── assets/
-│   └── images/                         # Drop all photos here (see images/README.md for filenames)
-│       └── README.md                   # Expected image filenames & sizes
+│   ├── icons/                          # Favicon (logo.ico) and header logo (logo.jpeg)
+│   └── images/                         # Drop product photos here
 ├── .gitignore                          # Excludes dev-server artifacts & OS/editor files
 └── README.md                           # This file
 ```
@@ -192,13 +192,12 @@ file alone to retheme the whole site.
 
 | Token group | Choices |
 |-------------|---------|
-| **Background** | Warm off-white `#faf7f2` ground, `#f1ece4` alt sections, white surfaces |
-| **Text** | Near-black `#1f1d1b` primary, muted `#5c574f`, soft `#8a847a` |
-| **Primary accent** | Deep forest green `#2f4a3a` (the "vegan/fresh" voice) — `--color-primary` |
-| **Secondary accent** | Soft terracotta `#c0643f` for warm CTAs/highlights — `--color-accent` |
-| **Sage** | Muted companion `#8a9a87` for secondary surfaces |
+| **Background** | Light grey `#f2f2f2` ground, `#e9e8e8` alt sections, white surfaces |
+| **Text** | Near-black `#212121` primary, muted `#5f5f5f`, soft `#8a8a8a` |
+| **Primary** | Muted purple-brown `#4f474e` (header, footer, primary buttons) |
+| **Accent** | Dusty pink `#ea9999` fills / `#ad5050` text (buttons, borders, highlights) |
 | **Body font** | Inter (clean grotesque, loaded via Google Fonts) |
-| **Display font** | Fraunces (modern serif with optical sizing — headings) |
+| **Display font** | Newsreader (editorial serif — used sparingly for hero h1 and stat numbers only) |
 | **Type scale** | Modular ratio 1.250 (major third), base 1rem; fluid `clamp()` for display sizes |
 | **Spacing** | 4px base unit (`--sp-1` … `--sp-10`) |
 | **Max width** | `--container-max` 1200px; `--container-narrow` 760px |
@@ -229,10 +228,8 @@ These are the remaining placeholders marked with `TODO` comments in the code:
   areas served).
 - **Yelp & Google Reviews URLs** — re-enable the disabled footer social links by
   removing `aria-disabled` and adding the real `href` (instructions in the TODO comments).
-- **OG image** — add `assets/images/og-image.jpg` (1200×630) and set the `og:image`
-  meta tag in `index.html`.
-- **Favicon** — the current favicon is an inline SVG data-URI (a green circle with "M").
-  Replace with `assets/images/favicon.svg` when a real logo is ready.
+- **OG image** — add a dedicated `assets/images/og-image.jpg` (1200×630). Currently using
+  `assets/icons/logo.jpeg` as a fallback.
 - **Donations list** — edit the `DONATIONS` array in `about/donations.html` to replace
   the placeholder entries with real donation history (instructions are in the comment).
 - **Local partnerships** — replace the placeholder partner cards on
