@@ -210,6 +210,36 @@
         ingredientsHtml = '<p style="font-style:italic; opacity:0.7;">Placeholder, content coming soon</p>';
       }
 
+      // --- Build product photo (keyed by actual product key, not imageKey —
+      //     imageKey is shared across categories and would cause false positives) ---
+      var photoMap = {
+        // Cakes
+        'cake-almond-crunch-bar':          '../assets/images/cakes/almondcrunch.png',
+        'cake-cardamom-rose':              '../assets/images/cakes/cardamomrose.png',
+        'cake-black-forest':               '../assets/images/cakes/blackforest.png',
+        'cake-enchanted-tree-stump':       '../assets/images/cakes/enchantedforest.jpeg',
+        'cake-vanilla-biscoff':            '../assets/images/cakes/biscoff.png',
+        'cake-vanilla-lemon-curd':         '../assets/images/cakes/lemoncurd.png',
+        'cake-mango-vanilla':              '../assets/images/cakes/mangolassi.png',
+        'cake-red-velvet':                 '../assets/images/cakes/redvelvet.png',
+        'cake-strawberry-crunch':          '../assets/images/cakes/strawberrycrunch.png',
+        'cake-ube-vanilla':                '../assets/images/cakes/ube.png',
+        'cake-vanilla-sprinkles':          '../assets/images/cakes/vintagestylevanilla.png',
+        // Cupcakes
+        'cupcake-vanilla-biscoff':         '../assets/images/cupcakes/biscoffcupcake.png',
+        'cupcake-cardamom-rose':           '../assets/images/cupcakes/cardamomrosecupcake.png',
+        'cupcake-chocolate-oreo-crunch':   '../assets/images/cupcakes/chocolateoreocupcake.png',
+        'cupcake-chocolate-coffee':        '../assets/images/cupcakes/coffeecupcake.png',
+        'cupcake-pumpkin-cranberry-bliss': '../assets/images/cupcakes/cranberrypumpkincupcake.png',
+        'cupcake-red-velvet':              '../assets/images/cupcakes/redvelvetcupcake.png',
+        'cupcake-ube-vanilla':             '../assets/images/cupcakes/ubecupcake.png'
+      };
+
+      var photoPath = photoMap[itemKey] || null;
+      var photoHtml = photoPath
+        ? '<div class="flavor-card__media" style="aspect-ratio:1; border-radius:var(--radius-lg); max-width:480px;"><img src="' + photoPath + '" alt="' + data.name + '"></div>'
+        : '<div class="flavor-card__media flavor-card__media--' + data.imageKey + '" role="img" aria-label="Placeholder for ' + data.name + '" style="aspect-ratio:1; border-radius:var(--radius-lg); max-width:480px;"><span class="placeholder-label">Placeholder, content coming soon</span></div>';
+
       // --- Render ---
       container.innerHTML =
         // Breadcrumb
@@ -224,12 +254,8 @@
         // Product grid: image left, details right
         '<div style="display:grid; gap:var(--sp-6); grid-template-columns:1fr; align-items:start;">' +
 
-          // Image placeholder
-          '<div class="flavor-card__media flavor-card__media--' + data.imageKey + '" ' +
-               'role="img" aria-label="Placeholder for ' + data.name + '" ' +
-               'style="aspect-ratio:1; border-radius:var(--radius-lg); max-width:480px;">' +
-            '<span class="placeholder-label">Placeholder, content coming soon</span>' +
-          '</div>' +
+          // Product photo (or placeholder)
+          photoHtml +
 
           // Details
           '<div>' +

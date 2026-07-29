@@ -101,30 +101,43 @@
             <a class="hero-stat" href="about/donations.html">$1,000+ donated to date &rarr;</a>
           </div>
         </div>
-        <!-- TODO: replace with a real hero product photo (assets/images/hero-cake.jpg, ~800×1000, 4:5) -->
-        <div class="hero-visual" role="img" aria-label="Placeholder for a hero photo of a vegan cake">
-          <div class="placeholder-label">
-            <span>Placeholder, content coming soon</span>
-          </div>
+        <div class="hero-visual">
+          <img src="assets/images/general/general.png" alt="Vegan cakes and baked goods by Mix for a Mission, a cottage microbakery in Kirkland, WA">
         </div>
       </div>
     </section>
 
+    <!-- ===== ORDER RECEIPT STRIP — signature element drawn from the
+         actual business process: Google Form → Venmo → text confirm → pickup. ===== -->
+    <div class="receipt-strip" aria-hidden="true">
+      <div class="container">
+        <span class="receipt-strip__inner">
+          <span class="receipt-strip__item">Order</span>
+          <span class="receipt-strip__sep">&rarr;</span>
+          <span class="receipt-strip__item">Google Form</span>
+          <span class="receipt-strip__sep">&rarr;</span>
+          <span class="receipt-strip__item">Venmo</span>
+          <span class="receipt-strip__sep">&rarr;</span>
+          <span class="receipt-strip__item">Text Confirm</span>
+          <span class="receipt-strip__sep">&rarr;</span>
+          <span class="receipt-strip__item">Pickup in Kirkland</span>
+        </span>
+      </div>
+    </div>
+
     <!-- ===== ABOUT US SUMMARY + STAT ===== -->
     <section class="section section--alt" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="about-split">
-          <div>
-            <span class="eyebrow">About Us</span>
-            <h2 id="about-heading">Baked with purpose.</h2>
-            <p class="lead">Mix for a Mission is a Washington State Cottage Food approved vegan home microbakery, founded by high school students. We create exciting vegan baked goods that satisfy your cravings — and use our profits to donate to animal sanctuaries and invest in our growth, so every order brings more donations to the causes we care about.</p>
-            <p><a href="about/">Learn more about our mission →</a></p>
-          </div>
-          <div class="label-stamp">
-            <span class="label-stamp__overline">Donated to date</span>
-            <span class="label-stamp__num"><a href="about/donations.html">$1,000+</a></span>
-            <span class="label-stamp__note">50% of profits to Hope Link</span>
-          </div>
+      <div class="container container--narrow">
+        <div class="label-stamp label-stamp--centered">
+          <span class="label-stamp__overline">Donated to date</span>
+          <span class="label-stamp__num"><a href="about/donations.html">$1,000+</a></span>
+          <span class="label-stamp__note">50% of profits to Hope Link</span>
+        </div>
+        <div class="about-summary">
+          <span class="eyebrow">About Us</span>
+          <h2 id="about-heading">Baked with purpose.</h2>
+          <p class="lead">Mix for a Mission is a Washington State Cottage Food approved vegan home microbakery, founded by high school students. We create exciting vegan baked goods that satisfy your cravings — and use our profits to donate to animal sanctuaries and invest in our growth, so every order brings more donations to the causes we care about.</p>
+          <p><a href="about/">Learn more about our mission &rarr;</a></p>
         </div>
       </div>
     </section>
@@ -139,11 +152,9 @@
         </div>
 
         <div class="featured-grid">
-          <!-- TODO: replace each placeholder media with <img src="assets/images/cake-*.jpg"> per assets/images/README.md -->
           <article class="product-card">
-            <div class="product-card__media product-card__media--vanilla" role="img" aria-label="Placeholder for Vanilla Sprinkles Cake">
-              <span class="emoji" aria-hidden="true">🎂</span>
-              <span class="placeholder-label">Placeholder, content coming soon</span>
+            <div class="product-card__media">
+              <img src="assets/images/cakes/vintagestylevanilla.png" alt="Vanilla Sprinkles Cake" loading="lazy">
             </div>
             <div class="product-card__body">
               <h3>Vanilla Sprinkles Cake</h3>
@@ -153,9 +164,8 @@
           </article>
 
           <article class="product-card">
-            <div class="product-card__media product-card__media--rose" role="img" aria-label="Placeholder for Cardamom Rose Cake">
-              <span class="emoji" aria-hidden="true">🌸</span>
-              <span class="placeholder-label">Placeholder, content coming soon</span>
+            <div class="product-card__media">
+              <img src="assets/images/cakes/cardamomrose.png" alt="Cardamom Rose Cake" loading="lazy">
             </div>
             <div class="product-card__body">
               <h3>Cardamom Rose Cake</h3>
@@ -165,9 +175,8 @@
           </article>
 
           <article class="product-card">
-            <div class="product-card__media product-card__media--chocolate" role="img" aria-label="Placeholder for Black Forest Cake">
-              <span class="emoji" aria-hidden="true">🍫</span>
-              <span class="placeholder-label">Placeholder, content coming soon</span>
+            <div class="product-card__media">
+              <img src="assets/images/cakes/blackforest.png" alt="Black Forest Cake" loading="lazy">
             </div>
             <div class="product-card__body">
               <h3>Black Forest Cake</h3>
@@ -177,9 +186,8 @@
           </article>
 
           <article class="product-card">
-            <div class="product-card__media product-card__media--strawberry" role="img" aria-label="Placeholder for Strawberry Crunch Cake">
-              <span class="emoji" aria-hidden="true">🍓</span>
-              <span class="placeholder-label">Placeholder, content coming soon</span>
+            <div class="product-card__media">
+              <img src="assets/images/cakes/strawberrycrunch.png" alt="Strawberry Crunch Cake" loading="lazy">
             </div>
             <div class="product-card__body">
               <h3>Strawberry Crunch Cake</h3>
@@ -189,9 +197,8 @@
           </article>
 
           <article class="product-card">
-            <div class="product-card__media product-card__media--ube" role="img" aria-label="Placeholder for Ube Vanilla Cake">
-              <span class="emoji" aria-hidden="true">💜</span>
-              <span class="placeholder-label">Placeholder, content coming soon</span>
+            <div class="product-card__media">
+              <img src="assets/images/cakes/ube.png" alt="Ube Vanilla Cake" loading="lazy">
             </div>
             <div class="product-card__body">
               <h3>Ube Vanilla Cake</h3>
@@ -201,9 +208,8 @@
           </article>
         </div>
 
-        <div class="cta-row cta-row--stack">
-          <a class="btn btn--secondary btn--lg" href="menu/">See full menu →</a>
-          <a class="btn btn--primary btn--lg" href="contact/#order-form">Order Now</a>
+        <div class="cta-row">
+          <a class="btn btn--secondary btn--lg" href="menu/">See full menu &rarr;</a>
         </div>
       </div>
     </section>

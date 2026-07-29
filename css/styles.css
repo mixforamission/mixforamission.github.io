@@ -1021,12 +1021,18 @@ a[aria-disabled="true"] * {
   background-image: radial-gradient(rgba(33, 33, 33, 0.08) 1px, transparent 1px);
   background-size: 18px 18px;
 }
-.hero-visual .placeholder-label {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: var(--sp-5);
-  color: var(--color-primary-active);
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-visual:has(img)::after {
+  display: none;
+}
+.hero-visual:has(img) {
+  background: none;
+  border-color: transparent;
+  box-shadow: none;
 }
 .hero-visual .placeholder-label strong {
   display: block;
@@ -1039,6 +1045,39 @@ a[aria-disabled="true"] * {
   font-size: var(--fs-2xs);
   line-height: 1.4;
   opacity: 0.7;
+}
+
+/* ---------- Order receipt strip — signature element drawn from the
+     actual business process: Google Form → Venmo → text confirm → pickup.
+     A thin horizontal band between hero and about, styled like a
+     receipt/order-confirmation line. Specific to this cottage food
+     business (no Shopify cart, no online checkout). ---------- */
+.receipt-strip {
+  padding-block: var(--sp-4);
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  background-color: var(--color-bg-alt);
+  overflow: hidden;
+}
+.receipt-strip__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--color-text-soft);
+}
+.receipt-strip__item {
+  white-space: nowrap;
+}
+.receipt-strip__sep {
+  color: var(--color-line-strong);
+  font-weight: var(--font-weight-bold);
 }
 
 /* ---------- Section head helper ---------- */
@@ -1054,12 +1093,32 @@ a[aria-disabled="true"] * {
   margin-bottom: var(--sp-3);
 }
 
-/* ---------- About summary + stat callout ---------- */
-.about-split {
-  display: grid;
-  gap: var(--sp-6);
-  grid-template-columns: 1fr;
-  align-items: center;
+/* ---------- About summary — single-column, centered layout with
+     label-stamp as a visual header. Distinct from the hero's
+     left/right split — avoids repeating the same shape back-to-back. ---------- */
+.about-summary {
+  max-width: var(--container-narrow);
+  margin-inline: auto;
+  text-align: center;
+}
+.about-summary .eyebrow {
+  margin-bottom: var(--sp-3);
+}
+.about-summary h2 {
+  margin-bottom: var(--sp-3);
+}
+.about-summary .lead {
+  max-width: 56ch;
+  margin-inline: auto;
+  margin-bottom: var(--sp-4);
+}
+
+/* ---------- Label stamp — centered variant for the about section ---------- */
+.label-stamp--centered {
+  max-width: 320px;
+  margin-inline: auto;
+  margin-bottom: var(--sp-6);
+  text-align: center;
 }
 
 /* ---------- Label stamp — ingredient-label vernacular drawn from the real
@@ -1149,12 +1208,17 @@ a[aria-disabled="true"] * {
 .product-card__media--chocolate   { background: linear-gradient(135deg, #e3d6c8, #cbb8a4); }
 .product-card__media--strawberry  { background: linear-gradient(135deg, #f4ddd8, #ecccc6); }
 .product-card__media--ube         { background: linear-gradient(135deg, #e6dcea, #d4c7dd); }
-.product-card__media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(rgba(33, 33, 33, 0.07) 1px, transparent 1px);
-  background-size: 14px 14px;
+.product-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Hide dot-pattern overlay and background when a real photo is present */
+.product-card__media:has(img)::after {
+  display: none;
+}
+.product-card__media:has(img) {
+  background: none;
 }
 .product-card__media .emoji {
   position: relative;
@@ -1334,10 +1398,6 @@ a[aria-disabled="true"] * {
   .hero-content h1 {
     font-size: clamp(2.5rem, 2rem + 3vw, 4rem);
     line-height: 1.1;
-  }
-  .about-split {
-    grid-template-columns: 1.4fr 1fr;
-    gap: var(--sp-8);
   }
   .featured-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -1622,12 +1682,17 @@ a[aria-disabled="true"] * {
   font-weight: var(--font-weight-bold);
   opacity: 0.7;
 }
-.flavor-card__media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(rgba(33, 33, 33, 0.06) 1px, transparent 1px);
-  background-size: 12px 12px;
+.flavor-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Hide dot-pattern overlay and background when a real photo is present */
+.flavor-card__media:has(img)::after {
+  display: none;
+}
+.flavor-card__media:has(img) {
+  background: none;
 }
 .flavor-card__name {
   padding: var(--sp-2) var(--sp-3) var(--sp-3);
