@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2, h3, h4, h5, h6 {
   font-family: var(--font-body);
-  font-weight: var(--font-weight-bold);
+  font-weight: 400;
   line-height: var(--lh-tight);
   letter-spacing: var(--ls-tight);
   color: var(--color-text);
@@ -124,15 +124,16 @@ h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: var(--font-display);
-  font-weight: var(--font-weight-bold);
+  font-weight: 500;
+  font-style: italic;
   line-height: var(--lh-tight);
-  letter-spacing: var(--ls-tight);
+  letter-spacing: -0.02em;
   color: var(--color-text);
   font-size: var(--fs-display-lg);
 }
 h2 {
   font-size: clamp(1.75rem, 1rem + 2.5vw, 2.5rem);
-  font-weight: var(--font-weight-extrabold);
+  letter-spacing: -0.01em;
 }
 h3 {
   font-size: var(--fs-3xl);
@@ -986,7 +987,8 @@ a[aria-disabled="true"] * {
   gap: var(--sp-2);
   font-family: var(--font-display);
   font-size: var(--fs-md);
-  font-weight: var(--font-weight-semibold);
+  font-weight: 500;
+  font-style: italic;
   color: var(--color-accent);
   text-decoration: none;
   border-bottom: 2px solid var(--color-accent-fill);
@@ -1038,7 +1040,8 @@ a[aria-disabled="true"] * {
   display: block;
   font-family: var(--font-display);
   font-size: var(--fs-md);
-  font-weight: var(--font-weight-semibold);
+  font-weight: 500;
+  font-style: italic;
   margin-bottom: var(--sp-1);
 }
 .hero-visual .placeholder-label span {
@@ -1160,7 +1163,8 @@ a[aria-disabled="true"] * {
   display: block;
   font-family: var(--font-display);
   font-size: var(--fs-display-md);
-  font-weight: var(--font-weight-bold);
+  font-weight: 500;
+  font-style: italic;
   line-height: 1;
   color: var(--color-text);
   margin-bottom: var(--sp-2);
@@ -1475,7 +1479,8 @@ a[aria-disabled="true"] * {
   gap: var(--sp-2);
   font-family: var(--font-display);
   font-size: var(--fs-lg);
-  font-weight: var(--font-weight-semibold);
+  font-weight: 500;
+  font-style: italic;
   color: var(--color-accent-active);
 }
 .cake-jars__label .ico {
@@ -1625,7 +1630,8 @@ a[aria-disabled="true"] * {
 .price-chip .num {
   font-family: var(--font-display);
   font-size: var(--fs-md);
-  font-weight: var(--font-weight-bold);
+  font-weight: 500;
+  font-style: italic;
   color: var(--color-accent);
 }
 .price-chip .lbl {
@@ -2056,7 +2062,8 @@ a[aria-disabled="true"] * {
 .donation-stat-band .stat-num {
   font-family: var(--font-display);
   font-size: var(--fs-display-lg);
-  font-weight: var(--font-weight-bold);
+  font-weight: 500;
+  font-style: italic;
   line-height: 1;
   color: var(--color-text-inverse);
   margin-bottom: var(--sp-3);
@@ -2084,7 +2091,8 @@ a[aria-disabled="true"] * {
 .hopelink-card__pct {
   font-family: var(--font-display);
   font-size: var(--fs-4xl);
-  font-weight: var(--font-weight-bold);
+  font-weight: 500;
+  font-style: italic;
   color: var(--color-accent);
   line-height: 1;
   text-align: center;
@@ -2153,7 +2161,8 @@ a[aria-disabled="true"] * {
 .donation-item__name {
   font-family: var(--font-display);
   font-size: var(--fs-lg);
-  font-weight: var(--font-weight-semibold);
+  font-weight: 500;
+  font-style: italic;
   margin-bottom: var(--sp-1);
 }
 .donation-item__blurb {
@@ -2480,7 +2489,8 @@ a[aria-disabled="true"] * {
 .contact-card__value {
   font-family: var(--font-display);
   font-size: var(--fs-lg);
-  font-weight: var(--font-weight-semibold);
+  font-weight: 500;
+  font-style: italic;
   color: var(--color-text);
   line-height: var(--lh-tight);
 }

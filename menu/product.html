@@ -7,9 +7,6 @@
   <meta name="description" content="Product details from Mix for a Mission, a vegan home bakery in Kirkland, WA." />
   <meta name="theme-color" content="#2f4a3a" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="icon" href="../assets/icons/logo.ico" />
@@ -168,6 +165,9 @@
       };
       var catAnchor = catAnchorMap[data.category] || "cakes";
 
+      // --- Custom order flag (used by size & ingredients blocks below) ---
+      var isCustom = (itemKey === 'cake-custom-order');
+
       // --- Build tagline ---
       var taglineHtml = data.tagline
         ? '<p class="lead">' + data.tagline + '</p>'
@@ -188,7 +188,9 @@
       // --- Build size info ---
       var sizeHtml = data.sizeInfo
         ? '<p><span class="details-label">Size</span>' + data.sizeInfo + '</p>'
-        : '<p style="font-style:italic; opacity:0.7;">Placeholder, content coming soon</p>';
+        : isCustom
+          ? '<p><span class="details-label">Size</span>Varies by design — discussed after ordering. All custom cakes must comply with Washington Cottage Food requirements.</p>'
+          : '<p style="font-style:italic; opacity:0.7;">Placeholder, content coming soon</p>';
 
       // --- Build allergens callout ---
       var allergensHtml = "";
@@ -206,6 +208,8 @@
         ingredientsHtml =
           '<p style="margin-top:var(--sp-4);"><span class="details-label">Ingredients</span>' + data.ingredients + '</p>' +
           '<p class="details-note" style="border-top:1px dashed var(--color-line); margin-top:var(--sp-3); padding-top:var(--sp-2);">Ingredients may be subject to change. Text us with any questions.</p>';
+      } else if (isCustom) {
+        ingredientsHtml = '<p style="margin-top:var(--sp-4);"><span class="details-label">Ingredients</span>Determined when you order — we will work with you to design a cake that fits your preferences, dietary needs, and Washington Cottage Food requirements.</p>';
       } else {
         ingredientsHtml = '<p style="font-style:italic; opacity:0.7;">Placeholder, content coming soon</p>';
       }

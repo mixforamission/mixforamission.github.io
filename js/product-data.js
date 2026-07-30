@@ -20,7 +20,7 @@ var productData = {
   "cake-almond-crunch-bar": {
     name: "Almond Crunch Bar Cake",
     category: "cake",
-    tagline: "Introducing our irresistible Almond Crunch Ice Cream Bar-inspired Almond Cake. This delightful dessert is sure to be a crowd-pleaser with its delicate almond flavor and crunchy almond cake roast that is reminiscent of the classic ice cream bar. The buttercream is smooth, and not-too-sweet! This cake is perfect for any Almond lover.",
+    tagline: "Inspired by classic almond ice cream bars. Delicate almond flavor with a crunchy almond roast, smooth buttercream that's not too sweet. If you like almonds, this is your cake.",
     ingredients: "VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE)), WATER, SALT, NATURAL FLAVOR (DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR), SUGAR, SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), ALMONDS, POWDERED SUGAR, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), WATER, FLAXSEED, APPLE CIDER VINEGAR, ALMOND EXTRACT (WATER, ALCOHOL, OIL OF BITTER ALMOND), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), BAKING SODA, SALT",
     sizeInfo: "Net weight: 90 oz (2551g)",
     gfAvailable: false,
@@ -41,7 +41,7 @@ var productData = {
   "cake-chocolate-mint": {
     name: "Chocolate Mint Cake",
     category: "cake",
-    tagline: "Cool peppermint meets deep dark chocolate in three showstopping layers — refreshing, rich, and impossible to stop eating. A customer favorite year-round.",
+    tagline: "Cool peppermint and dark chocolate in three layers. Refreshing and rich. People order this one all year, not just around the holidays.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR (SUGAR, CORNSTARCH), ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), COCOA, APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), PEPPERMINT EXTRACT (ALCOHOL, PEPPERMINT OIL), GEL FOOD COLOR (CORN SYRUP, SUGAR, WATER, MODIFIED CORNSTARCH, YELLOW 5, CARRAGEENAN, BLUE 1, RED 40, SODIUM BENZOATE (PRESERVATIVE), CIRTRIC ACID, BAKING POWDER (CORN STARCH, SODIUM BICARBONATE, SODIUM ALUMINUM SULFATE, MONOCALCIUM PHOSPHATE), SALT,",
     sizeInfo: "Net weight: 77.60oz (2200g)",
     gfAvailable: true,
@@ -91,7 +91,7 @@ var productData = {
   "cake-black-forest": {
     name: "Black Forest Cake",
     category: "cake",
-    tagline: "Indulge in our exquisite Vegan Chocolate Cake, lovingly decorated to resemble a lush and enchanting forest. Savor every bite of this decadent dessert, made with only the finest plant-based ingredients.",
+    tagline: "A vegan chocolate cake decorated to look like a forest. Meringue mushrooms, chocolate bark, matcha moss. It's the cake people send us the most messages about.",
     ingredients: "Chocolate cake (enriched flour (wheat flour, niacin, reduced iron, thiamine, mononitrate, riboflavin, folic acid), organic sugar, water, organic soymilk (filtered water, organic soybeans, contains 2% or less of: vitamin and mineral blend (calcium carbonate, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sea salt, gellan gum, ascorbic acid (vitamin C to protect)), canola oil, cocoa (processed with alkali), instant coffee powder, baking powder, baking soda, vanilla extract (water, ethyl alcohol, vanilla extract)); buttercream (vegan butter (vegetable oil blend (palm oil, canola oil), water, salt, pea protein isolate, monoglycerides, diglycerides, sunflower lecithin, artificial flavors, vitamin A palmitate, beta carotene with potassium sorbate, lactic acid, and calcium disodium EDTA), shortening (canola oil, modified palm and palm kernel oils, mono and diglycerides), corn syrup (light corn syrup, salt, and vanilla), sugar, water, instant coffee powder, vanilla extract (water, ethyl alcohol, vanilla extract), chocolate shards (sugar, hydrogenated palm fat, cocoa, soy lecithin, flavorings), meringue mushrooms (aquafaba, organic sugar, vinegar, cocoa powder (processed with alkali), matcha powder)).",
     sizeInfo: "3 layers, 7-inch diameter, serves 10\u201315",
     gfAvailable: true,
@@ -101,7 +101,7 @@ var productData = {
   "cake-vanilla-sprinkles": {
     name: "Vanilla Sprinkles Cake",
     category: "cake",
-    tagline: "A classic vanilla celebration cake absolutely loaded with rainbow sprinkles — fun, colorful, and pure joy in every slice.",
+    tagline: "A classic vanilla cake loaded with rainbow sprinkles. Fun, colorful, and always the first one finished at a party.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), RAINBOW SPRINKLES (SUGAR, HYDROGENATED PALM KERNEL OIL, CORN STARCH, SUNFLOWER LECITHIN, FD&C COLORS YELLOW 6 LAKE, YELLOW 5 LAKE, BLUE 1 LAKE, RED 40 LAKE, RED 3, MALTODEXTRIN, CARNAUBA WAX, VANILLIN, CELLULOSE GUM), APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "Net weight: 84.66oz (2400g)",
     gfAvailable: true,
@@ -111,7 +111,7 @@ var productData = {
   "cake-vanilla-coconut": {
     name: "Vanilla Coconut Cake",
     category: "cake",
-    tagline: "Vanilla cake with a tropical twist — packed with real coconut flakes and coconut extract for that unmistakable island sweetness in every layer.",
+    tagline: "Vanilla cake with real coconut flakes and coconut extract. Tropical without being fake about it.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), UNSWEETENED COCONUT FLAKES, APPLE CIDER VINEGAR, COCONUT EXTRACT (ALCHOL, WATER, GLYCERIN, AND NATURAL COCONUT FLAVORS), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "Net weight: 90oz (2551g)",
     gfAvailable: true,
@@ -121,7 +121,7 @@ var productData = {
   "cake-cardamom-rose": {
     name: "Cardamom Rose Cake",
     category: "cake",
-    tagline: "Three layers of fragrant cardamom-spiced cake filled with velvety rose buttercream — elegant, aromatic, and the flavor our customers won't stop talking about.",
+    tagline: "Three layers of cardamom-spiced cake with rose buttercream. The flavor people won't stop asking us to bring back.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), APPLE CIDER VINEGAR, ROSE EXTRACT (ALCHOL, GLYCERIN, NATURAL FLAVORS), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), CARDAMOM POWDER, FOOD COLOR (CORN SYRUP, SUGAR, WATER, MODIFIED CORNSTARCH, RED 40, SODIUM BENZOATE (PRESERVATIVE), CITRIC ACID), BAKING SODA, SALT",
     sizeInfo: "Net weight: 84.66oz (2400g)",
     gfAvailable: true,
@@ -131,7 +131,7 @@ var productData = {
   "cake-mango-vanilla": {
     name: "Mango Vanilla Cake",
     category: "cake",
-    tagline: "Tropical sunshine in cake form — three vanilla layers filled with sweet, juicy mango. Bright, beautiful, and a total showstopper.",
+    tagline: "Three vanilla layers filled with sweet mango. Bright, tropical, and it looks as good as the photos.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), MANGO PULP (MANGO PULP, WATER, SUGAR, CITRIC ACID) APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "",
     gfAvailable: true,
@@ -141,7 +141,7 @@ var productData = {
   "cake-vanilla-spice": {
     name: "Vanilla Spice Cake",
     category: "cake",
-    tagline: "Warm, cozy, and aromatic — vanilla cake spiced with cinnamon, ginger, clove, and nutmeg. Like a hug in cake form, no matter the season.",
+    tagline: "Vanilla cake spiced with cinnamon, ginger, clove, and nutmeg. Warm and cozy. Good any time of year.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), APPLE CIDER VINEGAR, CINNAMON, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), GINGER, BAKING SODA, CLOVE, NUTMEG SALT",
     sizeInfo: "Net weight: 84.66oz (2400g)",
     gfAvailable: true,
@@ -161,7 +161,7 @@ var productData = {
   "cake-strawberry-crunch": {
     name: "Strawberry Crunch Cake",
     category: "cake",
-    tagline: "Our Strawberry Crunch Cake follows on from our irresistible Almond Crunch Cake. This cake is a Vanilla sponge stuffed with our tangy strawberry buttercream flavored with real freeze-dried strawberries rolled in golden biscuits and freeze-dried strawberries. The strawberry flavor is aggressive without the taste being too sweet!",
+    tagline: "Vanilla sponge stuffed with tangy strawberry buttercream made from real freeze-dried strawberries, rolled in golden biscuit crumble. The strawberry flavor is aggressive in the best way, without being too sweet.",
     ingredients: "Soy milk (organic soybase (filtered water, whole organic soybeans), tricalcium phosphate, sea salt, organic flavors, gellan gum, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sugar, powdered sugar, enriched bleached flour (wheat flour, malted barley flour, niacin, iron, thiamine, riboflavin, folic acid), light corn syrup (corn syrup, salt, vanilla), vegan butter (oil blend (palm fruit, canola, soybean, flax, and olive), water, salt, natural flavor (plant derived from corn), soy protein, soy lecithin, lactic acid (non-dairy), annatto extract (color)), canola oil, shortening (soybean oil, fully hydrogenated palm oil, palm oil, mono and diglycerides, TBHQ and citric acid (antioxidants)), freeze dried strawberries, apple cider vinegar, vanilla extract (water, alcohol (35%), sugar, vanilla bean extractives), water, baking soda, salt.",
     sizeInfo: "3 layers, 7-inch diameter, serves 10\u201320 small slices; 8\u201310 large slices",
     gfAvailable: false,
@@ -181,7 +181,7 @@ var productData = {
   "cake-pandan-vanilla": {
     name: "Pandan Vanilla Cake",
     category: "cake",
-    tagline: "Vibrant green pandan meets creamy vanilla and sweet macapuno coconut in three stunning layers — a Southeast Asian classic, veganized and unforgettable.",
+    tagline: "Vibrant green pandan with creamy vanilla and sweet macapuno coconut. A Southeast Asian classic, veganized. One of the flavors people ask about the most.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, MACAPUNO (COCONUT SPORT, YOUNG COCONUT, SUGAR, WATER, SODIUM CARBOXYMETHYLCELLULOSE,SOLDIUM, METABISULFITE (AS PRESERVATIVE)), SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), APPLE CIDER VINEGAR, PANDAN FLAVOURING (GLUCOSE SYRUP, SORBITOL SYRUP, ARTIFICAL PANDAN FLAVOR, PROPYLENE GLYCOL, COLORING (FD&C YELLOW #5), MODIFIED STARCH, ARTIFICIAL VANILLIN FLAVOR, COLORING (FD&C BLUE #1), ETHYL MALTOL), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "Net weight: 90oz (2551g)",
     gfAvailable: true,
@@ -202,7 +202,7 @@ var productData = {
   "cake-white-forest": {
     name: "White Forest Cake",
     category: "cake",
-    tagline: "Do you like chocolate cake? Vanilla cake? Cherries? Well then get this! Our Forest series is one of the most popular at Mix For A Mission \u2014 and our customers have good taste. The sweet sour cherries balance perfectly with our vanilla and chocolate taste, and with the chopped chocolate this is a match made in heaven!",
+    tagline: "Do you like chocolate cake? Vanilla cake? Cherries? Good, because this one has all three. Sweet and sour cherries balanced with vanilla and chocolate, plus chopped chocolate throughout. Our Forest series is one of our most popular for a reason.",
     ingredients: "Soy milk (organic soybase (filtered water, whole organic soybeans), tricalcium phosphate, sea salt, organic flavors, gellan gum, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sugar, powdered sugar (sugar, cornstarch), enriched bleached flour (wheat flour, malted barley flour, niacin, iron, thiamine, riboflavin, folic acid), light corn syrup (corn syrup, salt, vanilla), vegan butter (oil blend (palm fruit, canola, soybean, flax, and olive), water, salt, natural flavor (plant derived from corn), soy protein, soy lecithin, lactic acid (non-dairy), annatto extract (color)), canola oil, shortening (soybean oil, fully hydrogenated palm oil, palm oil, mono and diglycerides, TBHQ and citric acid (antioxidants)), cocoa, apple cider vinegar, strawberry syrup (high fructose corn syrup, corn syrup, water, artificial flavors, citric acid, sodium benzoate, xanthan gum, Red 40), vanilla extract (water, alcohol (35%), sugar, vanilla bean extractives), baking powder (sodium acid pyrophosphate, sodium bicarbonate, cornstarch, monocalcium phosphate), salt.",
     sizeInfo: "3 layers, 7-inch diameter, serves 10\u201320 small slices; 8\u201310 large slices",
     gfAvailable: true,
@@ -242,7 +242,7 @@ var productData = {
   "cake-custom-order": {
     name: "Custom Order Cake",
     category: "cake",
-    tagline: "",
+    tagline: "Got something specific in mind? We'll work with you to design a fully custom vegan cake. Pricing starts at $60 and depends on complexity. Details are limited by Washington's Cottage Food law — we'll discuss everything after you place your order.",
     ingredients: "",
     sizeInfo: "",
     gfAvailable: true,
@@ -256,7 +256,7 @@ var productData = {
   "cupcake-almond-crunch": {
     name: "Almond Crunch",
     category: "cupcake",
-    tagline: "Our Almond Crunch cupcake is a bite-sized version of our most popular cake — smooth almond buttercream, crunchy roasted almonds, and a delicate flavor that'll make any almond lover swoon.",
+    tagline: "A bite-sized version of our most popular cake. Smooth almond buttercream, crunchy roasted almonds. Simple and really good if you're into almonds.",
     ingredients: "VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE)), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR), SUGAR, SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), ALMONDS, POWDERED SUGAR, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), WATER, \\FLAXSEED, APPLE CIDER VINEGAR, ALMOND EXTRACT (WATER, ALCOHOL, OIL OF BITTER ALMOND), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), BAKING SODA, SALT",
     sizeInfo: "Net weight: 44.45 oz (1260g)",
     gfAvailable: false,
@@ -276,7 +276,7 @@ var productData = {
   "cupcake-chocolate-candy-cane": {
     name: "Chocolate Candy Cane",
     category: "cupcake",
-    tagline: "A festive chocolate cupcake with a cool peppermint kick — tastes like the holidays, and we won't judge if you order it in July.",
+    tagline: "A festive chocolate cupcake with a cool peppermint kick. Tastes like the holidays. We won't judge if you order it in July.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR (SUGAR, CORNSTARCH), ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), COCOA, APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), PEPPERMINT EXTRACT (ALCOHOL, PEPPERMINT OIL), SOFT GEL PASTE FOOD COLOR (WATER, SUGAR, US CERTIFIED RED 40 (E129), RED 3 (E127), YELLOW 6 (E110), MODIFIED CORN STARCH, VEGTABLE GUM, CITRIC ACID AND 1/10 OF SODIUM BENZONATE AND POTASSIUM SORBATE (AS PRESERVATIVES)) BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), SALT,",
     sizeInfo: "Net weight: 38.8oz (1100g)",
     gfAvailable: true,
@@ -286,7 +286,7 @@ var productData = {
   "cupcake-chocolate-mint": {
     name: "Chocolate Mint",
     category: "cupcake",
-    tagline: "A mint-chocolate dream in cupcake form — cool, refreshing, and deeply chocolatey with that unmistakable green mint buttercream.",
+    tagline: "A mint-chocolate cupcake. Cool, refreshing, and deeply chocolatey with green mint buttercream.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR (SUGAR, CORNSTARCH), ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), COCOA, APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), PEPPERMINT EXTRACT (ALCOHOL, PEPPERMINT OIL), GEL FOOD COLOR (CORN SYRUP, SUGAR, WATER, MODIFIED CORNSTARCH, YELLOW 5, CARRAGEENAN, BLUE 1, RED 40, SODIUM BENZOATE (PRESERVATIVE), CIRTRIC ACID, BAKING POWDER (CORN STARCH, SODIUM BICARBONATE, SODIUM ALUMINUM SULFATE, MONOCALCIUM PHOSPHATE), SALT,",
     sizeInfo: "Net weight: 38.8oz (1100g)",
     gfAvailable: true,
@@ -306,7 +306,7 @@ var productData = {
   "cupcake-chocolate-oreo-crunch": {
     name: "Chocolate Oreo Crunch",
     category: "cupcake",
-    tagline: "Everything you love about cookies-and-cream, packed into a single cupcake with that signature Oreo crunch in every bite.",
+    tagline: "Everything you like about cookies and cream, packed into a cupcake with Oreo crunch in every bite.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR (SUGAR, CORNSTARCH), ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), COCOA, SEMISWEET CHOCOLATE CHIPS (CHOCOLATE LIQUOR, SUGAR, SOY LECITHIN, VANILLA), APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), PEPPERMINT EXTRACT (ALCOHOL, PEPPERMINT OIL), FOOD COLOR (CORN SYRUP, SUGAR, WATER, MODIFIED CORNSTARCH, REDSODIUM BENZOATE (PRESERVATIVE), CITRIC ACID), BAKING POWDER (CORN STARCH, SODIUM BICARBONATE, SODIUM ALUMINUM SULFATE, MONOCALCIUM PHOSPHATE), SALT,",
     sizeInfo: "Net weight: 33oz (1200g)",
     gfAvailable: false,
@@ -346,7 +346,7 @@ var productData = {
   "cupcake-toasted-smores": {
     name: "Toasted S'mores Cupcakes",
     category: "cupcake",
-    tagline: "Our smore cupcake is a delicious treat that will satisfy your sweet cravings. It is made with a cookie cupcake base and torched meringue that gives you that creamy marshmallow feel to create a rich and indulgent flavor. The cupcake has a nice chocolatey flavor that feels moist and fluffy giving you that smore and cupcake experience at the same time. Every bite of our smoking smore cupcake is an explosion of flavors that will make you crave for more.",
+    tagline: "A cookie cupcake base with torched meringue on top. You get the chocolate, the marshmallow, and the graham cracker vibes all at once. It's a s'more but make it a cupcake.",
     ingredients: "Chocolate cake (enriched flour (wheat flour, niacin, reduced iron, thiamine, mononitrate, riboflavin, folic acid), organic sugar, water, organic soymilk (filtered water, organic soybeans, contains 2% or less of: vitamin and mineral blend (calcium carbonate, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sea salt, gellan gum, ascorbic acid (vitamin C to protect)), canola oil, cocoa (processed with alkali), instant coffee powder, baking powder, baking soda, vanilla extract (water, ethyl alcohol, vanilla extract)); meringue (sugar, aquafaba, water, vinegar).",
     sizeInfo: "Sold in sets of 6 or 12",
     gfAvailable: false,
@@ -377,7 +377,7 @@ var productData = {
   "cupcake-cardamom-rose": {
     name: "Cardamom Rose",
     category: "cupcake",
-    tagline: "Indulge in the delicate and fragrant flavors of our irresistible rose buttercream cupcake! Our moist and fluffy cupcake is infused with the sweet aroma of roses, giving you a taste of pure elegance in every bite. Topped with a swirl of velvety rose buttercream, each bite is a delightful balance of floral and creamy flavors that will make you not regret your cheat day.",
+    tagline: "A moist cupcake infused with rose, topped with rose buttercream. Floral, creamy, and not too sweet. People are weirdly obsessed with these — try one and you'll get it.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), APPLE CIDER VINEGAR, ROSE EXTRACT (ALCHOL, GLYCERIN, NATURAL FLAVORS), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), CARDOMAM POWDER, FOOD COLOR (CORN SYRUP, SUGAR, WATER, MODIFIED CORNSTARCH, RED 40, SODIUM BENZOATE (PRESERVATIVE), CITRIC ACID), BAKING SODA, SALT",
     sizeInfo: "Net weight: 42.33oz (1200g)",
     gfAvailable: true,
@@ -387,7 +387,7 @@ var productData = {
   "cupcake-mango-vanilla": {
     name: "Mango Vanilla",
     category: "cupcake",
-    tagline: "A burst of mango sunshine in every bite — sweet, tropical, and perfectly balanced with smooth vanilla buttercream.",
+    tagline: "Sweet mango and smooth vanilla buttercream. Tropical, bright, and balanced.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), MANGO PULP (MANGO PULP, WATER,SUGAR, CITRIC ACID) APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "Net weight: 42.33oz (1200g)",
     gfAvailable: true,
@@ -436,7 +436,7 @@ var productData = {
   "cupcake-ube-vanilla": {
     name: "Ube Vanilla",
     category: "cupcake",
-    tagline: "A mini galaxy in cupcake form — vibrant purple ube with smooth vanilla buttercream. That color alone stops the scroll every time.",
+    tagline: "Vibrant purple ube with smooth vanilla buttercream. The color stops the scroll every single time.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, MACAPUNO (COCONUT SPORT, YOUNG COCONUT, SUGAR, WATER, SODIUM CARBOXYMETHYLCELLULOSE,SOLDIUM, METABISULFITE (AS PRESERVATIVE)), SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), APPLE CIDER VINEGAR, UBE FLAVOURING (GLUCOSE SYRUP, WATER, PROPYLENE GLYCOL, SORBITOL SYRUP, ARTIFICIAL SWEET POTATO FLAVOR, COLORING (FD&C RED #3 & FD&C BLUE #1), ETHYL VANILLA)), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "Net weight: 44.45oz (1260g)",
     gfAvailable: true,
@@ -466,7 +466,7 @@ var productData = {
   "cupcake-vanilla-chocolate-swirl": {
     name: "Vanilla Chocolate Swirl",
     category: "cupcake",
-    tagline: "Indulge in our heavenly Vanilla Chocolate Swirl Cupcake, a delectable treat that perfectly balances the classic flavors of vanilla and chocolate. We have skillfully crafted a moist and fluffy cupcake, with a rich and decadent chocolatey swirl that is sure to please your taste buds.",
+    tagline: "Vanilla and chocolate swirled together in one cupcake. Moist, fluffy, and simple. If you can't decide between vanilla and chocolate, you don't have to.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR (SUGAR, CORNSTARCH), ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, SOYBEAN, CANOLA, VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)) CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), COCOA, APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), SALT",
     sizeInfo: "Net weight: 38.8 oz (1110g)",
     gfAvailable: true,
@@ -489,7 +489,7 @@ var productData = {
   "cookie-blue-monster": {
     name: "Blue Cookie Monster",
     category: "cookie",
-    tagline: "A monstrously good GIANT cookie — bright blue, packed with Oreos, chocolate chips, and Biscoff crumbs. Cookie Monster would absolutely approve.",
+    tagline: "A bright blue GIANT cookie packed with Oreos, chocolate chips, and Biscoff crumbs. Cookie Monster would approve.",
     ingredients: "ENRICHED UNBLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), BROWN SUGAR, SUGAR, OREOS (SUGAR, UNBLEACHED ENRICHED FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE {VITAMIN B1}, RIBOFLAVIN {VITAMIN B2}, FOLIC ACID), PALM AND/OR CANOLA OIL, COCOA (PROCESSED WITH ALKALI), HIGH FRUCTOSE CORN SYRUP, CORNSTARCH, LEAVENING (BAKING SODA AND/OR CALCIUM PHOSPHATE), SALT, SOY LECITHIN, VANILLIN - AN ARTIFICIAL FLAVOR, CHOCOLATE), SEMI-SWEET CHOCOLATE CHIPS (CHOCOLATE LIQUOR, SUGAR, SOY LECITHIN, VANILLA), BISCOFF COOKIES (WHEAT FLOUR, SUGAR, VEGETABLE OILS (SOYBEAN OIL, SUNFLOWER OIL, CANOLA OIL, PALM OIL), BROWN SUGAR SYRUP, SODIUM BICARBONATE, SOY FLOUR, SALT, CINNAMON), FLAXSEED, BAKING SODA, SALT, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), ARTIFICAL COLORING (CORN SYRUP, SUGAR, WATER, MODIFIED CORNSTARCH, CARRAGEENAN, BLUE 1, BENZOATE [PRESERVATIVE], CITRIC ACID)",
     sizeInfo: "Net weight: 30oz (840g)",
     gfAvailable: false,
@@ -499,7 +499,7 @@ var productData = {
   "cookie-ube": {
     name: "Ube",
     category: "cookie",
-    tagline: "A vibrant purple GIANT ube cookie loaded with Oreos — sweet potato magic meets cookies-and-cream. The color alone is worth it, but the taste keeps you coming back.",
+    tagline: "A vibrant purple GIANT ube cookie loaded with Oreos. The color gets people's attention but the taste is what makes them order it again.",
     ingredients: "ENRICHED UNBLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), VEGAN BUTTER (OIL BLEND (PALM FRUIT, SOYBEAN, CANOLA, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), BROWN SUGAR, SUGAR, OREOS (SUGAR, UNBLEACHED ENRICHED FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE {VITAMIN B1}, RIBOFLAVIN {VITAMIN B2}, FOLIC ACID), PALM AND/OR CANOLA OIL, HIGH FRUCTOSE CORN SYRUP, CORNSTARCH, LEAVENING (BAKING SODA AND/OR CALCIUM PHOSPHATE), SALT, SOY LECITHIN, VANILLIN - AN ARTIFICIAL FLAVOR, CHOCOLATE), BROWN SUGAR SYRUP, SODIUM BICARBONATE, SOY FLOUR, SALT, CINNAMON), FLAXSEED, BAKING SODA, SALT, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), UBE FLAVOURING (GLUCOSE SYRUP, WATER, PROPYLENE GLYCOL, SORBITOL SYRUP, ARTIFICIAL SWEET POTATO FLAVOR, COLORING (FD&C RED #3 & FD&CBLUE #1), ETHYL VANILLA))",
     sizeInfo: "Net weight: 30oz (840g)",
     gfAvailable: true,
@@ -563,7 +563,7 @@ var productData = {
   "cakepop-red-velvet": {
     name: "Red Velvet (White Chocolate)",
     category: "cakepop",
-    tagline: "Red velvet cake dipped in smooth white chocolate on a stick — bite-sized, beautiful, and impossible to eat just one.",
+    tagline: "Red velvet cake dipped in white chocolate on a stick. Bite-sized, and it's actually hard to eat just one.",
     ingredients: "NONDAIRY WHITE CHOCOLATE COINS (SUGAR, HYDROGENATED PALM FAT, MALTODEXTRINE, EMULSIFIERS (SOY LECITHIN, POLYGLYCEROL POLYRICONEATE), FLAVORINGS, SALT, FOOD COLORINGS ( TITANIUM DIOXIDE)), SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR (SUGAR, CORNSTARCH), ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA),VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), APPLE CIDER VINEGAR, COCOA, RED GEL FOOD COLOR (SOFT GEL PASTE FOOD COLOR (WATER, SUGAR, US CERTIFIED RED 40 (E129), RED 3 (E127), YELLOW 6 (E110), MODIFIED CORN STARCH, VEGTABLE GUM, CITRIC ACID AND 1/10 OF SODIUM BENZONATE AND POTASSIUM SORBATE (AS PRESERVATIVES)), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), SALT",
     sizeInfo: "Net weight: 16.93oz (480g)",
     gfAvailable: false,
@@ -573,7 +573,7 @@ var productData = {
   "cakepop-double-dough-biscoff": {
     name: "Double Dough Biscoff (White Chocolate)",
     category: "cakepop",
-    tagline: "Cookie dough meets Biscoff meets white chocolate — on a stick. Indulgent, spiced, and dangerously poppable. You've been warned.",
+    tagline: "Cookie dough meets Biscoff meets white chocolate. On a stick.",
     ingredients: "SEMISWEET CHOCOLATE CHIPS (CHOCOLATE LIQUOR, SUGAR, SOY LECITHIN, VANILLA), SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), CANOLA OIL, POWDERED SUGAR, LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), CARABUNA WAX), COOKIE BUTTER (SPECULOOS COOKIES (WHEAT FLOUR [WHEAT FLOUR, MALTED WHEAT FLOUR], CARAMELIZED SUGAR, VEGETABLE OIL BLEND [PALM OIL, CANOLA OIL, CITRIC ACID AND LEMON JUICE CONCENTRATE {TO PRESERVE}], APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "Net weight: 16.93oz (480g)",
     gfAvailable: false,
@@ -597,7 +597,7 @@ var productData = {
   "cakejar-almond-crunch": {
     name: "Almond Crunch",
     category: "cakejar",
-    tagline: "All the almond-crunch goodness of our signature cake, layered in a portable jar — because almond lovers deserve options.",
+    tagline: "All the almond-crunch goodness of our signature cake, layered in a portable jar. For almond lovers who want their fix in single-serve form.",
     ingredients: "VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE)), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR), SUGAR, SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), ALMONDS, POWDERED SUGAR, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), WATER, \\FLAXSEED, APPLE CIDER VINEGAR, ALMOND EXTRACT (WATER, ALCOHOL, OIL OF BITTER ALMOND), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), BAKING SODA, SALT",
     sizeInfo: "",
     gfAvailable: false,
@@ -617,7 +617,7 @@ var productData = {
   "cakejar-chocolate-candy-cane": {
     name: "Chocolate Candy Cane",
     category: "cakejar",
-    tagline: "Chocolate peppermint joy, jarred — holiday vibes in every spoonful, year-round.",
+    tagline: "Chocolate peppermint in a jar. Holiday vibes in every spoonful, available year-round.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR (SUGAR, CORNSTARCH), ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), COCOA, APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), PEPPERMINT EXTRACT (ALCOHOL, PEPPERMINT OIL), SOFT GEL PASTE FOOD COLOR (WATER, SUGAR, US CERTIFIED RED 40 (E129), RED 3 (E127), YELLOW 6 (E110), MODIFIED CORN STARCH, VEGTABLE GUM, CITRIC ACID AND 1/10 OF SODIUM BENZONATE AND POTASSIUM SORBATE (AS PRESERVATIVES)) BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), SALT,",
     sizeInfo: "",
     gfAvailable: true,
@@ -627,7 +627,7 @@ var productData = {
   "cakejar-chocolate-mint": {
     name: "Chocolate Mint",
     category: "cakejar",
-    tagline: "Mint-chocolate bliss, jarred and ready to go — cool, refreshing, and dangerously easy to finish in one sitting.",
+    tagline: "Mint chocolate in a jar. Cool, refreshing, and really easy to finish in one sitting.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR (SUGAR, CORNSTARCH), ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), COCOA, APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), PEPPERMINT EXTRACT (ALCOHOL, PEPPERMINT OIL), GEL FOOD COLOR (CORN SYRUP, SUGAR, WATER, MODIFIED CORNSTARCH, YELLOW 5, CARRAGEENAN, BLUE 1, RED 40, SODIUM BENZOATE (PRESERVATIVE), CIRTRIC ACID, BAKING POWDER (CORN STARCH, SODIUM BICARBONATE, SODIUM ALUMINUM SULFATE, MONOCALCIUM PHOSPHATE), SALT,",
     sizeInfo: "",
     gfAvailable: true,
@@ -647,7 +647,7 @@ var productData = {
   "cakejar-chocolate-oreo-crunch": {
     name: "Chocolate Oreo Crunch",
     category: "cakejar",
-    tagline: "Oreo crunch cake, jarred — cookies-and-cream in every spoonful, no sharing required.",
+    tagline: "Oreo crunch cake in a jar. Cookies and cream in every spoonful.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR (SUGAR, CORNSTARCH), ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), COCOA, SEMISWEET CHOCOLATE CHIPS (CHOCOLATE LIQUOR, SUGAR, SOY LECITHIN, VANILLA), APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), PEPPERMINT EXTRACT (ALCOHOL, PEPPERMINT OIL), FOOD COLOR (CORN SYRUP, SUGAR, WATER, MODIFIED CORNSTARCH, REDSODIUM BENZOATE (PRESERVATIVE), CITRIC ACID), BAKING POWDER (CORN STARCH, SODIUM BICARBONATE, SODIUM ALUMINUM SULFATE, MONOCALCIUM PHOSPHATE), SALT,",
     sizeInfo: "",
     gfAvailable: false,
@@ -677,7 +677,7 @@ var productData = {
   "cakejar-black-forest": {
     name: "Black Forest",
     category: "cakejar",
-    tagline: "Our forest-inspired chocolate-and-cherry creation, jarred for one — all the enchantment of the full cake, now portable.",
+    tagline: "Our chocolate-and-cherry forest cake, jarred for one. All the layers, none of the slicing.",
     ingredients: "Chocolate cake (enriched flour (wheat flour, niacin, reduced iron, thiamine, mononitrate, riboflavin, folic acid), organic sugar, water, organic soymilk (filtered water, organic soybeans, contains 2% or less of: vitamin and mineral blend (calcium carbonate, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sea salt, gellan gum, ascorbic acid (vitamin C to protect)), canola oil, cocoa (processed with alkali), instant coffee powder, baking powder, baking soda, vanilla extract (water, ethyl alcohol, vanilla extract)); buttercream (vegan butter (vegetable oil blend (palm oil, canola oil), water, salt, pea protein isolate, monoglycerides, diglycerides, sunflower lecithin, artificial flavors, vitamin A palmitate, beta carotene with potassium sorbate, lactic acid, and calcium disodium EDTA), shortening (canola oil, modified palm and palm kernel oils, mono and diglycerides), corn syrup (light corn syrup, salt, and vanilla), sugar, water, instant coffee powder, vanilla extract (water, ethyl alcohol, vanilla extract), chocolate shards (sugar, hydrogenated palm fat, cocoa, soy lecithin, flavorings), meringue mushrooms (aquafaba, organic sugar, vinegar, cocoa powder (processed with alkali), matcha powder)).",
     sizeInfo: "",
     gfAvailable: true,
@@ -687,7 +687,7 @@ var productData = {
   "cakejar-vanilla-sprinkle": {
     name: "Vanilla Sprinkle",
     category: "cakejar",
-    tagline: "Vanilla sprinkle joy in a jar — colorful, fun, and ready for any celebration (or just a really good Tuesday).",
+    tagline: "Vanilla sprinkle cake in a jar. Colorful, fun, and good for celebrations. Or a random Tuesday.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), RAINBOW SPRINKLES (SUGAR, HYDROGENATED PALM KERNEL OIL, CORN STARCH, SUNFLOWER LECITHIN, FD&C COLORS YELLOW 6 LAKE, YELLOW 5 LAKE, BLUE 1 LAKE, RED 40 LAKE, RED 3, MALTODEXTRIN, CARNAUBA WAX, VANILLIN, CELLULOSE GUM), APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "",
     gfAvailable: true,
@@ -707,7 +707,7 @@ var productData = {
   "cakejar-cardamom-rose": {
     name: "Cardamom Rose",
     category: "cakejar",
-    tagline: "The floral, gently spiced magic of our cardamom rose creation, layered in a jar — all the elegance, none of the slicing.",
+    tagline: "Cardamom rose cake, layered in a jar. All the floral, spiced flavor without having to cut a slice.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), APPLE CIDER VINEGAR, ROSE EXTRACT (ALCHOL, GLYCERIN, NATURAL FLAVORS), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), CARDOMAM POWDER, FOOD COLOR (CORN SYRUP, SUGAR, WATER, MODIFIED CORNSTARCH, RED 40, SODIUM BENZOATE (PRESERVATIVE), CITRIC ACID), BAKING SODA, SALT",
     sizeInfo: "",
     gfAvailable: true,
@@ -717,7 +717,7 @@ var productData = {
   "cakejar-mango-vanilla": {
     name: "Mango Vanilla",
     category: "cakejar",
-    tagline: "Mango-and-vanilla sunshine, jarred — bright, tropical, and ready whenever the craving hits.",
+    tagline: "Mango and vanilla layered in a jar. Bright, tropical, and ready when the craving hits.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), MANGO PULP (MANGO PULP, WATER,SUGAR, CITRIC ACID) APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "",
     gfAvailable: true,
@@ -737,7 +737,7 @@ var productData = {
   "cakejar-strawberry-crunch": {
     name: "Strawberry Crunch",
     category: "cakejar",
-    tagline: "Strawberry crunch in a jar — that signature tangy, aggressive strawberry flavor and golden crunch, now portable. The flavor is still aggressive in the best way.",
+    tagline: "Strawberry crunch in a jar. That signature tangy strawberry flavor (still aggressive, still the best part) and golden crunch, now portable.",
     ingredients: "Soy milk (organic soybase (filtered water, whole organic soybeans), tricalcium phosphate, sea salt, organic flavors, gellan gum, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sugar, powdered sugar, enriched bleached flour (wheat flour, malted barley flour, niacin, iron, thiamine, riboflavin, folic acid), light corn syrup (corn syrup, salt, vanilla), vegan butter (oil blend (palm fruit, canola, soybean, flax, and olive), water, salt, natural flavor (plant derived from corn), soy protein, soy lecithin, lactic acid (non-dairy), annatto extract (color)), canola oil, shortening (soybean oil, fully hydrogenated palm oil, palm oil, mono and diglycerides, TBHQ and citric acid (antioxidants)), freeze dried strawberries, apple cider vinegar, vanilla extract (water, alcohol (35%), sugar, vanilla bean extractives), water, baking soda, salt.",
     sizeInfo: "",
     gfAvailable: false,
@@ -747,7 +747,7 @@ var productData = {
   "cakejar-vanilla-biscoff": {
     name: "Vanilla Biscoff",
     category: "cakejar",
-    tagline: "Biscoff bliss in a jar — cookie butter and vanilla, spoon-ready and dangerously easy to finish.",
+    tagline: "Vanilla cake with cookie butter and speculoos crunch, in a jar. Spoon-ready.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), COOKIE BUTTER (SPECULOOS COOKIES (WHEAT FLOUR [WHEAT FLOUR, MALTED WHEAT FLOUR], CARAMELIZED SUGAR, VEGETABLE OIL BLEND [PALM OIL, CANOLA OIL, CITRIC ACID AND LEMON JUICE CONCENTRATE {TO PRESERVE}], CANE SUGAR, SOY FLOUR, INVERT SUGAR SYRUP, WHEAT GLUTEN, SODIUM BICARBONATE, CINNAMON, NUTMEG)), BISCOFF COOKIES (WHEAT FLOUR, SUGAR, VEGETABLE OILS (SOYBEAN OIL, SUNFLOWER OIL, CANOLA OIL, PALM OIL), BROWN SUGAR SYRUP, SODIUM BICARBONATE (LEAVENING), SOY FLOUR, SALT, CINNAMON), APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "",
     gfAvailable: false,
@@ -757,7 +757,7 @@ var productData = {
   "cakejar-pandan-vanilla": {
     name: "Pandan Vanilla",
     category: "cakejar",
-    tagline: "Pandan-macapuno magic in a jar — a taste of the tropics, ready whenever you are.",
+    tagline: "Pandan and macapuno coconut layered in a jar. A taste of the tropics, ready when you are.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, MACAPUNO (COCONUT SPORT, YOUNG COCONUT, SUGAR, WATER, SODIUM CARBOXYMETHYLCELLULOSE,SOLDIUM, METABISULFITE (AS PRESERVATIVE)), SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), APPLE CIDER VINEGAR, PANDAN FLAVOURING (GLUCOSE SYRUP, SORBITOL SYRUP, ARTIFICAL PANDAN FLAVOR, PROPYLENE GLYCOL, COLORING (FD&C YELLOW #5), MODIFIED STARCH, ARTIFICIAL VANILLIN FLAVOR, COLORING (FD&C BLUE #1), ETHYL MALTOL), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "",
     gfAvailable: true,
@@ -767,7 +767,7 @@ var productData = {
   "cakejar-ube-vanilla": {
     name: "Ube Vanilla",
     category: "cakejar",
-    tagline: "Ube vanilla layered in a jar — purple, pretty, and perfectly portable.",
+    tagline: "Ube vanilla in a jar. Purple, pretty, and portable.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, MACAPUNO (COCONUT SPORT, YOUNG COCONUT, SUGAR, WATER, SODIUM CARBOXYMETHYLCELLULOSE,SOLDIUM, METABISULFITE (AS PRESERVATIVE)), SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), APPLE CIDER VINEGAR, UBE FLAVOURING (GLUCOSE SYRUP, WATER, PROPYLENE GLYCOL, SORBITOL SYRUP, ARTIFICIAL SWEET POTATO FLAVOR, COLORING (FD&C RED #3 & FD&C BLUE #1), ETHYL VANILLA)), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "",
     gfAvailable: true,
@@ -777,7 +777,7 @@ var productData = {
   "cakejar-milk-tea-boba": {
     name: "Milk Tea Boba",
     category: "cakejar",
-    tagline: "Milk tea boba in dessert form — tea, brown sugar, and chewy pearls, jarred for peak convenience.",
+    tagline: "Milk tea boba in dessert form. Tea, brown sugar, and chewy pearls, in a jar.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR, ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), WATER, BROWN SUGAR, TAPIOCA STARCH, MODIFIED TAPIOCA STARCH, CARAMEL COLOR, NATURAL FLAVOR, SODIUM CARBOXYMETHYLCELLULOSE, APPLE CIDER VINEGAR, BLACK TEA POWDER, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING SODA, SALT",
     sizeInfo: "",
     gfAvailable: false,
@@ -787,7 +787,7 @@ var productData = {
   "cakejar-red-velvet": {
     name: "Red Velvet",
     category: "cakejar",
-    tagline: "Red velvet, jarred. Sometimes a classic just needs to be portable.",
+    tagline: "Red velvet in a jar. Same classic, now portable.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR (SUGAR, CORNSTARCH), ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA),VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON- DAIRY), ANNATTO EXTRACT (COLOR)), CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), APPLE CIDER VINEGAR, COCOA, RED GEL FOOD COLOR (SOFT GEL PASTE FOOD COLOR (WATER, SUGAR, US CERTIFIED RED 40 (E129), RED 3 (E127), YELLOW 6 (E110), MODIFIED CORN STARCH, VEGTABLE GUM, CITRIC ACID AND 1/10 OF SODIUM BENZONATE AND POTASSIUM SORBATE (AS PRESERVATIVES)), VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), SALT",
     sizeInfo: "",
     gfAvailable: false,
@@ -797,7 +797,7 @@ var productData = {
   "cakejar-vanilla-chocolate-swirl": {
     name: "Vanilla Chocolate Swirl",
     category: "cakejar",
-    tagline: "The best of both worlds, jarred — vanilla and chocolate swirled together in every spoonful. No decisions necessary.",
+    tagline: "Vanilla and chocolate swirled together in a jar. For when you can't pick just one.",
     ingredients: "SOY MILK (ORGANIC SOYBASE (FILTERED WATER, WHOLE ORGANIC SOYBEANS), TRICALCIUM PHOSPHATE, SEA SALT, ORGANIC FLAVORS, GELLAN GUM, BITAMIN A PALMITATE, VITAMIN D2, RIBOFLAVIN (B2), VITAMIN B12), SUGAR, POWDERED SUGAR (SUGAR, CORNSTARCH), ENRICHED BLEACHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE, RIBOFLAVIN, FOLIC ACID), LIGHT CORN SYRUP (CORN SYRUP, SALT, VANILLA), VEGAN BUTTER (OIL BLEND (PALM FRUIT, SOYBEAN, CANOLA, VEGAN BUTTER (OIL BLEND (PALM FRUIT, CANOLA, SOYBEAN, FLAX, AND OLIVE), WATER, SALT, NATURAL FLAVOR (PLANT DERIVED FROM CORN), SOY PROTEIN, SOY LECITHIN, LACTIC ACID (NON-DAIRY), ANNATTO EXTRACT (COLOR)) CANOLA OIL, SHORTENING (SOYBEAN OIL, FULLY HYDROGENATED PALM OIL, PALM OIL, MONO AND DIGLYCERIDES, TBHQ AND CITRIC ACID (ANTIOXIDANTS)), COCOA, APPLE CIDER VINEGAR, VANILLA EXTRACT (WATER, ALCOHOL (35%), SUGAR, VANILLA BEAN EXTRACTIVES), BAKING POWDER (SODIUM ACID PYROPHOSPHATE, SODIUM BICARBONATE, CORNSTARCH, MONOCALCIUM PHOSPHATE), SALT",
     sizeInfo: "",
     gfAvailable: true,
