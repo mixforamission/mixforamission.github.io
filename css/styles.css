@@ -2001,6 +2001,7 @@ a[aria-disabled="true"] * {
 .person-card .product-card__media {
   aspect-ratio: 3 / 4;
   min-height: 160px;
+  overflow: hidden;
 }
 @media (min-width: 500px) {
   .person-card .product-card__media {
