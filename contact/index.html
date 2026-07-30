@@ -334,7 +334,10 @@
        endDate has passed. If no windows are active, the entire
        section stays hidden.
        ============================================================ */
-    var PICKUP_BLACKOUTS = [
+    (function () {
+      "use strict";
+
+      var PICKUP_BLACKOUTS = [
       {
         startDate: "2026-08-19",
         endDate: "2026-08-24",
@@ -387,6 +390,7 @@
       });
 
       section.removeAttribute("hidden");
+    })();
     })();
   </script>
 

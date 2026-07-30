@@ -131,7 +131,10 @@
        the page updates automatically. Don't change anything else.
        ============================================================ -->
   <script>
-    var DONATIONS = [
+    (function () {
+      "use strict";
+
+      var DONATIONS = [
       {
         name: "Hope Link",
         blurb: "50% of profits from every order, ongoing. A local organization supporting low-income families in our community.",
@@ -190,6 +193,7 @@
 
         list.appendChild(li);
       });
+    })();
     })();
   </script>
 
