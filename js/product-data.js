@@ -592,7 +592,7 @@ var productData = {
   },
 
   /* ======================================================
-     CAKE JARS — 21 items (same as cupcakes minus Smores and two discontinued)
+     CAKE JARS — 21 items (same as cupcake flavors, except Toasted Smores)
      ====================================================== */
   "cakejar-almond-crunch": {
     name: "Almond Crunch",
