@@ -241,8 +241,8 @@
 
       var photoPath = photoMap[itemKey] || null;
       var photoHtml = photoPath
-        ? '<div class="flavor-card__media" style="aspect-ratio:1; border-radius:var(--radius-lg); max-width:480px;"><img src="' + photoPath + '" alt="' + data.name + '"></div>'
-        : '<div class="flavor-card__media flavor-card__media--' + data.imageKey + '" role="img" aria-label="Placeholder for ' + data.name + '" style="aspect-ratio:1; border-radius:var(--radius-lg); max-width:480px;"><span class="placeholder-label">Image coming soon!</span></div>';
+        ? '<div class="flavor-card__media" style="border-radius:var(--radius-lg); max-width:480px;"><img src="' + photoPath + '" alt="' + data.name + '"></div>'
+        : '<div class="flavor-card__media flavor-card__media--' + data.imageKey + '" role="img" aria-label="Placeholder for ' + data.name + '"><span class="placeholder-label">Image coming soon!</span></div>';
 
       // --- Render ---
       container.innerHTML =
