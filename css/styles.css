@@ -1999,13 +1999,16 @@ a[aria-disabled="true"] * {
 .product-card__media--karan    { background: linear-gradient(135deg, #f0e4d6, #e0ceb0); }
 
 .person-card .product-card__media {
-  aspect-ratio: 3 / 4;
-  min-height: 160px;
+  aspect-ratio: 1;
+  min-height: 120px;
+  max-height: 180px;
   overflow: hidden;
 }
 @media (min-width: 500px) {
   .person-card .product-card__media {
+    aspect-ratio: auto;
     height: 100%;
+    max-height: none;
     min-height: 0;
   }
 }
