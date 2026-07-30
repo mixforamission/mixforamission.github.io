@@ -1996,7 +1996,7 @@ a[aria-disabled="true"] * {
 /* Board member photo tints */
 .product-card__media--emi      { background: linear-gradient(135deg, #eaf0e6, #d2ddca); }
 .product-card__media--tandisse { background: linear-gradient(135deg, #f4e7e2, #e6d2c9); }
-.product-card__media--ishwin   { background: linear-gradient(135deg, #e4e7f0, #cdd2e3); }
+.product-card__media--karan    { background: linear-gradient(135deg, #f0e4d6, #e0ceb0); }
 
 .person-card .product-card__media {
   aspect-ratio: 3 / 4;
