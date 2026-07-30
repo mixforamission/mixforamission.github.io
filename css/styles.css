@@ -1670,6 +1670,7 @@ a[aria-disabled="true"] * {
   place-items: center;
   position: relative;
   color: var(--color-primary-active);
+  overflow: hidden;
 }
 .flavor-card__media .emoji {
   position: relative;
