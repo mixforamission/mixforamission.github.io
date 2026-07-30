@@ -171,7 +171,7 @@
       // --- Build tagline ---
       var taglineHtml = data.tagline
         ? '<p class="lead">' + data.tagline + '</p>'
-        : '<p class="lead" style="font-style:italic; opacity:0.7;">Placeholder, content coming soon</p>';
+        : '<p class="lead" style="font-style:italic; opacity:0.7;">Image coming soon!</p>';
 
       // --- Build pricing ---
       var pricingHtml = categoryPricing[data.category] || "";
@@ -190,7 +190,7 @@
         ? '<p><span class="details-label">Size</span>' + data.sizeInfo + '</p>'
         : isCustom
           ? '<p><span class="details-label">Size</span>Varies by design — discussed after ordering. All custom cakes must comply with Washington Cottage Food requirements.</p>'
-          : '<p style="font-style:italic; opacity:0.7;">Placeholder, content coming soon</p>';
+          : '<p style="font-style:italic; opacity:0.7;">Image coming soon!</p>';
 
       // --- Build allergens callout ---
       var allergensHtml = "";
@@ -211,7 +211,7 @@
       } else if (isCustom) {
         ingredientsHtml = '<p style="margin-top:var(--sp-4);"><span class="details-label">Ingredients</span>Determined when you order — we will work with you to design a cake that fits your preferences, dietary needs, and Washington Cottage Food requirements.</p>';
       } else {
-        ingredientsHtml = '<p style="font-style:italic; opacity:0.7;">Placeholder, content coming soon</p>';
+        ingredientsHtml = '<p style="font-style:italic; opacity:0.7;">Image coming soon!</p>';
       }
 
       // --- Build product photo (keyed by actual product key, not imageKey —
@@ -242,7 +242,7 @@
       var photoPath = photoMap[itemKey] || null;
       var photoHtml = photoPath
         ? '<div class="flavor-card__media" style="aspect-ratio:1; border-radius:var(--radius-lg); max-width:480px;"><img src="' + photoPath + '" alt="' + data.name + '"></div>'
-        : '<div class="flavor-card__media flavor-card__media--' + data.imageKey + '" role="img" aria-label="Placeholder for ' + data.name + '" style="aspect-ratio:1; border-radius:var(--radius-lg); max-width:480px;"><span class="placeholder-label">Placeholder, content coming soon</span></div>';
+        : '<div class="flavor-card__media flavor-card__media--' + data.imageKey + '" role="img" aria-label="Placeholder for ' + data.name + '" style="aspect-ratio:1; border-radius:var(--radius-lg); max-width:480px;"><span class="placeholder-label">Image coming soon!</span></div>';
 
       // --- Render ---
       container.innerHTML =

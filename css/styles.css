@@ -1224,12 +1224,6 @@ a[aria-disabled="true"] * {
 .product-card__media:has(img) {
   background: none;
 }
-.product-card__media .emoji {
-  position: relative;
-  z-index: 1;
-  font-size: 2.25rem;
-  filter: saturate(0.85);
-}
 .product-card__media .placeholder-label {
   position: absolute;
   bottom: var(--sp-3);
@@ -1672,12 +1666,6 @@ a[aria-disabled="true"] * {
   color: var(--color-primary-active);
   overflow: hidden;
 }
-.flavor-card__media .emoji {
-  position: relative;
-  z-index: 1;
-  font-size: 1.85rem;
-  filter: saturate(0.82);
-}
 .flavor-card__media .placeholder-label {
   position: absolute;
   bottom: var(--sp-2);
@@ -2020,10 +2008,6 @@ a[aria-disabled="true"] * {
     min-height: 0;
   }
 }
-.person-card .product-card__media .emoji {
-  font-size: 2.5rem;
-}
-
 /* ---------- Responsive: board page ----------
    The .grid--cols-3 utility already collapses to 1 col on mobile and
    expands to 3 cols at ≥900px. No extra rules needed for the grid; the
@@ -2243,12 +2227,6 @@ a[aria-disabled="true"] * {
   inset: 0;
   background-image: radial-gradient(rgba(33, 33, 33, 0.07) 1px, transparent 1px);
   background-size: 16px 16px;
-}
-.event-item__media .emoji {
-  position: relative;
-  z-index: 1;
-  font-size: 2.5rem;
-  filter: saturate(0.82);
 }
 .event-item__media .placeholder-label {
   position: absolute;
