@@ -558,7 +558,7 @@ var productData = {
   },
 
   /* ======================================================
-     CAKE POPS — 3 items
+     CAKE POPS — 5 items
      ====================================================== */
   "cakepop-red-velvet": {
     name: "Red Velvet (White Chocolate)",
@@ -589,6 +589,29 @@ var productData = {
     gfAvailable: true,
     imageKey: "chocolate",
     allergens: "WHEAT, SOY",
+  },
+  /* TODO: confirm with client — tagline, ingredients, sizeInfo, allergens and the
+     coating name for the two pops below. Deliberately left blank rather than
+     copied from another flavor: allergen text must come from the client. */
+  "cakepop-double-dough": {
+    name: "Double Dough",
+    category: "cakepop",
+    tagline: "",
+    ingredients: "",
+    sizeInfo: "",
+    gfAvailable: false,
+    imageKey: "dough",
+    allergens: "",
+  },
+  "cakepop-zebra": {
+    name: "Zebra",
+    category: "cakepop",
+    tagline: "",
+    ingredients: "",
+    sizeInfo: "",
+    gfAvailable: false,
+    imageKey: "zebra",
+    allergens: "",
   },
 
   /* ======================================================
