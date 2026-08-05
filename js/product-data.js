@@ -5,17 +5,17 @@
    "cake-black-forest", "cupcake-black-forest") so the same
    flavor name across categories doesn't collide.
 
-   Ten items (6 cakes, 4 cupcakes) have real tagline/ingredients/
-   sizeInfo data sourced from the old Google Sites product pages.
-   All other entries have those fields as empty
-   strings — the template handles the fallback display.
+   Most items carry real tagline/ingredients/sizeInfo data sourced
+   from the old Google Sites product pages; the rest have those
+   fields as empty strings — the template handles the fallback
+   display.
 
    Load this BEFORE main.js on pages that need it.
    ============================================================ */
 
 var productData = {
   /* ======================================================
-     CAKES — 22 items
+     CAKES — 21 items
      ====================================================== */
   "cake-almond-crunch-bar": {
     name: "Almond Crunch Bar Cake",
@@ -28,16 +28,6 @@ var productData = {
     allergens: "ALMOND, WHEAT, SOY",
   },
 
-  "cake-chocolate-vanilla-buttercream": {
-    name: "Chocolate Cake w/Vanilla Buttercream",
-    category: "cake",
-    tagline: "",
-    ingredients: "",
-    sizeInfo: "",
-    gfAvailable: true,
-    imageKey: "chocolate",
-    allergens: "",
-  },
   "cake-chocolate-mint": {
     name: "Chocolate Mint Cake",
     category: "cake",
@@ -78,16 +68,6 @@ var productData = {
     imageKey: "strawberry",
     allergens: "",
   },
-  "cake-black-forest": {
-    name: "Black Forest Cake",
-    category: "cake",
-    tagline: "A vegan chocolate cake decorated to look like a forest. Meringue mushrooms, chocolate bark, matcha moss. It's the cake people send us the most messages about.",
-    ingredients: "Chocolate cake (enriched flour (wheat flour, niacin, reduced iron, thiamine, mononitrate, riboflavin, folic acid), organic sugar, water, organic soymilk (filtered water, organic soybeans, contains 2% or less of: vitamin and mineral blend (calcium carbonate, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sea salt, gellan gum, ascorbic acid (vitamin C to protect)), canola oil, cocoa (processed with alkali), instant coffee powder, baking powder, baking soda, vanilla extract (water, ethyl alcohol, vanilla extract)); buttercream (vegan butter (vegetable oil blend (palm oil, canola oil), water, salt, pea protein isolate, monoglycerides, diglycerides, sunflower lecithin, artificial flavors, vitamin A palmitate, beta carotene with potassium sorbate, lactic acid, and calcium disodium EDTA), shortening (canola oil, modified palm and palm kernel oils, mono and diglycerides), corn syrup (light corn syrup, salt, and vanilla), sugar, water, instant coffee powder, vanilla extract (water, ethyl alcohol, vanilla extract), chocolate shards (sugar, hydrogenated palm fat, cocoa, soy lecithin, flavorings), meringue mushrooms (aquafaba, organic sugar, vinegar, cocoa powder (processed with alkali), matcha powder)).",
-    sizeInfo: "3 layers, 7-inch diameter, serves 10\u201315",
-    gfAvailable: true,
-    imageKey: "blackforest",
-    allergens: ""
-  },
   "cake-vanilla-sprinkles": {
     name: "Vanilla Sprinkles Cake",
     category: "cake",
@@ -97,6 +77,16 @@ var productData = {
     gfAvailable: true,
     imageKey: "vanilla",
     allergens: "WHEAT, SOY",
+  },
+  "cake-black-forest": {
+    name: "Black Forest Cake",
+    category: "cake",
+    tagline: "A vegan chocolate cake decorated to look like a forest. Meringue mushrooms, chocolate bark, matcha moss. It's the cake people send us the most messages about.",
+    ingredients: "Chocolate cake (enriched flour (wheat flour, niacin, reduced iron, thiamine, mononitrate, riboflavin, folic acid), organic sugar, water, organic soymilk (filtered water, organic soybeans, contains 2% or less of: vitamin and mineral blend (calcium carbonate, vitamin A palmitate, vitamin D2, riboflavin (B2), vitamin B12), sea salt, gellan gum, ascorbic acid (vitamin C to protect)), canola oil, cocoa (processed with alkali), instant coffee powder, baking powder, baking soda, vanilla extract (water, ethyl alcohol, vanilla extract)); buttercream (vegan butter (vegetable oil blend (palm oil, canola oil), water, salt, pea protein isolate, monoglycerides, diglycerides, sunflower lecithin, artificial flavors, vitamin A palmitate, beta carotene with potassium sorbate, lactic acid, and calcium disodium EDTA), shortening (canola oil, modified palm and palm kernel oils, mono and diglycerides), corn syrup (light corn syrup, salt, and vanilla), sugar, water, instant coffee powder, vanilla extract (water, ethyl alcohol, vanilla extract), chocolate shards (sugar, hydrogenated palm fat, cocoa, soy lecithin, flavorings), meringue mushrooms (aquafaba, organic sugar, vinegar, cocoa powder (processed with alkali), matcha powder)).",
+    sizeInfo: "3 layers, 7-inch diameter, serves 10\u201315",
+    gfAvailable: true,
+    imageKey: "blackforest",
+    allergens: ""
   },
   "cake-vanilla-coconut": {
     name: "Vanilla Coconut Cake",

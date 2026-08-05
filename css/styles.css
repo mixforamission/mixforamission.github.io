@@ -1546,14 +1546,9 @@ a[aria-disabled="true"] * {
   margin-bottom: var(--sp-2);
 }
 .menu-section-head__title h2 {
-  font-size: var(--fs-3xl);
-  margin-bottom: var(--sp-2);
+  font-size: clamp(2rem, 1rem + 3vw, 3rem);
+  margin-bottom: 0;
   overflow-wrap: break-word; /* break long hyphenated words on narrow screens */
-}
-.menu-section-head__title p {
-  font-size: var(--fs-sm);
-  color: var(--color-text-muted);
-  margin: 0;
 }
 /* Pricing chips */
 .price-chips {
@@ -1764,7 +1759,7 @@ a[aria-disabled="true"] * {
     gap: var(--sp-5);
   }
   .menu-section-head__title h2 {
-    font-size: var(--fs-4xl);
+    font-size: clamp(2.5rem, 2rem + 2vw, 3.5rem);
   }
 }
 @media (min-width: 900px) {
