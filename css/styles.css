@@ -1417,7 +1417,6 @@ a[aria-disabled="true"] * {
    - Section headers with pricing chips.
    - Flavor card grid (reuses .product-card) with per-flavor
      tinted placeholders, denser than the home featured grid.
-   - Cake jars callout.
    ============================================================ */
 
 /* ---------- Menu page intro ---------- */
@@ -1452,49 +1451,6 @@ a[aria-disabled="true"] * {
 .menu-gf-note .gf-mark {
   color: var(--color-accent);
   font-weight: var(--font-weight-bold);
-}
-
-/* ---------- Cake jars callout ---------- */
-.cake-jars {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: var(--sp-3) var(--sp-4);
-  margin: var(--sp-4) auto var(--sp-2);
-  max-width: 560px;
-  padding: var(--sp-4) var(--sp-5);
-  background-color: var(--color-accent-soft);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-lg);
-}
-.cake-jars__label {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--sp-2);
-  font-family: var(--font-display);
-  font-size: var(--fs-lg);
-  font-weight: 500;
-  font-style: italic;
-  color: var(--color-accent-active);
-}
-.cake-jars__label .ico {
-  width: 22px;
-  height: 22px;
-  color: var(--color-accent);
-}
-.cake-jars__price {
-  font-size: var(--fs-sm);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-accent);
-  background-color: var(--color-surface);
-  padding: var(--sp-1) var(--sp-3);
-  border-radius: var(--radius-full);
-}
-.cake-jars__desc {
-  font-size: var(--fs-xs);
-  color: var(--color-text-muted);
-  line-height: var(--lh-normal);
 }
 
 /* ---------- Sticky category sub-nav ----------
@@ -1830,6 +1786,31 @@ a[aria-disabled="true"] * {
    .mission-quote (blockquote treatment for the mission statement).
    ============================================================ */
 
+/* ---------- About page photo pair ----------
+   Two bakery photos side by side. The column widths track each
+   image's own aspect ratio — general2 is portrait (1146x1528),
+   general3 landscape (4618x3464) — so the pair lines up to one
+   shared height with no cropping. Stacks on narrow screens. */
+.about-photos {
+  display: grid;
+  gap: var(--sp-4);
+  max-width: 900px;
+  margin-inline: auto;
+}
+.about-photos img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-line);
+}
+@media (min-width: 640px) {
+  .about-photos {
+    grid-template-columns: 0.75fr 1.333fr;
+    align-items: start;
+  }
+}
+
 /* ---------- Page intro (generic, reusable on any content page) ---------- */
 .page-intro {
   padding-block: var(--sp-6) var(--sp-4);
@@ -2031,7 +2012,6 @@ a[aria-disabled="true"] * {
 /* ============================================================
    DONATIONS PAGE
    - Prominent stat / progress band ($1,000+ donated)
-   - Hope Link highlight card (50% of profits)
    - JS-driven editable donations timeline (org name + blurb + link)
    Reuses .page-intro, .section-head, .btn patterns.
    ============================================================ */
@@ -2070,48 +2050,6 @@ a[aria-disabled="true"] * {
   color: rgba(255, 255, 255, 0.82);
   max-width: 40ch;
   margin-inline: auto;
-}
-
-/* ---------- Hope Link highlight card ----------
-   A warm terracotta-accented card calling out the 50%-of-profits model. */
-.hopelink-card {
-  display: grid;
-  gap: var(--sp-5);
-  grid-template-columns: 1fr;
-  align-items: center;
-  background-color: var(--color-accent-soft);
-  border: 1px solid var(--color-line);
-  border-left: 4px solid var(--color-accent-fill);
-  border-radius: var(--radius-lg);
-  padding: var(--sp-6) var(--sp-5);
-}
-.hopelink-card__pct {
-  font-family: var(--font-display);
-  font-size: var(--fs-4xl);
-  font-weight: 500;
-  font-style: italic;
-  color: var(--color-accent);
-  line-height: 1;
-  text-align: center;
-}
-.hopelink-card__pct .pct-label {
-  display: block;
-  font-family: var(--font-body);
-  font-size: var(--fs-2xs);
-  font-weight: var(--font-weight-bold);
-  letter-spacing: var(--ls-wider);
-  text-transform: uppercase;
-  color: var(--color-accent-active);
-  margin-top: var(--sp-2);
-}
-.hopelink-card__body h3 {
-  font-size: var(--fs-xl);
-  margin-bottom: var(--sp-2);
-}
-.hopelink-card__body p {
-  font-size: var(--fs-sm);
-  color: var(--color-text-muted);
-  margin: 0;
 }
 
 /* ---------- Donations timeline ----------
@@ -2173,16 +2111,6 @@ a[aria-disabled="true"] * {
 }
 
 /* ---------- Responsive: donations page ---------- */
-@media (min-width: 640px) {
-  .hopelink-card {
-    grid-template-columns: auto 1fr;
-    gap: var(--sp-6);
-    padding: var(--sp-7) var(--sp-6);
-  }
-  .hopelink-card__pct {
-    font-size: var(--fs-5xl);
-  }
-}
 @media (min-width: 900px) {
   .donation-list {
     grid-template-columns: repeat(2, 1fr);

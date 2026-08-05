@@ -123,25 +123,19 @@
       var categoryLabels = {
         cake:     "Cakes",
         cupcake:  "Cupcakes",
-        cookie:   "Cookies",
-        cakepop:  "Cake Pops",
-        cakejar:  "Cake Jars"
+        cookie:   "Cookies"
       };
 
       var categoryPricing = {
         cake:    '<span class="price-chip"><span class="num">$50</span><span class="lbl">non-custom 7&Prime; 3-layer</span></span> <span class="price-chip"><span class="num">$60+</span><span class="lbl">custom cakes</span></span>',
         cupcake: '<span class="price-chip"><span class="num">$30</span><span class="lbl">/ 12</span><span class="lbl">+ $2.50 half &amp; half</span></span> <span class="price-chip"><span class="num">$45</span><span class="lbl">/ 24</span><span class="lbl">+ $5 half &amp; half</span></span>',
-        cookie:  '<span class="price-chip"><span class="num">$18</span><span class="lbl">/ 6</span></span> <span class="price-chip"><span class="num">$30</span><span class="lbl">/ 12</span><span class="lbl">+ $2 half &amp; half</span></span> <span class="price-chip"><span class="num">$45</span><span class="lbl">/ 24</span><span class="lbl">+ $4 half &amp; half</span></span>',
-        cakepop: '<span class="price-chip"><span class="num">$30</span><span class="lbl">/ 12</span><span class="lbl">+ $3 half &amp; half</span></span> <span class="price-chip"><span class="num">$50</span><span class="lbl">/ 24</span><span class="lbl">+ $5 half &amp; half</span></span>',
-        cakejar: '<span class="price-chip"><span class="num">$10</span><span class="lbl">/ jar</span></span>'
+        cookie:  '<span class="price-chip"><span class="num">$18</span><span class="lbl">/ 6</span></span> <span class="price-chip"><span class="num">$30</span><span class="lbl">/ 12</span><span class="lbl">+ $2 half &amp; half</span></span> <span class="price-chip"><span class="num">$45</span><span class="lbl">/ 24</span><span class="lbl">+ $4 half &amp; half</span></span>'
       };
 
       var gfSurcharge = {
         cake:    "$5",
         cupcake: "$3",
-        cookie:  "$3",
-        cakepop: "$3",
-        cakejar: "$3"
+        cookie:  "$3"
       };
 
       // --- Read ?item= from URL ---
@@ -170,8 +164,7 @@
       // --- Build breadcrumb ---
       var catLabel = categoryLabels[data.category] || data.category;
       var catAnchorMap = {
-        cake: "cakes", cupcake: "cupcakes", cookie: "cookies",
-        cakepop: "cake-pops", cakejar: "cake-jars"
+        cake: "cakes", cupcake: "cupcakes", cookie: "cookies"
       };
       var catAnchor = catAnchorMap[data.category] || "cakes";
 
@@ -248,18 +241,13 @@
         'cupcake-red-velvet':              '../assets/images/cupcakes/redvelvetcupcake.png',
         'cupcake-ube-vanilla':             '../assets/images/cupcakes/ubecupcake.png',
         'cupcake-vanilla-sprinkle':        '../assets/images/cupcakes/vanillacupcake.png',
-        'cupcake-vanilla-chocolate-swirl': '../assets/images/cupcakes/chocolatevanillacupcakes.png',
         // Cookies
         'cookie-biscoff-stuff':            '../assets/images/cookies/cookiebutterstuffed.png',
         'cookie-blue-monster':             '../assets/images/cookies/bluemonstercookie.png',
         'cookie-party-sprinkles':          '../assets/images/cookies/sprinklecookie.png',
         'cookie-toasted-smores':           '../assets/images/cookies/smore%20cookie.png',
         'cookie-pumpkin-spice-latte':      '../assets/images/cookies/pumpkinspicelatte.png',
-        'cookie-strawberry-crunch':        '../assets/images/cookies/strawberrycrunchcookie.png',
-        // Cake pops
-        'cakepop-double-dough-biscoff':    '../assets/images/cakepop/doubledoughbiscoffcakepop.png',
-        'cakepop-double-dough':            '../assets/images/cakepop/doubledoughcakepop.png',
-        'cakepop-zebra':                   '../assets/images/cakepop/zebracakepop.png'
+        'cookie-strawberry-crunch':        '../assets/images/cookies/strawberrycrunchcookie.png'
       };
 
       var photoPath = photoMap[itemKey] || null;
