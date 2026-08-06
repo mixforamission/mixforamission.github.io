@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About: Mix for a Mission</title>
-  <meta name="description" content="About Mix for a Mission: our story and mission." />
+  <title>Board: Mix for a Mission</title>
+  <meta name="description" content="Meet the Mix for a Mission board." />
   <meta name="theme-color" content="#2f4a3a" />
 
 
@@ -31,11 +31,11 @@
           <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="../menu/">Menu</a></li>
           <li class="nav-item has-dropdown">
-            <a class="nav-link has-caret is-current" href="./">About Us<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
+            <a class="nav-link has-caret is-current" href="../about/">About Us<svg class="caret" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5L5 6.5L8 3.5"/></svg></a>
             <ul class="dropdown" aria-label="About Us">
-              <li><a class="is-active" href="./">Our Mission</a></li>
-              <li><a href="donations/">Donations</a></li>
-              <li><a href="../board/">Board</a></li>
+              <li><a href="../about/">Our Mission</a></li>
+              <li><a href="../about/donations/">Donations</a></li>
+              <li><a class="is-active" href="index.html">Board</a></li>
             </ul>
           </li>
           <li class="nav-item has-dropdown">
@@ -55,88 +55,80 @@
   <main id="main">
     <!--
       ============================================================
-      ABOUT US — hub/summary page
+      BOARD — Meet the students behind Mix for a Mission
       --------------------------------------------------------
-      Intro, full mission statement, Our Results stat, and a
-      Meet Our Board CTA card. Donations and Board get their own
-      dedicated sub-pages (linked from here).
+      A responsive team grid: 3 columns on desktop, stacks on
+      mobile. One card per board member with a photo placeholder,
+      name, role, and their quote exactly as given.
       ============================================================
     -->
 
     <!-- ===== Page intro ===== -->
-    <section class="page-intro" aria-labelledby="about-title">
+    <section class="page-intro" aria-labelledby="board-title">
       <div class="container">
-        <span class="eyebrow">About Us</span>
-        <h1 id="about-title">A vegan home bakery on a mission.</h1>
-        <p class="lead">Mix for a Mission is a vegan home bakery in Kirkland, Washington, founded in 2024 by high school students. We make custom vegan cakes, cookies, and cupcakes. Everything is baked fresh to order in our home kitchen, with pickup and delivery available.</p>
+        <span class="eyebrow">Our Board</span>
+        <h1 id="board-title">Meet the team.</h1>
+        <p class="lead">Mix for a Mission is run by a small board of high school students. They handle everything &mdash; from baking and marketing to the finances behind our donations.</p>
       </div>
     </section>
 
-    <!-- ===== Mission statement ===== -->
-    <section class="section" aria-labelledby="mission-heading">
+    <!-- ===== Board grid ===== -->
+    <section class="section" aria-labelledby="board-grid-heading">
+      <h2 id="board-grid-heading" class="visually-hidden">Board members</h2>
       <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow">Our Mission</span>
-          <h2 id="mission-heading">Why we bake.</h2>
-        </div>
-        <blockquote class="mission-quote">
-          <p>We bake vegan goods and donate 100% of the profits to animal sanctuaries — the places that rescue and care for farmed animals. Simple as that. We're a Washington State Cottage Food approved microbakery — which means everything is made in a home kitchen, not a commercial facility.</p>
-        </blockquote>
-      </div>
-    </section>
+        <div class="grid grid--cols-3">
 
-    <!-- ===== Our Results ===== -->
-    <section class="section section--alt" aria-labelledby="results-heading">
-      <div class="container">
-        <div class="about-split">
-          <div>
-            <span class="eyebrow">Our Results</span>
-            <h2 id="results-heading">Every order gives back.</h2>
-            <p class="lead">Since 2024, your orders have helped us donate over $1,000 to the causes we care about. Every order sends 100% of its profit straight back out to animal sanctuaries. More customers means more donations.</p>
-            <p><a href="donations/">See how we donate &amp; who we support &rarr;</a></p>
-          </div>
-          <div class="label-stamp">
-            <span class="label-stamp__overline">Donated to date</span>
-            <span class="label-stamp__num"><a href="donations/">$1,000+</a></span>
-            <span class="label-stamp__note">100% of profits to animal sanctuaries</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Bakery photos ===== -->
-    <section class="section">
-      <div class="container">
-        <div class="about-photos">
-          <img src="../assets/images/general/general2.png" alt="An assortment of Mix for a Mission baked goods" width="1146" height="1528" loading="lazy">
-          <img src="../assets/images/general/general3.jpg" alt="Vegan cakes and treats made by Mix for a Mission" width="4618" height="3464" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Meet Our Board CTA card ===== -->
-    <section class="section" aria-labelledby="board-heading">
-      <div class="container">
-        <div class="section-head section-head--center">
-          <span class="eyebrow">Our People</span>
-          <h2 id="board-heading">Meet the students behind the bakery.</h2>
-          <p class="lead">A small board of high schoolers running every part of Mix for a Mission. Outreach, photography, finances — we do it all.</p>
-        </div>
-        <div class="cta-card-wrap">
-          <!-- TODO: replace placeholder media with <img src="../assets/images/team.jpg"> -->
-          <article class="product-card">
-            <div class="product-card__media product-card__media--sage" role="img" aria-label="Placeholder for a team photo of the Mix for a Mission board">
+          <!-- Karan — CEO, Founder, Chef -->
+          <article class="product-card person-card">
+            <!-- TODO: replace with <img src="../assets/images/board-karan.jpg" alt="Karan"> (portrait, ~600x800, 3:4) -->
+            <div class="product-card__media product-card__media--karan" role="img" aria-label="Placeholder portrait of Karan">
               <span class="placeholder-label">Image coming soon!</span>
             </div>
             <div class="product-card__body">
-              <h3>Meet Our Board</h3>
-              <p class="price">Karan &middot; Emi &middot; Tandisse</p>
-              <p class="desc">The high schoolers who founded Mix for a Mission and keep it running.</p>
-              <div class="cta-row cta-row--left">
-                <a class="btn btn--primary" href="../board/">Meet the board</a>
+              <h3 class="product-card__name">Karan</h3>
+              <span class="product-card__role">CEO, Founder, Chef</span>
+            </div>
+          </article>
+
+          <!-- Emi — CMO -->
+          <article class="product-card person-card">
+            <!-- TODO: replace with <img src="../assets/images/board-emi.jpg" alt="Emi"> (portrait, ~600x800, 3:4) -->
+            <div class="product-card__media product-card__media--emi" role="img" aria-label="Placeholder portrait of Emi">
+              <span class="placeholder-label">Image coming soon!</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Emi</h3>
+              <span class="product-card__role">CMO</span>
+              <p class="product-card__quote">I joined MixForAMission because I wanted experience in outreach for my future career. I also wanted to make a positive change in our community and environment with the vegan products that we sell!</p>
+            </div>
+          </article>
+
+          <!-- Tandisse — CFO -->
+          <article class="product-card person-card">
+            <!-- TODO: replace with <img src="../assets/images/board-tandisse.jpg" alt="Tandisse"> (portrait, ~600x800, 3:4) -->
+            <div class="product-card__media product-card__media--tandisse" role="img" aria-label="Placeholder portrait of Tandisse">
+              <span class="placeholder-label">Image coming soon!</span>
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Tandisse</h3>
+              <span class="product-card__role">CFO</span>
+              <p class="product-card__quote">I joined MixForAMission to get experience managing finances for my future. If you have any questions about which charities we donate to or anything like that, feel free to reach out to s-trahimi@lwsd.org.</p>
+              <div class="product-card__contact">
+                <a href="mailto:s-trahimi@lwsd.org">
+                  <svg class="ext-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                  s-trahimi@lwsd.org
+                </a>
               </div>
             </div>
           </article>
+
+
+
+        </div>
+
+        <!-- ===== Back to About link ===== -->
+        <div class="cta-row cta-row--left-lg">
+          <a class="btn btn--ghost" href="../about/">&larr; Back to About</a>
         </div>
       </div>
     </section>
@@ -161,7 +153,7 @@
           <ul class="footer-list">
             <li><a href="../">Home</a></li>
             <li><a href="../menu/">Menu</a></li>
-            <li><a href="./">About Us</a></li>
+            <li><a href="../about/">About Us</a></li>
             <li><a href="../outreach/">Outreach</a></li>
             <li><a href="../contact/">Contact</a></li>
           </ul>
