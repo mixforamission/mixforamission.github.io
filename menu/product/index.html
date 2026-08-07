@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product Details — Mix for a Mission</title>
-  <meta name="description" content="Product details from Mix for a Mission, a vegan home bakery in Kirkland, WA." />
+  <meta name="description" content="Order custom vegan cakes, cupcakes &amp; cookies from Mix for a Mission in Kirkland, WA — 100% of profits go to animal sanctuaries." />
   <meta name="theme-color" content="#2f4a3a" />
+  <link rel="canonical" href="https://mixforamission.github.io/menu/product/" />
 
 
   <link rel="stylesheet" href="../../css/styles.css" />
@@ -119,11 +120,25 @@
       var container = document.getElementById("product-content");
       if (!container) return;
 
+      // --- Swap the static <meta name="description"> with one specific
+      //     to the product being viewed (SEO: each item gets unique copy) ---
+      function setMetaDescription(text) {
+        var meta = document.querySelector('meta[name="description"]');
+        if (meta) meta.setAttribute("content", text);
+      }
+
       // --- Category labels & pricing (matches /menu/ exactly) ---
       var categoryLabels = {
         cake:     "Cakes",
         cupcake:  "Cupcakes",
         cookie:   "Cookies"
+      };
+
+      // Singular forms for SEO meta description fallback copy
+      var categorySingular = {
+        cake:     "cake",
+        cupcake:  "cupcake",
+        cookie:   "cookie"
       };
 
       var categoryPricing = {
@@ -146,6 +161,7 @@
       // --- 404: not found ---
       if (!data) {
         document.title = "Item not found: Mix for a Mission";
+        setMetaDescription("That menu item isn't available right now. Browse our full vegan menu of cakes, cupcakes, and cookies from Mix for a Mission in Kirkland, WA.");
         container.innerHTML =
           '<div class="page-intro" style="text-align:center; padding-block:var(--sp-8);">' +
             '<span class="eyebrow">Menu</span>' +
@@ -158,8 +174,12 @@
         return;
       }
 
-      // --- Set document.title ---
+      // --- Set document.title + description ---
       document.title = data.name + ": Mix for a Mission";
+      var productDesc = (data.tagline
+        ? data.name + " — " + data.tagline
+        : data.name + ": a vegan " + (categorySingular[data.category] || "baked good") + " from Mix for a Mission, a vegan home bakery in Kirkland, WA. 100% of profits go to animal sanctuaries.");
+      setMetaDescription(productDesc.slice(0, 320));
 
       // --- Build breadcrumb ---
       var catLabel = categoryLabels[data.category] || data.category;
